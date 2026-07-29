@@ -1,0 +1,10 @@
+---
+description: Global loader for the shared Claude, Codex, and Cursor harness
+alwaysApply: true
+---
+
+Read and follow `{{HOME_WINDOWS}}\.agents\AGENTS.md`.
+
+For repository work, read the repository-root `AGENTS.md` first. Use `TASK.md` for active work, `STATUS.md` for durable state, recent `LOG.md` entries for completed work, `MAP.md` for architecture and paths, and `DESIGN.md` for interface rules.
+
+The repository contract is authoritative for project-specific behavior. The global harness supplies shared behavior, tools, skills, hooks, and receiving-computer setup.

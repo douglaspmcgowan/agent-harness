@@ -1,0 +1,14 @@
+title = "claude-global-config gitleaks config"
+
+# Keep the full default gitleaks ruleset...
+[extend]
+useDefault = true
+
+# ...but allowlist the one file that is SUPPOSED to contain credential-shaped
+# strings: the secret-hook test harness. Its inputs are synthetic fixtures used
+# to verify the secret-detection hooks actually fire. No real credentials.
+[allowlist]
+description = "Synthetic secret-detector test fixtures — not real credentials"
+paths = [
+  '''hooks/test-secret-hooks\.js''',
+]

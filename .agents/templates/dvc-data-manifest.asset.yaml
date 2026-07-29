@@ -1,0 +1,13 @@
+# Copy this entry under data-manifest.yaml -> assets and replace bracketed values.
+# The shared adapter stages a snapshot under the repository's ignored .dvc-data folder,
+# commits only the generated .dvc metadata, and stores content-addressed bytes under:
+#   %PROJECT_DATA_SYNC_ROOT%\<project>\dvc\<asset-id>
+  - id: "<asset-id>"
+    project: "<project-name>"
+    class: "versioned-large-artifact"
+    authority: "Git revision plus DVC metadata and the project Google Drive DVC remote"
+    local_destination: "inputs/<artifact-path>"
+    adapter: "Sync-DvcProjectData.ps1"
+    version_rule: "The .dvc metadata committed with the selected Git revision chooses the exact content hash"
+    integrity_rule: "DVC content-address verification plus adapter-reported SHA-256"
+    restore_verifier: "Run Sync-DvcProjectData.ps1 -Action Retrieve, then -Action Verify"

@@ -1,0 +1,20 @@
+/* theme: vellum */
+:root{
+  --bg:#2A3870;--bg-soft:#343F80;--surface:#34407A;--surface-2:#1F2858;
+  --border:rgba(232,216,92,.2);--border-strong:rgba(232,216,92,.32);
+  --text-1:#E8D85C;--text-2:rgba(232,216,92,.62);--text-3:rgba(232,216,92,.32);
+  --accent:#3A7878;--accent-2:#F5E168;--accent-3:#E8D85C;
+  --good:#3A7878;--warn:#E8D85C;--bad:#F5E168;
+  --grad:linear-gradient(135deg,#3A7878,#34407A 55%,#E8D85C);
+  --grad-soft:linear-gradient(135deg,#2A3870,#34407A);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:none;
+  --shadow-lg:none;
+  --font-sans:'DM Sans','Noto Sans SC',system-ui,sans-serif;
+  --font-serif:'Cormorant Garamond','LXGW WenKai TC','Noto Serif SC',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Courier Prime','Courier New',monospace;
+}
+/* readability: the teal --accent kicker reads too faint on the navy bg —
+   use the bright accent-2 so small uppercase labels stay legible. */
+.kicker{color:var(--accent-2)}

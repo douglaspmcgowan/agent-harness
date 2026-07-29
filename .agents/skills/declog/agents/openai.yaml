@@ -1,0 +1,4 @@
+interface:
+  display_name: "Declog"
+  short_description: "Audit memory and stale process trees safely"
+  default_prompt: "Use $declog to audit memory pressure, protect active work, and show me any stale process trees that need my decision."

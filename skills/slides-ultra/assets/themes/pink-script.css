@@ -1,0 +1,17 @@
+/* theme: pink-script */
+:root{
+  --bg:#060507;--bg-soft:#0F0D11;--surface:#0F0D11;--surface-2:#1A1218;
+  --border:rgba(245,237,241,.14);--border-strong:rgba(237,61,140,.32);
+  --text-1:#F5EDF1;--text-2:rgba(245,237,241,.78);--text-3:rgba(245,237,241,.55);
+  --accent:#ED3D8C;--accent-2:#FF66A8;--accent-3:#B81D67;
+  --good:#6FCF97;--warn:#F2C94C;--bad:#EB5757;
+  --grad:linear-gradient(135deg,#ED3D8C,#FF66A8 55%,#B81D67);
+  --grad-soft:linear-gradient(135deg,#1A1218,#0A0709 55%,#050306);
+  --radius:2px;--radius-sm:0px;--radius-lg:4px;
+  --shadow:0 12px 40px rgba(0,0,0,.55), 0 0 80px rgba(237,61,140,.12);
+  --shadow-lg:0 28px 70px rgba(0,0,0,.7), 0 0 120px rgba(237,61,140,.18);
+  --font-sans:'Inter',system-ui,sans-serif;
+  --font-serif:'DM Serif Display',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+}

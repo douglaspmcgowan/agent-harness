@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>Expandable Cards</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/base.css">
+<link rel="stylesheet" id="theme-link" href="../../assets/themes/minimal-white.css">
+<link rel="stylesheet" href="../../assets/animations/animations.css">
+<style>
+/* Expandable cards — click a card to grow it and reveal hidden detail. Tokens only. */
+.exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px;max-width:980px}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:24px 26px;box-shadow:var(--shadow);cursor:pointer;position:relative;overflow:hidden;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease)}
+.exp-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--border-strong)}
+.exp-card .ic{font-size:28px;margin-bottom:12px;transition:transform .3s var(--ease)}
+.exp-card:hover .ic{transform:scale(1.12)}
+.exp-card h4{font-size:20px;margin-bottom:4px}
+.exp-card .desc{font-size:15px;color:var(--text-2);line-height:1.45}
+.exp-more{max-height:0;opacity:0;overflow:hidden;margin-top:0;
+  transition:max-height .4s var(--ease),opacity .3s var(--ease),margin-top .3s var(--ease)}
+.exp-card.open .exp-more{max-height:160px;opacity:1;margin-top:14px}
+.exp-more-in{padding-top:14px;border-top:1px solid var(--border);
+  font-size:14px;line-height:1.55;color:var(--text-3)}
+.exp-more-in code{font-family:var(--font-mono);background:var(--surface-2);
+  padding:2px 6px;border-radius:6px;font-size:13px;color:var(--text-2)}
+.exp-chevron{position:absolute;bottom:12px;right:16px;font-size:13px;color:var(--text-3);
+  transition:transform .3s var(--ease)}
+.exp-card.open .exp-chevron{transform:rotate(180deg)}
+.exp-card:nth-child(1){border-top:3px solid var(--accent)}
+.exp-card:nth-child(2){border-top:3px solid var(--accent-2)}
+.exp-card:nth-child(3){border-top:3px solid var(--good)}
+.exp-card:nth-child(4){border-top:3px solid var(--accent-3)}
+</style>
+</head><body class="single">
+<div class="deck"><section class="slide is-active" data-title="Expandable cards">
+  <p class="kicker">Interactive · 点击展开</p>
+  <h2 class="h2">四个用法，按需展开细节</h2>
+  <p class="dim mt-s">点击卡片展开，看具体怎么用</p>
+  <div class="exp-grid anim-stagger-list" data-anim-target>
+    <div class="exp-card" onclick="this.classList.toggle('open')">
+      <div class="ic">📋</div><h4>从模板起稿</h4>
+      <p class="desc">复制 single-page 文件，换数据即成页</p>
+      <div class="exp-more"><div class="exp-more-in">把 <code>&lt;section class="slide"&gt;</code> 块粘进 deck，替换演示数据即可。</div></div>
+      <span class="exp-chevron">▼</span>
+    </div>
+    <div class="exp-card" onclick="this.classList.toggle('open')">
+      <div class="ic">🎛️</div><h4>切主题</h4>
+      <p class="desc">演示时按一个键循环换肤</p>
+      <div class="exp-more"><div class="exp-more-in">演示中按 <code>T</code> 在 24 套主题间循环，所有页同步更新。</div></div>
+      <span class="exp-chevron">▼</span>
+    </div>
+    <div class="exp-card" onclick="this.classList.toggle('open')">
+      <div class="ic">🖼️</div><h4>导出 PNG</h4>
+      <p class="desc">headless Chrome 一条命令出图</p>
+      <div class="exp-more"><div class="exp-more-in">跑 <code>render.sh</code>，每页落地为高清 PNG，适合贴进文档。</div></div>
+      <span class="exp-chevron">▼</span>
+    </div>
+    <div class="exp-card" onclick="this.classList.toggle('open')">
+      <div class="ic">🎙️</div><h4>演讲者视图</h4>
+      <p class="desc">备注 + 计时 + 下一页预览</p>
+      <div class="exp-more"><div class="exp-more-in">按 <code>S</code> 弹出独立窗口，主屏给观众、副屏给自己。</div></div>
+      <span class="exp-chevron">▼</span>
+    </div>
+  </div>
+  <div class="notes">点击任一卡片展开二级信息——上层是一句话概括，展开后是具体操作。适合 4 个用法/特性各有简述+细节的场景。</div>
+</section></div>
+<script src="../../assets/runtime.js"></script>
+</body></html>

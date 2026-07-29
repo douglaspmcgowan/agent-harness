@@ -1,0 +1,16 @@
+/* theme: blue-professional */
+:root{
+  --bg:#fdfae7;--bg-soft:#f6f2dc;--surface:rgba(30,43,250,.04);--surface-2:rgba(30,43,250,.08);
+  --border:rgba(30,43,250,.2);--border-strong:rgba(30,43,250,.35);
+  --text-1:#111111;--text-2:#6b6b6b;--text-3:#9a9a9a;
+  --accent:#1e2bfa;--accent-2:#5560f7;--accent-3:#8b93ff;
+  --good:#059669;--warn:#d97706;--bad:#dc2626;
+  --grad:linear-gradient(135deg,#1e2bfa,#5560f7 55%,#8b93ff);
+  --grad-soft:linear-gradient(135deg,rgba(30,43,250,.08),rgba(30,43,250,.04));
+  --radius:14px;--radius-sm:10px;--radius-lg:18px;
+  --shadow:0 6px 20px rgba(30,43,250,.06);
+  --shadow-lg:0 16px 40px rgba(30,43,250,.1);
+  --font-sans:'Inter','Noto Sans SC',sans-serif;
+  --font-serif:'Space Grotesk','Inter',sans-serif;
+  --font-mono:'Space Grotesk','JetBrains Mono',monospace;
+}

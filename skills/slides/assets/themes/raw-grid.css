@@ -1,0 +1,16 @@
+/* theme: raw-grid */
+:root{
+  --bg:#FFFFFF;--bg-soft:#F5F5F5;--surface:#FFFFFF;--surface-2:#F5F5F5;
+  --border:rgba(10,10,10,.85);--border-strong:#0A0A0A;
+  --text-1:#0A0A0A;--text-2:#333333;--text-3:#6a6a6a;
+  --accent:#0A0A0A;--accent-2:#F2D4CF;--accent-3:#E5EDD6;
+  --good:#7da06a;--warn:#d8a657;--bad:#c4615a;
+  --grad:linear-gradient(135deg,#F2D4CF,#E5EDD6 55%,#0A0A0A);
+  --grad-soft:linear-gradient(135deg,#F2D4CF,#E5EDD6);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:6px 6px 0 #0A0A0A;
+  --shadow-lg:8px 8px 0 #0A0A0A;
+  --font-sans:'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif;
+  --font-serif:'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif;
+  --font-mono:ui-monospace,'Cascadia Mono',Consolas,monospace;
+}

@@ -1,0 +1,17 @@
+{
+    "schemaVersion":  1,
+    "exportedAt":  "2026-07-29T21:24:29.5755034Z",
+    "files":  [
+                  "app.json",
+                  "appearance.json",
+                  "core-plugins.json",
+                  "graph.json",
+                  "hotkeys.json",
+                  "snippets/canvas-clean.css",
+                  "snippets/home-dashboard.css",
+                  "snippets/wide-editor.css",
+                  "themes/Minimal/manifest.json",
+                  "themes/Minimal/theme.css",
+                  "types.json"
+              ]
+}

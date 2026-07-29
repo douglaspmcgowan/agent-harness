@@ -1,0 +1,19 @@
+/* theme: neo-grid-bold */
+:root{
+  --bg:#ECECE8;--bg-soft:#F5F4EF;--surface:#F5F4EF;--surface-2:#E3E3DD;
+  --border:rgba(10,10,10,.22);--border-strong:rgba(10,10,10,.85);
+  --text-1:#0A0A0A;--text-2:#3A3A38;--text-3:#8A8A85;
+  --accent:#E6FF3D;--accent-2:#0A0A0A;--accent-3:#C7DE2E;
+  --good:#9FBF2A;--warn:#E6FF3D;--bad:#D23A2A;
+  --grad:linear-gradient(135deg,#E6FF3D,#0A0A0A 60%);
+  --grad-soft:linear-gradient(135deg,#F5F4EF,#ECECE8);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:6px 6px 0 rgba(10,10,10,.9);
+  --shadow-lg:12px 12px 0 rgba(10,10,10,1);
+  --font-sans:'Space Grotesk','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --font-serif:'Space Grotesk','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+}
+/* readability: bright-yellow --accent kicker is invisible on the near-white bg.
+   Neo-brutalist fix — box it as a solid yellow chip with black ink. */
+.kicker{display:inline-block;background:var(--accent);color:#0A0A0A;padding:2px 9px;border:2px solid #0A0A0A;font-weight:700}

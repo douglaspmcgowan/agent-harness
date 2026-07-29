@@ -1,0 +1,23 @@
+/* wide-editor.css
+   Makes "readable line length" ~80% of the window instead of the narrow
+   default (~700px). With this snippet ON, the core command
+   "Toggle readable line length" flips between ~80% width and full width.
+   Bind that command to a hotkey, or add a ribbon button (Commander /
+   Editing Toolbar) for a one-click side toggle.
+   To revert to the narrow default: disable this snippet in
+   Settings → Appearance → CSS snippets. */
+
+.markdown-source-view.is-readable-line-width .cm-sizer,
+.markdown-source-view.is-readable-line-width .cm-content,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 80% !important;
+  width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Expose the width var for themes (Minimal, etc.) that read it. */
+body {
+  --file-line-width: 80vw;
+  --max-width: 80vw;
+}

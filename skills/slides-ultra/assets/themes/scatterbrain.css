@@ -1,0 +1,16 @@
+/* theme: scatterbrain */
+:root{
+  --bg:#f7f5f0;--bg-soft:#faf8f3;--surface:#ffe066;--surface-2:#a5d8ff;
+  --border:rgba(45,42,38,.2);--border-strong:rgba(45,42,38,.5);
+  --text-1:#2d2a26;--text-2:#5c5750;--text-3:#8a857c;
+  --accent:#ff9f9f;--accent-2:#8ce99a;--accent-3:#74c0fc;
+  --good:#8ce99a;--warn:#ffcc80;--bad:#ff9f9f;
+  --grad:linear-gradient(135deg,#ffe066,#a5d8ff 55%,#ffc9c9);
+  --grad-soft:linear-gradient(135deg,#faf8f3,#f7f5f0);
+  --radius:6px;--radius-sm:4px;--radius-lg:10px;
+  --shadow:2px 3px 15px rgba(45,42,38,.15),0 1px 3px rgba(45,42,38,.25);
+  --shadow-lg:4px 6px 24px rgba(45,42,38,.22),0 2px 6px rgba(45,42,38,.3);
+  --font-sans:'Zilla Slab','Yozai',serif;
+  --font-serif:'Shrikhand','ZCOOL KuaiLe',cursive;
+  --font-mono:'Caveat',ui-monospace,monospace;
+}

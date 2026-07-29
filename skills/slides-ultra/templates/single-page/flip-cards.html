@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>Flip Cards</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/base.css">
+<link rel="stylesheet" id="theme-link" href="../../assets/themes/minimal-white.css">
+<link rel="stylesheet" href="../../assets/animations/animations.css">
+<style>
+/* Flip cards — click a card to flip it and reveal the back. Tokens only. */
+.flip-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px;max-width:980px}
+.flip-cell{perspective:1200px}
+.flip-card{position:relative;height:200px;cursor:pointer;transform-style:preserve-3d;
+  transition:transform .6s var(--ease)}
+.flip-card.flipped{transform:rotateY(180deg)}
+.flip-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--radius);
+  padding:26px 28px;display:flex;flex-direction:column;justify-content:center;
+  background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow)}
+.flip-front{border-top:3px solid var(--accent)}
+.flip-cell:nth-child(2) .flip-front{border-top-color:var(--accent-2)}
+.flip-cell:nth-child(3) .flip-front{border-top-color:var(--good)}
+.flip-cell:nth-child(4) .flip-front{border-top-color:var(--accent-3)}
+.flip-back{transform:rotateY(180deg);background:var(--surface-2);
+  align-items:center;text-align:center}
+.flip-icon{font-size:30px;margin-bottom:10px}
+.flip-title{font-size:21px;font-weight:700;margin-bottom:4px;color:var(--text-1)}
+.flip-sub{font-size:15px;font-weight:600;color:var(--accent)}
+.flip-cell:nth-child(2) .flip-sub{color:var(--accent-2)}
+.flip-cell:nth-child(3) .flip-sub{color:var(--good)}
+.flip-cell:nth-child(4) .flip-sub{color:var(--accent-3)}
+.flip-hint{position:absolute;bottom:12px;right:16px;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--text-3)}
+.flip-detail{font-size:15px;line-height:1.6;color:var(--text-2)}
+.flip-detail strong{color:var(--text-1)}
+.flip-card:hover .flip-front{box-shadow:var(--shadow-lg)}
+</style>
+</head><body class="single">
+<div class="deck"><section class="slide is-active" data-title="Flip cards">
+  <p class="kicker">Interactive · 点击翻面</p>
+  <h2 class="h2">四个能力，点开看细节</h2>
+  <p class="dim mt-s">点击任意卡片翻面，背面是落地说明</p>
+  <div class="flip-grid anim-stagger-list" data-anim-target>
+    <div class="flip-cell"><div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-face flip-front">
+        <div class="flip-icon">🎨</div><div class="flip-title">Token 主题</div>
+        <div class="flip-sub">一处改色，全场同步</div><div class="flip-hint">click</div>
+      </div>
+      <div class="flip-face flip-back">
+        <p class="flip-detail">24 套主题共享同一组 <strong>CSS 变量</strong>，换肤只动 <strong>:root</strong>。</p>
+      </div>
+    </div></div>
+    <div class="flip-cell"><div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-face flip-front">
+        <div class="flip-icon">⌨️</div><div class="flip-title">键盘导航</div>
+        <div class="flip-sub">零鼠标演示</div><div class="flip-hint">click</div>
+      </div>
+      <div class="flip-face flip-back">
+        <p class="flip-detail">方向键翻页、<strong>O</strong> 总览、<strong>S</strong> 演讲者视图，全键可达。</p>
+      </div>
+    </div></div>
+    <div class="flip-cell"><div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-face flip-front">
+        <div class="flip-icon">⚡</div><div class="flip-title">零构建</div>
+        <div class="flip-sub">打开即用</div><div class="flip-hint">click</div>
+      </div>
+      <div class="flip-face flip-back">
+        <p class="flip-detail">没有打包步骤，<strong>双击 HTML</strong> 直接在 Chrome 里跑。</p>
+      </div>
+    </div></div>
+    <div class="flip-cell"><div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-face flip-front">
+        <div class="flip-icon">📐</div><div class="flip-title">25 个动效</div>
+        <div class="flip-sub">命名即用</div><div class="flip-hint">click</div>
+      </div>
+      <div class="flip-face flip-back">
+        <p class="flip-detail">从 <strong>fade</strong> 到 <strong>3D flip</strong>，按 <strong>A</strong> 现场循环切换。</p>
+      </div>
+    </div></div>
+  </div>
+  <div class="notes">点击演示翻面交互——前面是标题，后面是一句话落地说明。键盘演示时无需翻面也能讲完。</div>
+</section></div>
+<script src="../../assets/runtime.js"></script>
+</body></html>

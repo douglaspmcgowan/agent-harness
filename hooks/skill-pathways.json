@@ -1,0 +1,15 @@
+{
+  "chains": [
+    {
+      "id": "harden-tail",
+      "name": "Harden Tail",
+      "steps": ["solo-review", "probe", "hone", "spar"],
+      "minNamedToTrigger": 2,
+      "evidence": [
+        {"session": "2a40581d-1b6f-450a-8e0d-0f9f66337791", "quote": "run whatever skills in this list that you haven't yet: solo review, spar, tune, probe."},
+        {"session": "978aeda7-cfa1-4b48-a606-9f0a279f00a2", "quote": "find all issues, run solo review/spar/probe/tune that hasn't been done"}
+      ],
+      "note": "Real usage shows Douglas invokes this cluster standalone, independent of a fresh build -- not just as the tail of Construct. Extracted as its own named chain 2026-07-08. Order corrected 2026-07-14 per Douglas: solo-review -> probe -> hone -> spar (spar is the FINAL adversarial gate, so it runs last, after issues are found (probe) and tuned (hone))."
+    }
+  ]
+}

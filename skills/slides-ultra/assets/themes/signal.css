@@ -1,0 +1,17 @@
+/* theme: signal */
+:root{
+  --bg:#1C2644;--bg-soft:#232F55;--surface:#232F55;--surface-2:#F0ECE3;
+  --border:rgba(46,61,92,.9);--border-strong:rgba(202,196,180,.5);
+  --text-1:#E2DCD0;--text-2:#8A96A8;--text-3:#4E5A6E;
+  --accent:#C8A870;--accent-2:#8A96A8;--accent-3:#CAC4B4;
+  --good:#7d9e6a;--warn:#C8A870;--bad:#b06a5a;
+  --grad:linear-gradient(135deg,#C8A870,#a78f5c 55%,#8A96A8);
+  --grad-soft:linear-gradient(135deg,#1C2644,#232F55);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:none;
+  --shadow-lg:0 1px 0 rgba(46,61,92,.9);
+  --font-sans:'DM Sans','Noto Sans SC',system-ui,sans-serif;
+  --font-serif:'Source Serif 4','Noto Serif SC',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'IBM Plex Mono','JetBrains Mono',monospace;
+}

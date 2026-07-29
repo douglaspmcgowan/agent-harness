@@ -1,0 +1,8 @@
+{
+  "editor:toggle-readable-line-length": [
+    {
+      "modifiers": ["Mod", "Shift"],
+      "key": "L"
+    }
+  ]
+}

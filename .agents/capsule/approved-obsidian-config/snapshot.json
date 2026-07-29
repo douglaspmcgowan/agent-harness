@@ -1,0 +1,67 @@
+{
+    "schemaVersion":  1,
+    "purpose":  "Approved portable Obsidian configuration captured for the next harness commit.",
+    "capturedAt":  "2026-07-29T21:24:29.6553614Z",
+    "files":  [
+                  {
+                      "path":  "app.json",
+                      "bytes":  334,
+                      "sha256":  "5fba267a59204c0685412d6211b7fff1b38a609ae9a6bc43af063afd7ce59040"
+                  },
+                  {
+                      "path":  "appearance.json",
+                      "bytes":  161,
+                      "sha256":  "5afaa15fed38c5e49b50ebe0423b944eaf675aec89b1499b9ffb26128df4171e"
+                  },
+                  {
+                      "path":  "core-plugins.json",
+                      "bytes":  696,
+                      "sha256":  "763cf20a921fd9955735b278006820b90b207b2fc04d9e79ca648279c7c14276"
+                  },
+                  {
+                      "path":  "graph.json",
+                      "bytes":  512,
+                      "sha256":  "7892e3c1beda4aeaeb89947ed9b320e787e09a86a45a992bed528306330e6133"
+                  },
+                  {
+                      "path":  "hotkeys.json",
+                      "bytes":  116,
+                      "sha256":  "0932368998b5b43eb2a31438522347ff43e7a7d468df73e2eb73362f024ea90e"
+                  },
+                  {
+                      "path":  "manifest.json",
+                      "bytes":  570,
+                      "sha256":  "9135c91e0d3637149bd806588ef61ac26343b6273f1792896bbfe6a527070cd4"
+                  },
+                  {
+                      "path":  "snippets/canvas-clean.css",
+                      "bytes":  1466,
+                      "sha256":  "539547ec9f71e6b6de4ea4d2358f81b8f5d29384e043539a40664e786cc59608"
+                  },
+                  {
+                      "path":  "snippets/home-dashboard.css",
+                      "bytes":  840,
+                      "sha256":  "1da86b01ab3eef61766515b354b8612cd7ceecbcae4c36e9cae76dc894c9ebe0"
+                  },
+                  {
+                      "path":  "snippets/wide-editor.css",
+                      "bytes":  887,
+                      "sha256":  "a646771f53403730520d413a969939032f14c6e5e1e0fea12fe1e6795a15f419"
+                  },
+                  {
+                      "path":  "themes/Minimal/manifest.json",
+                      "bytes":  199,
+                      "sha256":  "927736006a99c1384464bb147ec509e418cd2a46908cb14c3e8e27de90d07453"
+                  },
+                  {
+                      "path":  "themes/Minimal/theme.css",
+                      "bytes":  267361,
+                      "sha256":  "c75b6043bb8e7de95efaf835b509c3e995fe5fd49c43d7639a6b4a9efe934bdd"
+                  },
+                  {
+                      "path":  "types.json",
+                      "bytes":  966,
+                      "sha256":  "040e0437dea24f96ba61968416ad233b4ca6950c42ceef302d151e543536f7c0"
+                  }
+              ]
+}

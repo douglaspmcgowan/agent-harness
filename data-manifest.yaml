@@ -1,0 +1,4 @@
+version: 2
+project: "agent-harness"
+data_root_env: "PROJECT_DATA_ROOT"
+assets: []

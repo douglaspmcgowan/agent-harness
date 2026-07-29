@@ -1,0 +1,5 @@
+Read and follow {{HOME_WINDOWS}}\.agents\AGENTS.md.
+
+For a repository, read its root AGENTS.md before work. Read TASK.md, STATUS.md, and recent LOG.md when present. Read MAP.md for architecture or path questions and DESIGN.md for interface work.
+
+The installer writes the local global loader to {{HOME_WINDOWS}}\.cursor\rules\00-agent-harness.mdc. This plain-text projection may also be pasted into Cursor Settings > Rules > User Rules when cloud-synced user rules are desired. Cursor project rules remain in each repository under .cursor\rules.

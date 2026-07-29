@@ -1,0 +1,2 @@
+- [User profile](user_profile.md) — ThinkPad P16 Gen 1 owner diagnosing recurring BSODs
+- [BSOD diagnosis](project_bsod_diagnosis.md) — 0x7E crashes from nvlddmkm.sys during Modern Standby, DDU + clean install done

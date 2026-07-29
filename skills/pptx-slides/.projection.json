@@ -1,0 +1,8 @@
+{
+    "schemaVersion":  1,
+    "name":  "pptx-slides",
+    "source":  "C:\\Users\\dougl\\.agents\\skills\\pptx-slides",
+    "sha256":  "4f2538d3668d6b093d471e3f4c9c84ecf0e206fc654f3a58be03b34a27fa1470",
+    "kind":  "adapter:claude",
+    "generatedAt":  "2026-07-27T02:30:13.7424729Z"
+}

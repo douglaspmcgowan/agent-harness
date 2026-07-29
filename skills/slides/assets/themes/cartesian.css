@@ -1,0 +1,17 @@
+/* theme: cartesian */
+:root{
+  --bg:#EDE8E0;--bg-soft:#E2DBD1;--surface:rgba(255,255,255,.3);--surface-2:#E2DBD1;
+  --border:rgba(184,176,164,1);--border-strong:rgba(138,129,120,1);
+  --text-1:#1A1A1A;--text-2:#5A5A5A;--text-3:#8A8178;
+  --accent:#8A8178;--accent-2:#B8B0A4;--accent-3:#1A1A1A;
+  --good:#6f8a6a;--warn:#b39a5a;--bad:#a8736a;
+  --grad:linear-gradient(135deg,#8A8178,#B8B0A4 55%,#1A1A1A);
+  --grad-soft:linear-gradient(135deg,#EDE8E0,#E2DBD1);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:none;
+  --shadow-lg:none;
+  --font-sans:'Inter','Noto Sans SC',sans-serif;
+  --font-serif:'Playfair Display','Noto Serif SC',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Inter','JetBrains Mono',monospace;
+}

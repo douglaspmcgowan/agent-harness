@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Audit"
+  short_description: "Audit skills for portability and maintainability"
+  default_prompt: "Use $skill-audit to review these skills and produce a grouped remediation docket."

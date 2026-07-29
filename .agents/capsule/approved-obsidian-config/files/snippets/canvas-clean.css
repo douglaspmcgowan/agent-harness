@@ -1,0 +1,39 @@
+/* canvas-clean.css
+   Cleans up FILE card previews in Obsidian Canvas (NOT text nodes).
+   File cards render as .markdown-embed inside .canvas-node-content; text nodes do not,
+   so scoping to .markdown-embed protects the "# Douglas McGowan" center text node.
+
+   Hides: Properties/frontmatter widget, embed/inline title, and the redundant # H1.
+   Enable: Settings > Appearance > CSS Snippets > toggle canvas-clean
+*/
+
+/* ---- Properties / frontmatter block (broad: applies to any canvas card) ---- */
+.canvas-node-content .metadata-container,
+.canvas-node-content .metadata-properties-container,
+.canvas-node-content .metadata-properties,
+.canvas-node-content .mod-frontmatter,
+.canvas-node-content .frontmatter,
+.canvas-node-content .metadata-property {
+  display: none !important;
+}
+
+/* ---- Embed / inline title ---- */
+.canvas-node-content .markdown-embed-title,
+.canvas-node-content .embed-title,
+.canvas-node-content .inline-title {
+  display: none !important;
+}
+
+/* ---- Redundant H1 — scoped to file embeds so TEXT nodes keep their H1 ---- */
+.canvas-node-content .markdown-embed h1,
+.canvas-node-content.markdown-embed h1,
+.markdown-embed .markdown-preview-view h1,
+.markdown-embed .markdown-rendered h1 {
+  display: none !important;
+}
+
+/* ---- Tighten top padding now that title/properties are hidden ---- */
+.canvas-node-content .markdown-embed .markdown-preview-sizer,
+.canvas-node-content .markdown-preview-sizer {
+  padding-top: 6px !important;
+}

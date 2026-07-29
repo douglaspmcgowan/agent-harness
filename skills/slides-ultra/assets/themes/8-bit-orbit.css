@@ -1,0 +1,17 @@
+/* theme: 8-bit-orbit */
+:root{
+  --bg:#0A0E27;--bg-soft:#0F1B3D;--surface:#0F1B3D;--surface-2:#15224a;
+  --border:rgba(94,220,244,.22);--border-strong:rgba(94,220,244,.42);
+  --text-1:#FFFFFF;--text-2:rgba(255,255,255,.72);--text-3:rgba(226,213,242,.55);
+  --accent:#5EDCF4;--accent-2:#F0A6CA;--accent-3:#F4D03F;
+  --good:#7CE38B;--warn:#F4D03F;--bad:#F0A6CA;
+  --grad:linear-gradient(135deg,#5EDCF4,#F0A6CA 55%,#F4D03F);
+  --grad-soft:linear-gradient(135deg,#0F1B3D,#15224a);
+  --radius:0px;--radius-sm:0px;--radius-lg:2px;
+  --shadow:6px 6px 0 rgba(15,27,61,.85);
+  --shadow-lg:8px 8px 0 #F4D03F;
+  --font-sans:'Chakra Petch','Noto Sans SC',sans-serif;
+  --font-serif:'Tektur','Chakra Petch',sans-serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Space Mono','JetBrains Mono',monospace;
+}

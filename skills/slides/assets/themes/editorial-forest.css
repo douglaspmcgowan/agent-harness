@@ -1,0 +1,17 @@
+/* theme: editorial-forest */
+:root{
+  --bg:#efe7d4;--bg-soft:#e6dcc4;--surface:#ffffff;--surface-2:#e6dcc4;
+  --border:rgba(26,26,23,.14);--border-strong:rgba(26,26,23,.30);
+  --text-1:#1a1a17;--text-2:#4a4a42;--text-3:#7a7a6e;
+  --accent:#2e4a2a;--accent-2:#e89cb1;--accent-3:#d27e96;
+  --good:#3a5a36;--warn:#c89a3a;--bad:#d27e96;
+  --grad:linear-gradient(135deg,#2e4a2a,#3a5a36 55%,#e89cb1);
+  --grad-soft:linear-gradient(135deg,#efe7d4,#e6dcc4);
+  --radius:6px;--radius-sm:4px;--radius-lg:10px;
+  --shadow:0 4px 18px rgba(26,26,23,.06);
+  --shadow-lg:0 14px 40px rgba(26,26,23,.12);
+  --font-sans:'Source Serif 4','Source Serif Pro',Georgia,serif;
+  --font-serif:'Source Serif 4','Source Serif Pro',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+}

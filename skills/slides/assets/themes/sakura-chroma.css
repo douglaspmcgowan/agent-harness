@@ -1,0 +1,17 @@
+/* theme: sakura-chroma */
+:root{
+  --bg:#F1E6CB;--bg-soft:#E5D6B0;--surface:#F1E6CB;--surface-2:#E5D6B0;
+  --border:rgba(58,37,22,.5);--border-strong:rgba(58,37,22,.85);
+  --text-1:#3A2516;--text-2:#5a4634;--text-3:#8a755e;
+  --accent:#E5392A;--accent-2:#E54489;--accent-3:#3F8BC4;
+  --good:#3D9F47;--warn:#F0BC2A;--bad:#E5392A;
+  --grad:linear-gradient(135deg,#E5392A,#E54489 55%,#3F8BC4);
+  --grad-soft:linear-gradient(135deg,#F1E6CB,#E5D6B0);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:8px 8px 0 #3A2516;
+  --shadow-lg:10px 10px 0 #3A2516;
+  --font-sans:'Albert Sans','LXGW WenKai',sans-serif;
+  --font-serif:'Big Shoulders Display','ZCOOL XiaoWei',sans-serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono','LXGW WenKai',ui-monospace,monospace;
+}

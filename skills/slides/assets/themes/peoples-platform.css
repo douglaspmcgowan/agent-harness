@@ -1,0 +1,17 @@
+/* theme: peoples-platform */
+:root{
+  --bg:#F5F2EA;--bg-soft:#F4E9D6;--surface:#F4E9D6;--surface-2:#EBE2CF;
+  --border:rgba(14,14,20,.28);--border-strong:rgba(14,14,20,.9);
+  --text-1:#0E0E14;--text-2:#3A3A44;--text-3:#6A6A72;
+  --accent:#2C2CDC;--accent-2:#F2A03A;--accent-3:#E83A2A;
+  --good:#6B7A2E;--warn:#F2A03A;--bad:#E83A2A;
+  --grad:linear-gradient(135deg,#2C2CDC,#F2A03A 55%,#E83A2A);
+  --grad-soft:linear-gradient(135deg,#F5F2EA,#F4E9D6);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:6px 6px 0 #E83A2A;
+  --shadow-lg:12px 12px 0 #E83A2A, 24px 24px 0 #B7281C;
+  --font-sans:'Archivo Narrow','Noto Sans SC',sans-serif;
+  --font-serif:'Alfa Slab One','Noto Serif SC',serif;
+  --font-display:var(--font-serif);
+  --font-mono:'DM Mono','Noto Sans SC',monospace;
+}

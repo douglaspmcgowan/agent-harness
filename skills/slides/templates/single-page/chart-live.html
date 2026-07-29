@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>Chart · Live</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/base.css">
+<link rel="stylesheet" id="theme-link" href="../../assets/themes/minimal-white.css">
+<link rel="stylesheet" href="../../assets/animations/animations.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head><body class="single">
+<div class="deck"><section class="slide is-active" data-title="Live chart">
+  <p class="kicker">Chart · Live init</p>
+  <h2 class="h2">Build the chart only on entering this page; destroy on leaving</h2>
+  <div class="card mt-l" style="height:500px;padding:28px"><canvas id="chart-live"></canvas></div>
+  <script>
+  /* Live Chart.js — deck-safe.
+     Mirrors fx-runtime.js: the chart is built only when this .slide gains
+     .is-active (so its entrance animation plays), and destroyed when it
+     leaves (no memory leak across a long deck). In single-page mode the
+     slide starts active, so it builds on load. All access is guarded so it
+     never throws if Chart.js failed to load or the slide is never shown. */
+  (function(){
+    var canvas = document.getElementById('chart-live');
+    if (!canvas) return;
+    var slide = canvas.closest('.slide');
+    if (!slide) return;
+    var instance = null;
+
+    function build(){
+      if (instance) return;                          // already built
+      if (typeof Chart === 'undefined') return;      // CDN not ready / offline
+      var css = getComputedStyle(document.documentElement);
+      var accent = css.getPropertyValue('--accent').trim() || '#3b6cff';
+      var acc2   = css.getPropertyValue('--accent-2').trim() || '#7a5cff';
+      var text2  = css.getPropertyValue('--text-2').trim() || '#55596a';
+      var border = css.getPropertyValue('--border').trim() || 'rgba(0,0,0,.08)';
+      try {
+        instance = new Chart(canvas, {
+          type: 'bar',
+          data: {
+            labels: ['Q1','Q2','Q3','Q4','Q1 +1','Q2 +1'],
+            datasets: [
+              { label: 'New decks', data: [38,52,67,89,118,156],
+                backgroundColor: accent, borderRadius: 8, barThickness: 30, order: 2 },
+              { type: 'line', label: 'Themes', data: [6,10,14,18,22,24],
+                borderColor: acc2, backgroundColor: acc2 + '22',
+                tension: .4, borderWidth: 3, pointRadius: 4, fill: true, order: 1, yAxisID: 'y1' }
+            ]
+          },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            animation: { duration: 800, easing: 'easeOutQuart' },
+            plugins: { legend: { labels: { color: text2 } } },
+            scales: {
+              x:  { ticks: { color: text2 }, grid: { color: border } },
+              y:  { ticks: { color: text2 }, grid: { color: border }, beginAtZero: true },
+              y1: { position: 'right', ticks: { color: text2 }, grid: { display: false }, beginAtZero: true }
+            }
+          }
+        });
+      } catch (e) { /* swallow — chart simply won't appear */ }
+    }
+    function teardown(){
+      if (instance) { try { instance.destroy(); } catch(e){} instance = null; }
+    }
+
+    // Build now if the slide is already showing (single-page, or first slide of a deck).
+    if (slide.classList.contains('is-active')) build();
+
+    // Otherwise build on enter / destroy on leave — same trigger fx-runtime uses.
+    var mo = new MutationObserver(function(muts){
+      for (var i=0;i<muts.length;i++){
+        if (muts[i].attributeName === 'class'){
+          if (slide.classList.contains('is-active')) build();
+          else teardown();
+        }
+      }
+    });
+    mo.observe(slide, { attributes: true, attributeFilter: ['class'] });
+  })();
+  </script>
+  <div class="notes">Unlike the existing chart-bar differs: the chart becomes is-active created only on enter, destroyed on leave, avoiding long deck using memory at once. In single-page mode, the chart builds directly.Chart.js not loading won't throw an error.</div>
+</section></div>
+<script src="../../assets/runtime.js"></script>
+</body></html>

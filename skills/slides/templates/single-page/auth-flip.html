@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>Flip Compare</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/base.css">
+<link rel="stylesheet" id="theme-link" href="../../assets/themes/minimal-white.css">
+<link rel="stylesheet" href="../../assets/animations/animations.css">
+<style>
+/* Flip compare — two big cards (bad vs good); click to flip and reveal the why. Tokens only. */
+.fc{display:grid;grid-template-columns:1fr 70px 1fr;gap:24px;align-items:stretch;margin-top:34px;max-width:960px}
+.fc-cell{perspective:1300px}
+.fc-card{position:relative;height:300px;cursor:pointer;transform-style:preserve-3d;
+  transition:transform .6s var(--ease)}
+.fc-card.flipped{transform:rotateY(180deg)}
+.fc-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--radius);
+  padding:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow)}
+.fc-front.bad{border-top:3px solid var(--bad)}
+.fc-front.good{border-top:3px solid var(--good)}
+.fc-back{transform:rotateY(180deg);background:var(--surface-2)}
+.fc-icon{font-size:42px;margin-bottom:14px}
+.fc-name{font-size:24px;font-weight:700;margin-bottom:8px;color:var(--text-1)}
+.fc-mark{font-size:34px;margin-bottom:10px}
+.fc-front.bad .fc-mark{color:var(--bad)}
+.fc-front.good .fc-mark{color:var(--good)}
+.fc-tag{font-family:var(--font-mono);font-size:14px;color:var(--text-3)}
+.fc-hint{position:absolute;bottom:14px;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--text-3)}
+.fc-why{font-size:15px;line-height:1.65;color:var(--text-2)}
+.fc-why strong.bad{color:var(--bad)}
+.fc-why strong.good{color:var(--good)}
+.fc-vs{display:flex;align-items:center;justify-content:center;
+  font-size:22px;font-weight:800;color:var(--text-3)}
+.fc-card:hover .fc-front{box-shadow:var(--shadow-lg)}
+</style>
+</head><body class="single">
+<div class="deck"><section class="slide is-active" data-title="Flip compare">
+  <p class="kicker">Before vs After · Flip Compare</p>
+  <h2 class="h2">Hardcoded styles vs Token -ize</h2>
+  <p class="dim mt-s">Click both cards to flip and see the cost vs payoff</p>
+  <div class="fc">
+    <div class="fc-cell anim-fade-left" data-anim="fade-left">
+      <div class="fc-card" onclick="this.classList.toggle('flipped')">
+        <div class="fc-face fc-front bad">
+          <div class="fc-icon">🧱</div><div class="fc-name">Hardcode each page</div>
+          <div class="fc-mark">✕</div><div class="fc-tag">color: #0c0d10</div>
+          <div class="fc-hint">click to flip</div>
+        </div>
+        <div class="fc-face fc-back">
+          <p class="fc-why">To change one brand color, you must comb through <strong class="bad">every page, every card</strong> and replace by hand,<br>sooner or later pages drift out of sync.</p>
+        </div>
+      </div>
+    </div>
+    <div class="fc-vs">vs</div>
+    <div class="fc-cell anim-fade-right" data-anim="fade-right">
+      <div class="fc-card" onclick="this.classList.toggle('flipped')">
+        <div class="fc-face fc-front good">
+          <div class="fc-icon">🎨</div><div class="fc-name">Token -ize</div>
+          <div class="fc-mark">✓</div><div class="fc-tag">color: var(--text-1)</div>
+          <div class="fc-hint">click to flip</div>
+        </div>
+        <div class="fc-face fc-back">
+          <p class="fc-why">All colors go into <strong class="good">:root variables</strong>, <br>reskin by editing one place,24 themes follow automatically.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">Two big cards——Bad practice on the left, good on the right. Click to flip and reveal"the why". For comparisons/before/after/for good vs bad practices—more revealing than a static comparison more revealing.</div>
+</section></div>
+<script src="../../assets/runtime.js"></script>
+</body></html>

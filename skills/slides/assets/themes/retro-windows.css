@@ -1,0 +1,16 @@
+/* theme: retro-windows */
+:root{
+  --bg:#c0c0c0;--bg-soft:#d4d0c8;--surface:#d4d0c8;--surface-2:#ffffff;
+  --border:rgba(0,0,0,.45);--border-strong:#000000;
+  --text-1:#222222;--text-2:#555555;--text-3:#808080;
+  --accent:#000080;--accent-2:#1084d0;--accent-3:#008080;
+  --good:#008000;--warn:#808000;--bad:#800000;
+  --grad:linear-gradient(90deg,#000080,#0000a0);
+  --grad-soft:linear-gradient(135deg,#d4d0c8,#c0c0c0);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:inset 1px 1px 0 #ffffff, inset -1px -1px 0 #404040, 2px 2px 0 rgba(0,0,0,.35);
+  --shadow-lg:inset 1px 1px 0 #ffffff, inset -1px -1px 0 #404040, 4px 4px 8px rgba(0,0,0,.4);
+  --font-sans:'MS Sans Serif','Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  --font-serif:'MS Sans Serif','Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  --font-mono:'VT323',ui-monospace,monospace;
+}

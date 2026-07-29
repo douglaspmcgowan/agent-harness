@@ -1,0 +1,478 @@
+{
+    "schemaVersion":  1,
+    "generatedAt":  "2026-07-29T05:29:17.8788141Z",
+    "files":  [
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\AGENT-START.md",
+                      "sha256":  "6fe26ef7d2e53419e4d0ca32578703136cf86fd25274fb6d9cdd4ee87e29d6cd"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Bootstrap-Capsule.cmd",
+                      "sha256":  "a5e6c75123d520c09dc3d88f1aecef5d909d08daaa8e7d3e9bb0da3534e1e906"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Bootstrap-Capsule.ps1",
+                      "sha256":  "3e6b8f2d8e2dec508ae5fd653655d3ccbce8e5e6b4afd9248fe5c11e1867c41f"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Capsule.Tests.ps1",
+                      "sha256":  "c3231e4e3c04669c0ca4a87b21fe7597bc1ee3593ad093420f43674ae1d286cc"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\DATA-SYNC-AND-RETENTION.md",
+                      "sha256":  "d0094d69eacf9bcd96cce4a32d51e8c1cbb0ab561957f805fa4ffab88b627e79"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\NEXT-STEPS.md",
+                      "sha256":  "8ffcb59c5067f801711a8e769781dc708a22b4b016c01790b70c0e561b4032f7"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\RECOVERY-LAYER.md",
+                      "sha256":  "386bcfaaefc9135aee66ef412928c80625929ae2f3505e4c6a05ed9507db0e2b"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Refresh-Capsule.ps1",
+                      "sha256":  "6e26e82a902aafe3e4d4e299778189f577e2e9ea10c0b91ec71c70215d1e3b12"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Refresh-Integrity.cmd",
+                      "sha256":  "af8804bcc1a0c7fd7e2ef2930a3357f020191c5636c6af3ad9570e8f140e8375"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Refresh-Integrity.ps1",
+                      "sha256":  "45d1c6ede31676a0cc0fe81084ffbc4bed00d04ffe43757d2ec7983652da9f83"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\SECRETS-BITWARDEN.md",
+                      "sha256":  "036f89d7c5c233ac6c3b4479e224e54c60929f409f1f499ef6e0350784114865"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Set-CapsuleAccounts.cmd",
+                      "sha256":  "439b2a85a535dcefd3c265c701e0a01870fb99aae31139157edf13674a9e750c"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Set-CapsuleAccounts.ps1",
+                      "sha256":  "edec9e6e9cc0a7d99df9d34153a9ced3e41b889c3c556041f52ec233179e9158"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\START-HERE.md",
+                      "sha256":  "da82af87858c59ba83353cc017c604a8ca25378b9ecb0174cf3acbc0cd460f04"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\SYSTEM-MAP.md",
+                      "sha256":  "829f6b737c2278d8a313209d35b541aa481cc658c4840668e462dbc49fbe958d"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\templates\\accounts.template.json",
+                      "sha256":  "fa73c08892948db5b2dda59f558f31e95b961cf096edeb2f1ea1601dea2b7bc9"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\templates\\software.json",
+                      "sha256":  "7f16f4cb3a03d34ed1a0c545562093b9153e2d71de386f41efee1e3d473b4a61"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Verify-Capsule.cmd",
+                      "sha256":  "17843b856a2909e3313b468e86298551c564dd014c51dfb4dca3ba3c540d6c76"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\capsule\\Verify-Capsule.ps1",
+                      "sha256":  "0bd935cb36e48ede4565ab69e1693b3be6a9a50b475779d740a709becda179b5"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\CLAUDE-SKILL-ADAPTERS.json",
+                      "sha256":  "c65937ac82fc66427370b1260d8aa478bb8eea7425cd388ed618913ba55baf7d"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\core\\task-state.js",
+                      "sha256":  "ef87fb00b8e30fc002624de59eca5d2f77ea0cabf6ec2abc9a46ddfdae571e45"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\CROSS-AGENT-CONTRACT.md",
+                      "sha256":  "f443a94ca40cb94b4f464578fbb5169b053dd6f69f5ee846128cf31b97c0e592"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\DOCKET-PROTOCOL.md",
+                      "sha256":  "e274cd436a7565b54c236c19d17b2c544f88b149feea568ce422ba4362290057"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\FEEDBACK-ROUTER.md",
+                      "sha256":  "50bde15e8e0337cc774d9388b6e68b42db13f5c03364aa0be4abf25704a32c9e"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\HARNESS-MAP.md",
+                      "sha256":  "9f275338023dab6b994295eacc5af466782b3a977d20637f01b5511289f6b9c4"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\human-readable\\08-CONTEXT-LOADING-AND-TASK-STATE.md",
+                      "sha256":  "604322fcda7e4aa1f47206f7cc31845a8ba328db03b15d3eeb80c222f1982cf2"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\human-readable\\09-SECRETS-MANAGEMENT.md",
+                      "sha256":  "34b12e42ebb60675b7208a8e0f0c878f1ff5c43e8b34fa136beeb296ffc6a818"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\human-readable\\10-SKILLS-AND-ADAPTERS.md",
+                      "sha256":  "72b125dc88ec828a3712fbaeb4176bc697513a954e6a4008766106caa32b6521"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\human-readable\\11-DOCKET-CROSS-PLATFORM.md",
+                      "sha256":  "13e2f86045db8f3d30abefa05a5e390fe65e4a64b5a19ab5bc800889323aeb26"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\human-readable\\15-BACKUP-INVENTORY-AND-GOOGLE-DRIVE.md",
+                      "sha256":  "cceced67c2f1838e5f73252e68500691e6673206ee6d0434791483c18f15e949"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\human-readable\\18-PROJECT-AND-REPOSITORY-INVENTORY.md",
+                      "sha256":  "bffc2b88debc49578ad2dc89c21b2b973e8ee2b0df7184014ceab2837fa95a28"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\human-readable\\21-CAPSULE-PORTABLE-COMPUTER-RECOVERY.md",
+                      "sha256":  "d328b3f83763ea30a8a3303bd6183e5bf69654dbb5cc3118dc1d54e248a44cb0"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\human-readable\\README.md",
+                      "sha256":  "d21e111b4a2355f89ee7dabd51c802cd53fa199c5e89c85ddd5f9be1adaa1dd0"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\human-readable\\UPDATE-PROTOCOL.md",
+                      "sha256":  "365fce0c74f9cd2625fcfaeadff40adca0a2f4e2430a60f705b411dcfe197fe0"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\PORTABLE-PRINCIPLES.md",
+                      "sha256":  "c156bdeb5e132b50f9fe81f9916215ebe83fc2d20fbb77788f995f3f9c135213"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\SKILL-PORTABILITY-CONTRACT.md",
+                      "sha256":  "286695e98dc90486233e2d1fddfc9fad9c526a3f956b042908f053995362fb48"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\claude-sync\\SKILL.md",
+                      "sha256":  "5e42ff9eb155109368577c5682358444f3df4a4ebf38ae70483998653bb32f68"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\declog\\agents\\openai.yaml",
+                      "sha256":  "44dce1a02ea1e6f6febd6430a9507d844743d106adc09b304b06b775e7534ca7"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\declog\\references\\research.md",
+                      "sha256":  "0da848b7d6bf209732fdb702a34ebd51fd5138b2f0b240e43bf156cade285306"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\declog\\scripts\\Get-DeclogReport.ps1",
+                      "sha256":  "7699a8b7991c6a1fd195e642b765b73cdfe6edab9a2c50e293d112f321bd80cf"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\declog\\scripts\\Test-Declog.ps1",
+                      "sha256":  "92882e80b56dec6c671482ff7883673c93b31cf988c0ec6f42a8892acb5edf5d"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\declog\\SKILL.md",
+                      "sha256":  "557df622ec9d35ff3680421e0b081e4d8f95341b8e29f82face1118bead874f2"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\feedback\\scripts\\Record-Feedback.ps1",
+                      "sha256":  "ab5d8f4c794ea30a8f5c85e3b8731266984df5a0ba55de15142360d75c4d29f8"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\feedback\\scripts\\Record-Feedback.test.ps1",
+                      "sha256":  "4b3ca98a12fff204511361921345f82281e8125af6781c32b668c12b026a5cf2"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\feedback\\SKILL.md",
+                      "sha256":  "a6c08c856c7207e09e35a3f7d78d7a67d208ff4be37e32c9f3ccc4ea569e2afc"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\skill-audit\\agents\\openai.yaml",
+                      "sha256":  "a58a23b3007ed61df0b40de4b2ff26f986172c442a0f6c2d3024f4d891f15b31"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\skill-audit\\references\\audit-schema.md",
+                      "sha256":  "9e61fda9185cbb05554d3d06d728795e38d8be1a1ef0c14909de77fa2eec0159"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\skill-audit\\scripts\\audit-skills.cmd",
+                      "sha256":  "fc959ba4025ddc4800c7f8d30adb67e643f5d078817b72a5bd00c9467e782169"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\skill-audit\\scripts\\audit-skills.ps1",
+                      "sha256":  "43334bec85a726e1c2c59656e69f60ed2f978326dbcd2a6556d3cce923a6fdd4"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\skill-audit\\SKILL.md",
+                      "sha256":  "866cc4c858fa973ac46b6201cc0c32a4ae09ab261ed7cd4b45e9c8d63cbbf4ea"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\source-command-tactician\\SKILL.md",
+                      "sha256":  "ddae427281cdf26e5632fea6570ce62b3a6cfa04984e670e7e9c7d49f58c4941"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\skills\\source-command-tactitian\\SKILL.md",
+                      "sha256":  "b734f00b4f1e5a2f638d20173133d3e6e071730c70ac1d892f4f82ccc6bcfa7c"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\AGENTS.md",
+                      "sha256":  "d73f1b542df0c9c07300eefbe6000a1fd694bcbdc2351f553e8bcb0c439b6daa"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\CLAUDE.md",
+                      "sha256":  "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\cursor-project-contract.mdc",
+                      "sha256":  "3cf8908f90a5293e8c2ed60018409fec1c2eef5be20b295f27e6758f51eeddfb"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\data-manifest.yaml",
+                      "sha256":  "2ae6e907ca183f69322073bec75133f9403fb4f0e7d77922cd1bcca1dff2e178"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\gitleaks\\.gitleaks.toml",
+                      "sha256":  "345a5d3c38bc709a9f0312245d6241890ea216a5c1c195acecb7700a9b6132ce"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\gitleaks\\gitleaks.yml",
+                      "sha256":  "ea09a97ba0db1e07364e9102c3846886bef5f789dbee622d9163f8b2ff68d5d9"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\gitleaks\\pre-commit",
+                      "sha256":  "233f75ed3061f5106ff9db9d36f8b6832d707d9fc75ebc62fb8fc92ea6e5fca2"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\MAP.md",
+                      "sha256":  "8e3ff86969e268678a819bb44a1ce2ad3ae3d11fd261d0596557278c241c8191"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\secret-manifest.json",
+                      "sha256":  "cc23a36494f3aee10144a9246c6635414b13990bc13988538a83d99f85d169d6"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\skill-projection-manifest.json",
+                      "sha256":  "b13d6a83a670ba864f1af25857ac10346bd0363779386785d98ee0496c90e898"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\templates\\skills-manifest.json",
+                      "sha256":  "3d33788d1db34aad73e6c8c014ad465498513581000a691b65800b7410a3f2a7"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Approve-ClaudeSkillAdapter.ps1",
+                      "sha256":  "e9d394668d8a0c36cfad239dcd86b1e502aced5d4a08abcef9f2218999f30e6f"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Backup-AgentWorkspace.ps1",
+                      "sha256":  "121e1ff5563e79544545e16a64695a1e5450975c988d870427a84adfc9db4994"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Backup-AgentWorkspace.test.ps1",
+                      "sha256":  "48fb40989573d03070bc92bed61cb7d412c6066c4fe44e9fdd2913c5c397e9fa"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\bitwarden-project-scaffolds.json",
+                      "sha256":  "b3d1f9cb48abb96679acb9c9f477f89bd03883c616ccc98582c7b887f17f5afe"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Build-SkillsDocket.cmd",
+                      "sha256":  "9064adf62fea5fa41d4828347d2cd86f3fedb92fef7458b6785f7ae739b00b4f"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Build-SkillsDocket.ps1",
+                      "sha256":  "7fb781b7835ec73d8411721165b538eb80dd3f1f9035abb40bed87b790a16eae"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Build-SkillsDocket.test.ps1",
+                      "sha256":  "6fbbffb3e11d2c715120afe066d6d6f0f9d2adad01df708507669e6ac02f32aa"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\bws-command-allowlist.json",
+                      "sha256":  "8d53dbb1719d24985b50758c3771e53fdab63f037877c6bd3edb24b36a0e52d9"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Clear-StaleAgentProcesses.ps1",
+                      "sha256":  "c5e70b0c4657d3a72de86e6dc4160d8f0a5eeb8a13f0774b8baaec28497bcad8"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Clear-StaleAgentProcesses.test.ps1",
+                      "sha256":  "a959593f2fe7e8ebe38a2a06fc94a9c42bec7c25cc73eceaccc95b10c86b3809"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\credential-command-allowlist.json",
+                      "sha256":  "4e392e91e7fb4ec3c68be43f6f7de88f17a24e22ba64b4acc396880a075d68cf"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Enable-Gitleaks.ps1",
+                      "sha256":  "36819d1d7dd6b1d286efc377b3194b5a3e48db02f51a3f6cba55aefe0c4406d8"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Enable-Gitleaks.test.ps1",
+                      "sha256":  "9bb5bf1b57a8acbd6257f49cb9c271b10a6159f7df1adc468d6008464749169e"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Ensure-AgentProject.cmd",
+                      "sha256":  "bc925b4339547659f8c7825a357f9b9597ce3042e075dfe2e5cb77987119ef75"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Ensure-AgentProject.ps1",
+                      "sha256":  "9c69ed2b58efc1380da42f85e08b07407c6007118651edfff2a9ad54dbbf6773"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Export-HarnessBackup.ps1",
+                      "sha256":  "5705757ce910bbd4e43e0adb1fe906a4ac12f90a084f00497b556e66cef87095"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Get-EnvironmentVariableMetadata.cmd",
+                      "sha256":  "680e25faed143d62e0ca372f573382e7da054b4631ed62b8d83117d8324deeaa"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Get-EnvironmentVariableMetadata.ps1",
+                      "sha256":  "a6d946985f043b1f7d974f3085c44e451de9efcf64149ed77cd361b56af358ea"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Get-EnvironmentVariableMetadata.test.ps1",
+                      "sha256":  "703a91e22682e495eedf2c68682bb588a21b72d0f32cd6fc67ac64e50c7a2220"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Initialize-AgentProject.ps1",
+                      "sha256":  "c65d3daa3cfac35590eab5718e16271b05e17130e20d8eab9f8dac833623f2a9"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Install-AgentBackupTask.ps1",
+                      "sha256":  "829ae2e88245bae6f0860f4d53391c3fd89ca4a7fdbd00fb77703761f2972de5"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Install-AgentBackupTask.Tests.ps1",
+                      "sha256":  "7533570c24c1fa559678667901cf6a726518366c00d91b60267ff04793403261"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Install-StaleAgentCleanupTask.ps1",
+                      "sha256":  "9221317e73432402f7535fbf20a4e80a0f876995ed464ebdebb05060a221fa27"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Invoke-WithBitwardenItem.ps1",
+                      "sha256":  "bf7f949aba9d8cb73e409897c3c92d824ee8150a8890dc7180697c2595a5d370"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Invoke-WithBitwardenSecret.ps1",
+                      "sha256":  "31c9fbd8cc85bc772e51578fcf4631d99282775a1ef94906749d2185ed6a0c74"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Invoke-WithBitwardenSecret.test.ps1",
+                      "sha256":  "c3b8fd40152f8938824bd3b4c04965a428a5cebc3e02559171c4040811ed9734"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\New-AgentRepository.cmd",
+                      "sha256":  "e8d57f31125c995e2430e8eae44023ce9823762a2fea8d5d95d4bc9906ce236e"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\New-AgentRepository.ps1",
+                      "sha256":  "59aec579edadcdb39c0382dc7596ca56d6c340122f61b0ec15a8046f07d47f82"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\New-BitwardenProjectScaffolds.ps1",
+                      "sha256":  "89e8a91fad279f030e14337e18a52f0a0928bfe4590f09c810ce906348ff2979"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\New-BitwardenProjectScaffolds.Tests.ps1",
+                      "sha256":  "8ffe7afddea28cbeef08925a7ccd0b37a6ede7899a614128c5504b29dd6a96b6"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Repair-QuickAccess.ps1",
+                      "sha256":  "b98f6f08bbe1e25d90e1dd9dc48f5914d1d8849688c14228ac89baad121ea5c4"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Restore-AgentWorkspace.ps1",
+                      "sha256":  "91e5d73e1ba3e891f6e337b4ad0a897e327fc76da81747d732f9154b96f46f14"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Restore-AgentWorkspace.test.ps1",
+                      "sha256":  "bb60608182f8586a44b7abb99e37a97787a9c9a718b16e3b52d160034c4b9d57"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Sync-ClaudeSkills.ps1",
+                      "sha256":  "9adc8a9a73cc0e63f52ed7c4f0fe301e8f0149bc81608677d9eb7c8e2e20aa5d"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Sync-PortableContract.ps1",
+                      "sha256":  "dff2557828c22efcd43f59b06942910d80d0d27910c7ee4e6b8533ccb0276f41"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Sync-ProjectSkills.cmd",
+                      "sha256":  "3dccb9bcd08aed155dcdd02d61f5bdd948667533bd2f8c3dac5e9fe7a51be81c"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Sync-ProjectSkills.ps1",
+                      "sha256":  "10b7a47219be666541a3bee1578d94ecbf2835b17f3bb2f118a7f917f474724f"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Test-AgentProjectState.cmd",
+                      "sha256":  "950e789584a062e4017506e9d4fe33692934ea7aec6126a5f50b7b9e5e14ea57"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Test-AgentProjectState.ps1",
+                      "sha256":  "ceb9dc6a3f263c73d48059f4cec2da729fb72b752a95f8098b4199617302eb20"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Test-HarnessSetup.ps1",
+                      "sha256":  "4bf1fd42a5bdfa688727703edb75ba4bc89ef07abf63960a17562669d48a1e81"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Update-HarnessSetupStamp.ps1",
+                      "sha256":  "fbbc07ec09bd6f6ad6a31433a5d2b3f3bee52923112f1b6963d7a7bfc27ac99e"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Update-SecretManifest.cmd",
+                      "sha256":  "78d76f9009aae4cf3209ce2f0fe900a34ab9b2085bdab0debf3dd8c052c71ae4"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\tools\\Update-SecretManifest.ps1",
+                      "sha256":  "9afa15a0baa20dc4fbb5a6efdf51e284676422b8c5a75a9d9c085fe28f33bee7"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.agents\\WORKTREE-PROTOCOL.md",
+                      "sha256":  "478ec31d648c447221d3bc8d14a92609305a6e3da5c9758f88b7b9e3781a9e3f"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.claude\\hooks\\check-secret-exposure.js",
+                      "sha256":  "60a877a0bf27603717fc53b7fcbdc3230531dfe6bf92bdcef264ed33d06212a0"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.claude\\hooks\\check-secret-exposure.test.js",
+                      "sha256":  "d87617bce48b8ce6330b180fffaf798a209eadc98ea5cedd4ec35a044ed271f0"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.claude\\skill-projection-manifest.json",
+                      "sha256":  "dad6e6999ed93eb9ae0fab9c6fbbfab70c8aa0db7a8810fdee83fb4a7eef8bc3"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.claude\\skills\\claude-sync\\SKILL.md",
+                      "sha256":  "cd9fcb7df6d5b562869431da7f64b6bf01ed0ff86197893175d25fe2d0d6b656"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.codex\\hooks\\check-secret-exposure.js",
+                      "sha256":  "60a877a0bf27603717fc53b7fcbdc3230531dfe6bf92bdcef264ed33d06212a0"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.codex\\hooks\\check-secret-exposure.test.js",
+                      "sha256":  "d87617bce48b8ce6330b180fffaf798a209eadc98ea5cedd4ec35a044ed271f0"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.cursor\\hooks\\block-dangerous-bash.js",
+                      "sha256":  "404b0bc950941d04385dc6bfae114e4df252389b8de56788eaec74e0d30204fc"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.cursor\\hooks\\check-secret-exposure.js",
+                      "sha256":  "b2e45979cdbf5010ccafda79e24fff4e733271e3841ba83991f4219e12655569"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.cursor\\hooks\\session-primer.js",
+                      "sha256":  "186f77d1823f0ffc077bb80591efe5d8a0ff3f0c0e90f52839f3d16548a5fa5e"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.cursor\\hooks\\task-state-reminder.js",
+                      "sha256":  "e8c4fe98bb27021955f8eca97c9ffefb8baed47e32002b6f791c67d5ec5938cb"
+                  },
+                  {
+                      "path":  "C:\\Users\\dougl\\.cursor\\rules\\00-cross-agent-contract.mdc",
+                      "sha256":  "38e07d687ab0f79248a5cd3ccd08a6b5af77a85e508c40ed3f1c2e5ba35acb3d"
+                  }
+              ]
+}

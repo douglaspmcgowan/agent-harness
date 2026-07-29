@@ -1,0 +1,17 @@
+/* theme: coral */
+:root{
+  --bg:#F5F0E8;--bg-soft:#E8E0D4;--surface:#FFFFFF;--surface-2:#E8E0D4;
+  --border:rgba(26,26,26,.14);--border-strong:rgba(26,26,26,.28);
+  --text-1:#1A1A1A;--text-2:#6B6B6B;--text-3:#B0B0B0;
+  --accent:#E85D5D;--accent-2:#D44A4A;--accent-3:#1A1A1A;
+  --good:#3B8C5A;--warn:#D9952B;--bad:#D44A4A;
+  --grad:linear-gradient(135deg,#E85D5D,#D44A4A);
+  --grad-soft:linear-gradient(135deg,#F5F0E8,#E8E0D4);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:0 0 0 1px rgba(26,26,26,.08);
+  --shadow-lg:8px 8px 0 rgba(26,26,26,.12);
+  --font-sans:'Inter','Noto Sans SC',-apple-system,sans-serif;
+  --font-serif:'Bebas Neue','ZCOOL XiaoWei',sans-serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Inter','Noto Sans SC',sans-serif;
+}

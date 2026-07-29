@@ -1,0 +1,17 @@
+/* theme: soft-editorial */
+:root{
+  --bg:#F2EEDF;--bg-soft:#ECE6D2;--surface:rgba(255,255,255,.55);--surface-2:#ECE6D2;
+  --border:rgba(42,36,27,.18);--border-strong:rgba(42,36,27,.35);
+  --text-1:#2A241B;--text-2:#5C5345;--text-3:#8a8170;
+  --accent:#E1A4C2;--accent-2:#D6DD63;--accent-3:#B7C7A8;
+  --good:#B7C7A8;--warn:#E8C9B6;--bad:#E1A4C2;
+  --grad:linear-gradient(135deg,#E1A4C2,#C9BEDC 55%,#B7C7A8);
+  --grad-soft:linear-gradient(135deg,#F2EEDF,#ECE6D2);
+  --radius:28px;--radius-sm:18px;--radius-lg:36px;
+  --shadow:none;
+  --shadow-lg:none;
+  --font-sans:'Work Sans','Noto Serif SC',sans-serif;
+  --font-serif:'Cormorant Garamond','LXGW WenKai TC','Noto Serif SC',Garamond,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Work Sans',ui-monospace,monospace;
+}

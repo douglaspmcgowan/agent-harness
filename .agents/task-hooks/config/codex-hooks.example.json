@@ -1,0 +1,82 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell|Write|Edit|MultiEdit|apply_patch|Read|Grep|Glob|mcp__obsidian__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME_POSIX}}/.agents/hooks/security-dispatch.js PreToolUse --product=codex",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|PowerShell|Write|Edit|MultiEdit|apply_patch|Agent|Task|Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME_POSIX}}/.agents/hooks/security-dispatch.js PostToolUse --product=codex",
+            "timeout": 120
+          }
+        ]
+      },
+      {
+        "matcher": "TaskCreate|TaskUpdate|TaskStop",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME_POSIX}}/.agents/hooks/task-state-dispatch.js PostToolUse --product=codex",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME_POSIX}}/.agents/hooks/task-state-dispatch.js UserPromptSubmit --product=codex",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME_POSIX}}/.agents/hooks/task-state-dispatch.js SessionStart --product=codex",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME_POSIX}}/.agents/hooks/task-state-dispatch.js PreCompact --product=codex",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node {{HOME_POSIX}}/.agents/hooks/continue-dispatch.js Stop --product=codex",
+            "timeout": 18900
+          }
+        ]
+      }
+    ]
+  }
+}

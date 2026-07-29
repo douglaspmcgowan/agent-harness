@@ -1,0 +1,16 @@
+/* theme: studio */
+:root{
+  --bg:#1C1C1C;--bg-soft:#242422;--surface:#242422;--surface-2:#F5D200;
+  --border:#2E2E2C;--border-strong:rgba(245,210,0,.32);
+  --text-1:#F5D200;--text-2:rgba(245,210,0,.58);--text-3:rgba(245,210,0,.32);
+  --accent:#F5D200;--accent-2:#F0CC00;--accent-3:#F5D200;
+  --good:#F5D200;--warn:#F5D200;--bad:#F5D200;
+  --grad:linear-gradient(135deg,#F5D200,#F0CC00);
+  --grad-soft:linear-gradient(135deg,#1C1C1C,#242422);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:none;
+  --shadow-lg:none;
+  --font-sans:'Barlow','Noto Sans SC',sans-serif;
+  --font-serif:'Barlow','Noto Serif SC',sans-serif;
+  --font-mono:'IBM Plex Mono',monospace;
+}

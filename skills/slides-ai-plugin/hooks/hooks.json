@@ -1,0 +1,4 @@
+{
+  "description": "slides-ai-plugin hooks DISABLED by Douglas 2026-06-21 — the PostToolUse presentation-check + Stop slide-completion prompt hooks fired on every edit/stop on non-slide work and overrode keep-going. Skill generation unaffected.",
+  "hooks": {}
+}

@@ -1,0 +1,400 @@
+{
+    "schemaVersion":  1,
+    "policy":  "All canonical non-source-command skills; legacy source-command aliases remain in Claude commands.",
+    "generatedAt":  "2026-07-27T03:15:00.1376946Z",
+    "entries":  [
+                    {
+                        "name":  "agent-pack-generator",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\agent-pack-generator",
+                        "sourceSha256":  "d014dfbd6e6e6d24c7ef916a994305e4da3a7d4b008ffffe50f19b6946a191e7",
+                        "targetSha256":  "05206d14e737536ac5030b58c8ff519c444c43af28bf89ef7e2b262c66b06018",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "brandkit",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\brandkit",
+                        "sourceSha256":  "3adcb42f0400f59464144c9d3447ea39895107811b9c5f806b7af8c748b5da46",
+                        "targetSha256":  "3adcb42f0400f59464144c9d3447ea39895107811b9c5f806b7af8c748b5da46",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "build-graph-explorer",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\build-graph-explorer",
+                        "sourceSha256":  "bb2d4077c5eff5766db290787c65478a0b0cbce680e758be88605187942ffc18",
+                        "targetSha256":  "2b1a886da3cc09a9fcfa7ad2493a92fb70792bd3a7e520483ca1d4afadab6953",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "build-reviewer",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\build-reviewer",
+                        "sourceSha256":  "3954e632093abf153c53076d12f030031c99578d15b8efa1d5cbca87bd4b84a9",
+                        "targetSha256":  "3954e632093abf153c53076d12f030031c99578d15b8efa1d5cbca87bd4b84a9",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "build-tracker",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\build-tracker",
+                        "sourceSha256":  "d172ce73106a8446bc71f2cc7c3b446261c754ca9ce642ebb98324b08b7281d5",
+                        "targetSha256":  "9c744798944ad3c74635c25cc5939dcefe4bf451780fa8d56784ac642cc5da15",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "chrome-cdp",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\chrome-cdp",
+                        "sourceSha256":  "bc7bda260cee0681e299c15aa7262986f6d064fe871e68222ac2459d9e8e5e55",
+                        "targetSha256":  "bc7bda260cee0681e299c15aa7262986f6d064fe871e68222ac2459d9e8e5e55",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "claude-sync",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\claude-sync",
+                        "sourceSha256":  "dfff4c289d6cec5e551457db0dbef7d63f8be8570c30ed92b2856b63c195cad3",
+                        "targetSha256":  "51f30813dd52a7248c56365c6fe99689b6772ce70df4e307faef95b581b7c49a",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "clean-downloads",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\clean-downloads",
+                        "sourceSha256":  "681541726e2d6dc7e6c4a9422e3ef20cd9ec1708207111e6037e5df2bcbdb8fb",
+                        "targetSha256":  "aedc945d82f4f616ac4f97f811448e7de89f815fef641f04b7ad3ecd13f69db1",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "client",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\client",
+                        "sourceSha256":  "a754cd5841dd9e8eaf0ce71713782782273bd7946f66c8c14de915f93a24d3a6",
+                        "kind":  "adapter:claude",
+                        "status":  "current"
+                    },
+                    {
+                        "name":  "daily-review",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\daily-review",
+                        "sourceSha256":  "8eb008766cccf8e5707e252f9f8793fafe48622b8c9b99ebabb2211a103cd710",
+                        "targetSha256":  "bfb63b75071985977b204ce123d70e29401e3733f7b8edd91148ce2114f43494",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "deep-search",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\deep-search",
+                        "sourceSha256":  "488e21b015b7138a1b3c11a3493c8b7ba5726547f89507fc124eda40c0cb476b",
+                        "targetSha256":  "488e21b015b7138a1b3c11a3493c8b7ba5726547f89507fc124eda40c0cb476b",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "design-taste",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\design-taste",
+                        "sourceSha256":  "beadd1e867df8182d645cbb3be61702aadc63953f020373e802dfa887bc2a728",
+                        "targetSha256":  "beadd1e867df8182d645cbb3be61702aadc63953f020373e802dfa887bc2a728",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "design-taste-frontend-v1",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\design-taste-frontend-v1",
+                        "sourceSha256":  "fc0129673d8ee341a1a5ed6cbabf7ea09dfc66b3c916d3164d587557afe3fbc7",
+                        "targetSha256":  "fc0129673d8ee341a1a5ed6cbabf7ea09dfc66b3c916d3164d587557afe3fbc7",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "doctor",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\doctor",
+                        "sourceSha256":  "5fc3a0d8b9d0b00832b3df24d45849eacfd6dc414d8ee0ee88ce32586c7292d3",
+                        "targetSha256":  "08ffb6761ec7f75587862ce4fb649326f1cbea30a8523ec240153119a01d0a5d",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "environment-preflight",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\environment-preflight",
+                        "sourceSha256":  "72219238cc8dc23643ba48a3f986074316f27dc9c94826a983942b42e4fa966d",
+                        "targetSha256":  "1cb1e5a1a0c0f884e1728d7c5f59ddc757787cef4bba20c6f3fb2ba357b8d334",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "feedback",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\feedback",
+                        "sourceSha256":  "bde74b57443d0a7cae798d01304e17251c1421512ea9b7e10c7c555d44c8ab60",
+                        "kind":  "adapter:claude",
+                        "status":  "current"
+                    },
+                    {
+                        "name":  "fellowship-review",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\fellowship-review",
+                        "sourceSha256":  "466f41ec9e3cb89d5169559d909d36a35b30da6f65fdb7cbf730a4d66bbc8eb0",
+                        "targetSha256":  "c51eea4175d1f91866b8b1bd02ebbbfe50276d8dc026ef4f5ef05379e3a9d1bd",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "frontend-slides",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\frontend-slides",
+                        "sourceSha256":  "887a5a6c6bb9186b93554a17a0e41ad3332633f86c697a6717e78b2696f46db3",
+                        "targetSha256":  "040c134e1733428433f1a433d22013afe3612bd334c306e9e8a6a43ba9b51609",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "full-output-enforcement",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\full-output-enforcement",
+                        "sourceSha256":  "2b90de69fe9a68fd552bba4159452c33cb591c00622da0c54d4c22631eab09ae",
+                        "targetSha256":  "2b90de69fe9a68fd552bba4159452c33cb591c00622da0c54d4c22631eab09ae",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "gpt-taste",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\gpt-taste",
+                        "sourceSha256":  "fccd6e9880179d2084dadafcf2e332b51996fe8b49b7b935c6744ae1ce29ba97",
+                        "targetSha256":  "fccd6e9880179d2084dadafcf2e332b51996fe8b49b7b935c6744ae1ce29ba97",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "high-end-visual-design",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\high-end-visual-design",
+                        "sourceSha256":  "3432845f5f02987a39b26ee90a5eb747753aaa4b3939e3cbcc2a9399b332a35b",
+                        "targetSha256":  "3432845f5f02987a39b26ee90a5eb747753aaa4b3939e3cbcc2a9399b332a35b",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "html-ppt",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\html-ppt",
+                        "sourceSha256":  "25ee868ac820f8273fbffff5ba1c999b8e7225be87942d7100fb0db4dfd904fd",
+                        "kind":  "adapter:claude",
+                        "status":  "current"
+                    },
+                    {
+                        "name":  "html-slides",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\html-slides",
+                        "sourceSha256":  "ea53e517b87ed823ca5f8a2d86156a19bf6350f25a5a7a99b249b3b254e2be1f",
+                        "targetSha256":  "ea53e517b87ed823ca5f8a2d86156a19bf6350f25a5a7a99b249b3b254e2be1f",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "html-slides-pointer",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\html-slides-pointer",
+                        "sourceSha256":  "8bf5a5ff2bf86ff948ae0ad74874dc0f9f1d3690be0713da4454b22c256cd502",
+                        "kind":  "adapter:claude",
+                        "status":  "current"
+                    },
+                    {
+                        "name":  "hue",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\hue",
+                        "sourceSha256":  "2d06d610f6dd808d5cf66103484cabe0c8e89c76ed20bd7ca906673713dddd8e",
+                        "targetSha256":  "ec1a5635e9cf9cfd4e60490a6ff48be18bf8ca59414d264ad781c0b9d88c20d8",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "imagegen-frontend-mobile",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\imagegen-frontend-mobile",
+                        "sourceSha256":  "e45e58a1f3fca4975c5096f4a62c8f0464d629c57e05471407b1be879054eb74",
+                        "targetSha256":  "e45e58a1f3fca4975c5096f4a62c8f0464d629c57e05471407b1be879054eb74",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "imagegen-frontend-web",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\imagegen-frontend-web",
+                        "sourceSha256":  "2556449e7c6195dab1f26316b873ac48e64807e40ff883330f7dd713c04be5f6",
+                        "targetSha256":  "2556449e7c6195dab1f26316b873ac48e64807e40ff883330f7dd713c04be5f6",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "image-to-code",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\image-to-code",
+                        "sourceSha256":  "448cd315516fb242bf10c2f7b5d5b39a2a65e560f949b76bf5296488bdc6a531",
+                        "targetSha256":  "448cd315516fb242bf10c2f7b5d5b39a2a65e560f949b76bf5296488bdc6a531",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "impeccable",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\impeccable",
+                        "sourceSha256":  "a3683ac9725c6a95c7025bb015becc2a752ac6cf2e24fadfcec6f056056040bf",
+                        "targetSha256":  "873ba7ff05b24512cd61d0042e1a4431ea03f1affeeec6b1985719a7c575ffbf",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "industrial-brutalist-ui",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\industrial-brutalist-ui",
+                        "sourceSha256":  "e14332a7e987cd1c9585fc943975b70ff16f574bb617101334e0c1fb419938b7",
+                        "targetSha256":  "e14332a7e987cd1c9585fc943975b70ff16f574bb617101334e0c1fb419938b7",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "make-playbook",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\make-playbook",
+                        "sourceSha256":  "542b5692c8ec849cab4ac418e92c7a2be8f0681355d7a9f188be507cd874a893",
+                        "targetSha256":  "ee54f97c82225489917c74a306cc925f3cee0eb82583d6cb29ef36b66d504e4c",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "map-field",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\map-field",
+                        "sourceSha256":  "bc88b97dce29b68eeb84cdf51076575c327c5a8c1d3f8d32f67bf8191cb299b4",
+                        "targetSha256":  "ef541af79934f37be927ce705b28bbdfcbf9702aac3f7c4afd08e437481fb334",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "minimalist-ui",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\minimalist-ui",
+                        "sourceSha256":  "1281c0b517bb055f671323e8decebac88b93e807e74ce4b70b087dd0587d7faa",
+                        "targetSha256":  "1281c0b517bb055f671323e8decebac88b93e807e74ce4b70b087dd0587d7faa",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "parallelize",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\parallelize",
+                        "sourceSha256":  "c064ff111df6a1af6367d76a1837325ec718ff17da0952157cbed080dc592b06",
+                        "targetSha256":  "b0b17aa2ac835add76a394cdd3bf018ab6a48e07af8f059cce65f0636a83da23",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "playwright-setup",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\playwright-setup",
+                        "sourceSha256":  "7d97e593bd5f89835c36d9b0013f9cd6e6dce2ccf21f836434fdcaa34064cfcb",
+                        "targetSha256":  "6d3c37e945371ac65a9c0558a8a2442ed80d83fce466b836108692ce23330591",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "pptx-slides",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\pptx-slides",
+                        "sourceSha256":  "4f2538d3668d6b093d471e3f4c9c84ecf0e206fc654f3a58be03b34a27fa1470",
+                        "kind":  "adapter:claude",
+                        "status":  "current"
+                    },
+                    {
+                        "name":  "process-linkedin-inbox",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\process-linkedin-inbox",
+                        "sourceSha256":  "78c68de81e80e28f7367a7a35b1f2a3015a31470487db1b7dc60d11ca176c962",
+                        "targetSha256":  "86866c7234deb9bef8ff54e395615b3b468995341f2cc9422b5275901834ac81",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "redesign-existing-projects",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\redesign-existing-projects",
+                        "sourceSha256":  "008b3699f429f21fc17740072cb1e2a495d04443725d2f958dd8cb5b151fa4aa",
+                        "targetSha256":  "008b3699f429f21fc17740072cb1e2a495d04443725d2f958dd8cb5b151fa4aa",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "research-asset-manifest",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\research-asset-manifest",
+                        "sourceSha256":  "5c6872368f0508122e43eabc5e123427ff1e0c3bdb6b70091e43b8e4bca595be",
+                        "targetSha256":  "e8d8be2c9ad8f75b467782bac9664f82556ce92227b015d45c0b9a685993f537",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "resume-context",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\resume-context",
+                        "sourceSha256":  "82fcfd09592832233ae7de76a85371c0e24a47408145ba0d8ad0445eafb26c3a",
+                        "targetSha256":  "185531e239990b80b7db25ef420c6224ab0b31edd241f3edd13418c0131a9d63",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "rollover-session",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\rollover-session",
+                        "sourceSha256":  "b3e7e5019695051100aa09656e790096d39cfe1844021577ca0775859eba0312",
+                        "targetSha256":  "7c424a8cb8aa3ed3848e362b0db658cd4c97d9787cbfb5ea4b0f880bdd67605c",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "save-context",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\save-context",
+                        "sourceSha256":  "66cf2a74e608ac72923b365ea4d5b5f47e7736c409dbeb999450559f34a36027",
+                        "targetSha256":  "f14598e1b687b06ac0f63b54144c68578f7189a010410287963a7c34008f3b0f",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "skill-audit",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\skill-audit",
+                        "sourceSha256":  "e58bf7e6836854674f5188c9eb336be80b1d05f9be5e10b1008a57ea891f80e2",
+                        "kind":  "adapter:claude",
+                        "status":  "current"
+                    },
+                    {
+                        "name":  "slide-design",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\slide-design",
+                        "sourceSha256":  "d5bf352b8a269023789d351aa180d5bb2590065a0d288862934d343ce8c3b8e4",
+                        "kind":  "adapter:claude",
+                        "status":  "current"
+                    },
+                    {
+                        "name":  "slides",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\slides",
+                        "sourceSha256":  "2531612ebcd42079518bb5a24b6f45d12bef778f3826ed0c9947177dbb7ccf6a",
+                        "targetSha256":  "2531612ebcd42079518bb5a24b6f45d12bef778f3826ed0c9947177dbb7ccf6a",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "slides-ultra",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\slides-ultra",
+                        "sourceSha256":  "0dcc1d22167a106babb9f6c71be33d9ec17ea54b0d5818532925939cc93e958d",
+                        "targetSha256":  "0dcc1d22167a106babb9f6c71be33d9ec17ea54b0d5818532925939cc93e958d",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "stitch-design-taste",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\stitch-design-taste",
+                        "sourceSha256":  "eda64ace3fd0d001d72590e3f0240134593c8dbbed2843630601621403e5ecc8",
+                        "targetSha256":  "eda64ace3fd0d001d72590e3f0240134593c8dbbed2843630601621403e5ecc8",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    },
+                    {
+                        "name":  "tech-debt-audit",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\tech-debt-audit",
+                        "sourceSha256":  "b05842ac74eec2bd45cd84e9d3953723bc85f01ec6f6b0a7698b6d1635e0621c",
+                        "targetSha256":  "99639d467f5baefae7d82e18cf8115687edeb61c6567e6cd27ef792707644071",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "walmart-ultrareview",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\walmart-ultrareview",
+                        "sourceSha256":  "1a9c1977c94c8a027874ebe6e7ca604861a6c330e03a32448c15a48bb26aedf4",
+                        "targetSha256":  "87f30b4dba4ae5823a3440596022de778d5aa5e88fc86604074a8fca6e653081",
+                        "kind":  "adapter:claude",
+                        "status":  "reviewed-adapter"
+                    },
+                    {
+                        "name":  "wayfinder",
+                        "source":  "C:\\Users\\dougl\\.agents\\skills\\wayfinder",
+                        "sourceSha256":  "27b342194c20e6dd6439f122101d2284f6f1f5c1d443034650c981d5db815173",
+                        "targetSha256":  "27b342194c20e6dd6439f122101d2284f6f1f5c1d443034650c981d5db815173",
+                        "kind":  "adapter:claude",
+                        "status":  "unmanaged-current"
+                    }
+                ]
+}

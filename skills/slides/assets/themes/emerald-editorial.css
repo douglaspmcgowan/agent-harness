@@ -1,0 +1,17 @@
+/* theme: emerald-editorial */
+:root{
+  --bg:#3CD896;--bg-soft:#2DC684;--surface:#2DC684;--surface-2:#25B377;
+  --border:rgba(15,26,92,.22);--border-strong:rgba(15,26,92,.85);
+  --text-1:#0F1A5C;--text-2:#1B2774;--text-3:#3A4593;
+  --accent:#0F1A5C;--accent-2:#F1E9D6;--accent-3:#1B2774;
+  --good:#1B2774;--warn:#C9A23A;--bad:#9A2D3A;
+  --grad:linear-gradient(135deg,#3CD896,#2DC684 55%,#25B377);
+  --grad-soft:linear-gradient(135deg,#3CD896,#2DC684);
+  --radius:0px;--radius-sm:0px;--radius-lg:2px;
+  --shadow:0 0 0 1px rgba(15,26,92,.18);
+  --shadow-lg:0 0 0 2px rgba(15,26,92,.85);
+  --font-sans:'Bodoni Moda',serif;
+  --font-serif:'Bodoni Moda',serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+}

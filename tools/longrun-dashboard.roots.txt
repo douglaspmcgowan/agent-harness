@@ -1,0 +1,17 @@
+# longrun-dashboard.py watcher roots — one absolute project path per line.
+# As of 2026-07-08: this is only the BASE list. Any subfolder under one of these lines that itself
+# contains a .git dir, CURRENT-TASK.md, or package.json is auto-discovered (and any of ITS marked
+# subfolders too, a few levels deep) -- you no longer need to hand-add e.g. a new repo under
+# "Claude NASA Folder". Only add a line here for a genuinely NEW top-level folder outside every
+# umbrella already listed, or for a real project subfolder that has none of those 3 markers (a plain
+# content/asset folder with no .git/CURRENT-TASK.md/package.json still won't be auto-discovered).
+# Lines starting with # are ignored. If this file is empty/missing, the script's
+# built-in DEFAULT_ROOTS list is used instead.
+C:\Users\dmcgowa2\Documents\Claude NASA Folder
+C:\Users\dmcgowa2\Documents\Claude NASA Folder\ai-for-cad
+C:\Users\dmcgowa2\Documents\Claude NASA Folder\ai-for-cad\cad-forge
+C:\Users\dmcgowa2\Documents\Claude NASA Folder\text-to-truss
+C:\Users\dmcgowa2\Documents\Claude NASA Folder\sme-tacit-frames
+C:\Users\dmcgowa2\Documents\Claude GSFC Folder
+C:\Users\dmcgowa2\Documents\Claude GSFC Folder\text-to-truss
+C:\Users\dmcgowa2\Documents\Claude GSFC Folder\Text-to-Spaceship

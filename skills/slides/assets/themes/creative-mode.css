@@ -1,0 +1,17 @@
+/* theme: creative-mode */
+:root{
+  --bg:#EFE9D9;--bg-soft:#E4DCC4;--surface:#FFFFFF;--surface-2:#E4DCC4;
+  --border:rgba(15,15,15,.85);--border-strong:#0F0F0F;
+  --text-1:#0F0F0F;--text-2:#2A2A2A;--text-3:#6B6B5A;
+  --accent:#1F8A4C;--accent-2:#F06CA8;--accent-3:#E85A1F;
+  --good:#1F8A4C;--warn:#F5C518;--bad:#E85A1F;
+  --grad:linear-gradient(135deg,#1F8A4C,#F06CA8 55%,#E85A1F);
+  --grad-soft:linear-gradient(135deg,#EFE9D9,#E4DCC4);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:6px 6px 0 #0F0F0F;
+  --shadow-lg:18px 18px 0 #0F0F0F;
+  --font-sans:'Space Grotesk','Noto Serif SC',sans-serif;
+  --font-serif:'Archivo Black','Noto Serif SC',sans-serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+}

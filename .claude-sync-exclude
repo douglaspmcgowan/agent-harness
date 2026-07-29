@@ -1,0 +1,6 @@
+# Files /claude-sync must NEVER push upstream (NASA-saturated; no generic value).
+# One pattern per line. Checked before any commit in Part 1.
+commands/json-generator.md          # GSFC drone-payload Text-to-Structure generator + NASA system prompt
+hooks/block-egress-exfil.js         # hardcodes internal proxy hostname (also gitignored)
+hooks/block-nasa-web-egress.js      # hardcodes internal proxy hostname (also gitignored)
+tools/sync-pulldown-rewrite.js  # holds the concrete work-machine->desktop path table; machine-local by design

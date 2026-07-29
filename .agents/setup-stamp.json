@@ -1,0 +1,1789 @@
+{
+    "schemaVersion":  2,
+    "files":  [
+                  {
+                      "path":  "adapters/claude/CLAUDE.md",
+                      "sha256":  "7b1c3c29a0a35abba374fc5c71863527f4c9b92f726908e3ce97135c42713c9b"
+                  },
+                  {
+                      "path":  "adapters/codex/AGENTS.proposed.md",
+                      "sha256":  "19762916a8b5233d3f6539e575e5d90bfef209127c69d08110445a44760c5498"
+                  },
+                  {
+                      "path":  "adapters/codex/AGENTS-EDIT-PROPOSAL.md",
+                      "sha256":  "1361ffb6ffdaf10f850229f16a4c437869384a1dae850237b028758cba647d58"
+                  },
+                  {
+                      "path":  "adapters/cursor/00-agent-harness.mdc",
+                      "sha256":  "bad8edd4d6b309031b645b9121b35b97aa5c10238f780e532a84d9ca56381b09"
+                  },
+                  {
+                      "path":  "adapters/cursor/user-rules.txt",
+                      "sha256":  "c5109f2eb72f296db293c056b0abd5a9667a2f204e7db323db1d725213becc55"
+                  },
+                  {
+                      "path":  "AGENTS.md",
+                      "sha256":  "596b5cdbbec943526b4c9841936c330f5154d0569a1218341b302f58fe67789c"
+                  },
+                  {
+                      "path":  "archive/legacy-contracts/CROSS-AGENT-CONTRACT.md",
+                      "sha256":  "2dca2d64fcd98ed41c95fabdbe22985733a4d408e6e9424b1cb40417c1169026"
+                  },
+                  {
+                      "path":  "archive/legacy-contracts/FEEDBACK-ROUTER.md",
+                      "sha256":  "50bde15e8e0337cc774d9388b6e68b42db13f5c03364aa0be4abf25704a32c9e"
+                  },
+                  {
+                      "path":  "archive/legacy-contracts/HARNESS-MAP.md",
+                      "sha256":  "7830973f680a5a4b1c43a4e9d378443b01d0418effbff159ac53f9bf7f969ffd"
+                  },
+                  {
+                      "path":  "capsule/AGENT-START.md",
+                      "sha256":  "fa8cdbdc0c83a65563632c984b8dad7d92361f9e12d24b4af685d54968b52393"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/app.json",
+                      "sha256":  "5fba267a59204c0685412d6211b7fff1b38a609ae9a6bc43af063afd7ce59040"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/appearance.json",
+                      "sha256":  "5afaa15fed38c5e49b50ebe0423b944eaf675aec89b1499b9ffb26128df4171e"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/core-plugins.json",
+                      "sha256":  "763cf20a921fd9955735b278006820b90b207b2fc04d9e79ca648279c7c14276"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/graph.json",
+                      "sha256":  "7892e3c1beda4aeaeb89947ed9b320e787e09a86a45a992bed528306330e6133"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/hotkeys.json",
+                      "sha256":  "0932368998b5b43eb2a31438522347ff43e7a7d468df73e2eb73362f024ea90e"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/manifest.json",
+                      "sha256":  "45e67ad7d63f80690f19072a428dd9b1b17c34db6bdf080aad14680404a973a8"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/snippets/canvas-clean.css",
+                      "sha256":  "539547ec9f71e6b6de4ea4d2358f81b8f5d29384e043539a40664e786cc59608"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/snippets/home-dashboard.css",
+                      "sha256":  "1da86b01ab3eef61766515b354b8612cd7ceecbcae4c36e9cae76dc894c9ebe0"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/snippets/wide-editor.css",
+                      "sha256":  "a646771f53403730520d413a969939032f14c6e5e1e0fea12fe1e6795a15f419"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/themes/Minimal/manifest.json",
+                      "sha256":  "65966b4bf4851762fb723beb47680f67cc1eb2bb82bacaac800adecd887fe678"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/themes/Minimal/theme.css",
+                      "sha256":  "eceaea27dcfbd617e0cda245f5bf6b273fa4d5b18170b739285b19e8671ce52c"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/files/types.json",
+                      "sha256":  "040e0437dea24f96ba61968416ad233b4ca6950c42ceef302d151e543536f7c0"
+                  },
+                  {
+                      "path":  "capsule/approved-obsidian-config/snapshot.json",
+                      "sha256":  "a75fe3f4e1acc196288c84ddf7b07dfcbcbda9b92889f977f6c46b42434dd8a1"
+                  },
+                  {
+                      "path":  "capsule/Bootstrap-Capsule.cmd",
+                      "sha256":  "a5e6c75123d520c09dc3d88f1aecef5d909d08daaa8e7d3e9bb0da3534e1e906"
+                  },
+                  {
+                      "path":  "capsule/Bootstrap-Capsule.ps1",
+                      "sha256":  "5f632a391d0a1969a513f74527d26dae0b0bb5d1893ac12bca6e5a6b3b4438dd"
+                  },
+                  {
+                      "path":  "capsule/Capsule.Tests.ps1",
+                      "sha256":  "c6e3f68f6e9f09cdad31c400b4d933aa5bcbb0d2cc3fb3f5d7f548d4b6c3b7e2"
+                  },
+                  {
+                      "path":  "capsule/Capsule-Portability.Tests.ps1",
+                      "sha256":  "c72669c04a553199469b7db9ee8ca250610c575075092b3558f7f1fcbf686b79"
+                  },
+                  {
+                      "path":  "capsule/Capture-ApprovedObsidianConfig.ps1",
+                      "sha256":  "db44ab0c8987034b6362d2715f60824de75798377439bc9a797f2a00ed3b2e21"
+                  },
+                  {
+                      "path":  "capsule/Capture-ApprovedObsidianConfig.Tests.ps1",
+                      "sha256":  "a539c32121f7e6a7b0681b6f54946614d42ab14c83bf0133e1c9f9c4b45ba529"
+                  },
+                  {
+                      "path":  "capsule/DATA-SYNC-AND-RETENTION.md",
+                      "sha256":  "a910df955b5a79b38666b5ee110835c646d13d7b1c51fef14ad21ad8851d730e"
+                  },
+                  {
+                      "path":  "capsule/DOCKET.md",
+                      "sha256":  "a0058bc0fbff6d304d75e28b228f9b7817b9b8901ab190f064f69f676419b35e"
+                  },
+                  {
+                      "path":  "capsule/Export-ObsidianConfig.ps1",
+                      "sha256":  "e14dd079e5185a09584ff02dc36bc6abba73641b5e89b25b9891d4948efb78eb"
+                  },
+                  {
+                      "path":  "capsule/Harness.ps1",
+                      "sha256":  "e8b3e9144763d010a14507f3bd7323e716a37ecb5966569e8a286d42a96cb025"
+                  },
+                  {
+                      "path":  "capsule/Harness.Tests.ps1",
+                      "sha256":  "b09ec3fa73684f63b172af13015d1003e12f7171a437ae5caea79a5c56ef65dc"
+                  },
+                  {
+                      "path":  "capsule/NEXT-STEPS.md",
+                      "sha256":  "475702562b5aec297d86b55b7bf34e508a1d3d6737f31a62977171469f1cbab1"
+                  },
+                  {
+                      "path":  "capsule/Obsidian-Config.Tests.ps1",
+                      "sha256":  "fb7b201f39e03903f635a6b213f694703b3b7442c89bf838a3de46123ba2f5a4"
+                  },
+                  {
+                      "path":  "capsule/Project-Data-Environment.Tests.ps1",
+                      "sha256":  "606aa44e1d0a827e1392b905b9c91ac78d704b5083fcdb6540c81855d2a4b634"
+                  },
+                  {
+                      "path":  "capsule/README.md",
+                      "sha256":  "a039554bdddcc7077c93122fbf307516d1bd1733770a3f248bb2cc7083237d4b"
+                  },
+                  {
+                      "path":  "capsule/RECOVERY-LAYER.md",
+                      "sha256":  "940f503dfc639aee8bd83bc8a33fe94fc329ab6326f2971a1ddf0ed5dd30be7d"
+                  },
+                  {
+                      "path":  "capsule/Refresh-Capsule.ps1",
+                      "sha256":  "95b59dd5d3d39b9723041e6f0122356d32fd57304bb039d412985951f63e06f5"
+                  },
+                  {
+                      "path":  "capsule/Refresh-Integrity.cmd",
+                      "sha256":  "af8804bcc1a0c7fd7e2ef2930a3357f020191c5636c6af3ad9570e8f140e8375"
+                  },
+                  {
+                      "path":  "capsule/Refresh-Integrity.ps1",
+                      "sha256":  "45d1c6ede31676a0cc0fe81084ffbc4bed00d04ffe43757d2ec7983652da9f83"
+                  },
+                  {
+                      "path":  "capsule/Restore-ObsidianConfig.ps1",
+                      "sha256":  "9080ab540e1ea840f4cc282c85d7816ccc36577cde60f301a87da719a65fdf37"
+                  },
+                  {
+                      "path":  "capsule/SECRETS-BITWARDEN.md",
+                      "sha256":  "f0760bd53a682fc8f1b51e42a8a49fda66921b7d4cf5065a7d2eb0683f62491a"
+                  },
+                  {
+                      "path":  "capsule/Set-CapsuleAccounts.cmd",
+                      "sha256":  "439b2a85a535dcefd3c265c701e0a01870fb99aae31139157edf13674a9e750c"
+                  },
+                  {
+                      "path":  "capsule/Set-CapsuleAccounts.ps1",
+                      "sha256":  "edec9e6e9cc0a7d99df9d34153a9ced3e41b889c3c556041f52ec233179e9158"
+                  },
+                  {
+                      "path":  "capsule/Set-ProjectDataEnvironment.ps1",
+                      "sha256":  "4f9105bb483904d2b8415f0b27d70c731ede7dcaabaa69a6546c449b9b9277aa"
+                  },
+                  {
+                      "path":  "capsule/START-HERE.md",
+                      "sha256":  "847462a905776af8b15aa928fbe3e96e6f2099b4cc0fa30fbe7296aef46e7b6a"
+                  },
+                  {
+                      "path":  "capsule/SYSTEM-MAP.md",
+                      "sha256":  "03a9a16ab0bf8e4a97fee03ce00996d38fd76921c6238b7453cff3f2d39c69d3"
+                  },
+                  {
+                      "path":  "capsule/templates/accounts.template.json",
+                      "sha256":  "341dc695c18021edded3f190eb8a010d4fdb7818c315a7c13922064935c318a2"
+                  },
+                  {
+                      "path":  "capsule/templates/software.json",
+                      "sha256":  "e6ef97b8d5d4a82fbe7d72ff131e9cd9027307de45be3312296c85fa4b1d7096"
+                  },
+                  {
+                      "path":  "capsule/Verify-Capsule.cmd",
+                      "sha256":  "17843b856a2909e3313b468e86298551c564dd014c51dfb4dca3ba3c540d6c76"
+                  },
+                  {
+                      "path":  "capsule/Verify-Capsule.ps1",
+                      "sha256":  "aa368cf144610f7a7e1f92e34fb37d59e8569e48e548a2edb0a7b1e635c62676"
+                  },
+                  {
+                      "path":  "CLAUDE-SKILL-ADAPTERS.json",
+                      "sha256":  "69126ad57e9745eaf6910bea15438504fc0a7c5cbce40ae82a703e8009fe2e49"
+                  },
+                  {
+                      "path":  "core/task-state.js",
+                      "sha256":  "ef87fb00b8e30fc002624de59eca5d2f77ea0cabf6ec2abc9a46ddfdae571e45"
+                  },
+                  {
+                      "path":  "DESIGN.md",
+                      "sha256":  "c88c8e76a9b0292d05de64b0d7f11a92e19e3be2adee2bac67a9c980a63aab6d"
+                  },
+                  {
+                      "path":  "DOCKET-PROTOCOL.md",
+                      "sha256":  "40fa126e013b4901451d4a8e0f9efc5c2728136b2b81d447b87754207e83e9e8"
+                  },
+                  {
+                      "path":  "feedback/FEEDBACK-LOG.md",
+                      "sha256":  "ddcf9c39266eb7e70f514b39ef11c00bd22dde8edb8641d5bf6f834620c8019a"
+                  },
+                  {
+                      "path":  "git-template/hooks/pre-commit",
+                      "sha256":  "9a2433f8a1151e59060a5c82a2b19896b9b6601e7889d5550343a7eb67d37755"
+                  },
+                  {
+                      "path":  "harness-provenance.json",
+                      "sha256":  "3f25fcc7fb0959a3b16fa692c455fc53ec60a9f56d0db4328753d4c82414ab71"
+                  },
+                  {
+                      "path":  "human-readable/archive/audits/13-SKILL-AUDIT-RESULTS.md",
+                      "sha256":  "182d63789c1d8098187d8bd67b05a25e58a82a6c9819fa5985e306c0fb025ced"
+                  },
+                  {
+                      "path":  "human-readable/archive/audits/19-COMPLETION-AUDIT-AND-OPEN-BOUNDARIES.md",
+                      "sha256":  "784de86c7fc33364542136a2e79a41933490a7cb5d7e4213679289362c390881"
+                  },
+                  {
+                      "path":  "human-readable/archive/incidents/12-ZIP64-ARCHIVE-RECOVERY.md",
+                      "sha256":  "28c8bc8367349813bb1f23ff9db837d17b6cd593c3dd7314e1da69584e7e790f"
+                  },
+                  {
+                      "path":  "human-readable/archive/pre-consolidation/harness-v3/08-CONTEXT-LOADING-AND-TASK-STATE.md",
+                      "sha256":  "604322fcda7e4aa1f47206f7cc31845a8ba328db03b15d3eeb80c222f1982cf2"
+                  },
+                  {
+                      "path":  "human-readable/archive/pre-consolidation/harness-v3/09-SECRETS-MANAGEMENT.md",
+                      "sha256":  "34b12e42ebb60675b7208a8e0f0c878f1ff5c43e8b34fa136beeb296ffc6a818"
+                  },
+                  {
+                      "path":  "human-readable/archive/pre-consolidation/harness-v3/10-SKILLS-AND-ADAPTERS.md",
+                      "sha256":  "72b125dc88ec828a3712fbaeb4176bc697513a954e6a4008766106caa32b6521"
+                  },
+                  {
+                      "path":  "human-readable/archive/pre-consolidation/harness-v3/11-DOCKET-CROSS-PLATFORM.md",
+                      "sha256":  "13e2f86045db8f3d30abefa05a5e390fe65e4a64b5a19ab5bc800889323aeb26"
+                  },
+                  {
+                      "path":  "human-readable/archive/pre-consolidation/harness-v3/15-BACKUP-INVENTORY-AND-GOOGLE-DRIVE.md",
+                      "sha256":  "cceced67c2f1838e5f73252e68500691e6673206ee6d0434791483c18f15e949"
+                  },
+                  {
+                      "path":  "human-readable/archive/pre-consolidation/harness-v3/18-PROJECT-AND-REPOSITORY-INVENTORY.md",
+                      "sha256":  "bffc2b88debc49578ad2dc89c21b2b973e8ee2b0df7184014ceab2837fa95a28"
+                  },
+                  {
+                      "path":  "human-readable/archive/pre-consolidation/harness-v3/21-CAPSULE-PORTABLE-COMPUTER-RECOVERY.md",
+                      "sha256":  "d328b3f83763ea30a8a3303bd6183e5bf69654dbb5cc3118dc1d54e248a44cb0"
+                  },
+                  {
+                      "path":  "human-readable/archive/pre-consolidation/harness-v3/setup-stamp.json",
+                      "sha256":  "0ebba2fc7639dd044711923176117f079dc4a4a27f95fb76495ce08aced7dead"
+                  },
+                  {
+                      "path":  "human-readable/archive/README.md",
+                      "sha256":  "660abd3d7b2656e30bbda25bdd4aa6c82e83799848b1927dc7f3db1d2004d378"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/01-ARCHITECTURE-AND-SESSIONS.md",
+                      "sha256":  "0802884d7aa306ee16b43a0df0943592ddd53875f0dde9b6872465b930041ab1"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/02-PRODUCT-SURFACES.md",
+                      "sha256":  "b2b26b044f2f51315fb9c80ed795a568f7453049bc6d5caa86c5911f6a351711"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/03-STORAGE-AND-SQLITE.md",
+                      "sha256":  "368dd448a56fd742b7c460388723b2dd47d33424701342bfe55ba6da30647924"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/04-BITWARDEN-OPERATIONS.md",
+                      "sha256":  "810d54a6fe70b2ef702e10cada509916be3fde9d72db6c83e7294d169b18686f"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/05-BITLOCKER-AND-GITLEAKS.md",
+                      "sha256":  "78a727a059f039066d6cadc2240d56da9bf7812170696de870d4a186f8cd6214"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/06-GOOGLE-DRIVE-STATUS.md",
+                      "sha256":  "e75177b92060881493f72770715f744511d55e0f0085ea53ab4fd04e79a549f0"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/07-HARNESS-PORTABILITY.md",
+                      "sha256":  "a5f220d87a429ba0a4ee8ab65786b835d3d51f1ea84c69d32f7f510e7c49933a"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/08-CONTEXT-LOADING-AND-TASK-STATE.md",
+                      "sha256":  "604322fcda7e4aa1f47206f7cc31845a8ba328db03b15d3eeb80c222f1982cf2"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/09-SECRETS-MANAGEMENT.md",
+                      "sha256":  "34b12e42ebb60675b7208a8e0f0c878f1ff5c43e8b34fa136beeb296ffc6a818"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/10-SKILLS-AND-ADAPTERS.md",
+                      "sha256":  "72b125dc88ec828a3712fbaeb4176bc697513a954e6a4008766106caa32b6521"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/11-DOCKET-CROSS-PLATFORM.md",
+                      "sha256":  "13e2f86045db8f3d30abefa05a5e390fe65e4a64b5a19ab5bc800889323aeb26"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/14-REPOSITORY-BOOTSTRAP-AND-CLOUD-AGENTS.md",
+                      "sha256":  "75ce3a7f25c7f6551a62d1165aa055004f085febf88af3e100c5dfccf2867da5"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/15-BACKUP-INVENTORY-AND-GOOGLE-DRIVE.md",
+                      "sha256":  "cceced67c2f1838e5f73252e68500691e6673206ee6d0434791483c18f15e949"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/16-CURSOR-PERMISSIONS-AND-SESSION-START.md",
+                      "sha256":  "edd37eb2d0c4830a8177a4b566e1e4d1bb3b3f8d6e7baf83ca0990bf5fc99c09"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/17-FEEDBACK-ROUTING-AND-CORRECTIONS.md",
+                      "sha256":  "d57080cb434b8f11638030f75965735529fef4bae37ebd36774383349a9e0c94"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/18-PROJECT-AND-REPOSITORY-INVENTORY.md",
+                      "sha256":  "bffc2b88debc49578ad2dc89c21b2b973e8ee2b0df7184014ceab2837fa95a28"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/20-FREE-SECRETS-MANAGEMENT.md",
+                      "sha256":  "e00f63c334ad04bb68ae3459a0b3cdd32ac74af410fb4f45605c3365e8e0b434"
+                  },
+                  {
+                      "path":  "human-readable/archive/topics/21-CAPSULE-PORTABLE-COMPUTER-RECOVERY.md",
+                      "sha256":  "d328b3f83763ea30a8a3303bd6183e5bf69654dbb5cc3118dc1d54e248a44cb0"
+                  },
+                  {
+                      "path":  "human-readable/CHANGELOG.md",
+                      "sha256":  "909b4b692cd2f09b65f77b04c78ffe4063442d21e919cee5b61b246f3247d0d8"
+                  },
+                  {
+                      "path":  "human-readable/README.html",
+                      "sha256":  "7f02005f9523aedd8871002b795ab60fc7b68c36d921d1f85b24de8d94abad79"
+                  },
+                  {
+                      "path":  "human-readable/README.md",
+                      "sha256":  "45ecb163dd6ce40ef2aa1461753b43510c713a68c6d1f510c6d42bba7a87ea9a"
+                  },
+                  {
+                      "path":  "human-readable/UPDATE-PROTOCOL.md",
+                      "sha256":  "6a92a8574dd440ab8c07990bcb4f7ddf92297d3db7e3fc0bc6bdbbebcbd54930"
+                  },
+                  {
+                      "path":  "manifests/baseline-skills.json",
+                      "sha256":  "d0df73bd1e0c4ab8c577ef569c6d4d88e9baf598ce7f93d43cdf87d8f0026604"
+                  },
+                  {
+                      "path":  "MAP.md",
+                      "sha256":  "e5fa1867f21a9f218459e5dc859f9aa1fe2738aac8bd6446335a2059351a3f61"
+                  },
+                  {
+                      "path":  "MEMORY.md",
+                      "sha256":  "52d803040bdaa79a60a35befa0a27bbc9b99f278719815a366696bec3f4a7cfa"
+                  },
+                  {
+                      "path":  "PORTABLE-PRINCIPLES.md",
+                      "sha256":  "394383f92a663048ccb8e1fa2018470db464338d70f67344ed4c2a04a95aef34"
+                  },
+                  {
+                      "path":  "skill-pathways.json",
+                      "sha256":  "33d529030f3723bc185f94090cf9fcd1007646f9c7d15a76f962104aa78a3b9b"
+                  },
+                  {
+                      "path":  "SKILL-PORTABILITY-CONTRACT.md",
+                      "sha256":  "286695e98dc90486233e2d1fddfc9fad9c526a3f956b042908f053995362fb48"
+                  },
+                  {
+                      "path":  "skills/correct/scripts/Record-Correction.ps1",
+                      "sha256":  "bc091bc4c58958f8cec3ffc4dcc7b9817d29af33db5a9928e21bbe36856b09c5"
+                  },
+                  {
+                      "path":  "skills/correct/scripts/Record-Correction.test.ps1",
+                      "sha256":  "14cb28af57c48413798e309e018ebebf1e432ba9c83595f92fccecabef776db2"
+                  },
+                  {
+                      "path":  "skills/correct/SKILL.md",
+                      "sha256":  "b8c6d3fbad02a71c07e353ea653eb2abc59891e2a38740ae6d16dcedb103fb56"
+                  },
+                  {
+                      "path":  "skills/declog/agents/openai.yaml",
+                      "sha256":  "44dce1a02ea1e6f6febd6430a9507d844743d106adc09b304b06b775e7534ca7"
+                  },
+                  {
+                      "path":  "skills/declog/references/research.md",
+                      "sha256":  "0da848b7d6bf209732fdb702a34ebd51fd5138b2f0b240e43bf156cade285306"
+                  },
+                  {
+                      "path":  "skills/declog/scripts/Get-DeclogReport.ps1",
+                      "sha256":  "7699a8b7991c6a1fd195e642b765b73cdfe6edab9a2c50e293d112f321bd80cf"
+                  },
+                  {
+                      "path":  "skills/declog/scripts/Test-Declog.ps1",
+                      "sha256":  "92882e80b56dec6c671482ff7883673c93b31cf988c0ec6f42a8892acb5edf5d"
+                  },
+                  {
+                      "path":  "skills/declog/SKILL.md",
+                      "sha256":  "159adae0d40902edb4aaf1ec346880c7bde1a3d184dd4b151d26cde1e3f2487b"
+                  },
+                  {
+                      "path":  "skills/deep-search/SKILL.md",
+                      "sha256":  "64e57fbd46a6b44ac4fa7f99314e406f26878877f46a6d7b9e65aaf8de69f7f6"
+                  },
+                  {
+                      "path":  "skills/feedback/scripts/Record-Feedback.ps1",
+                      "sha256":  "ab5d8f4c794ea30a8f5c85e3b8731266984df5a0ba55de15142360d75c4d29f8"
+                  },
+                  {
+                      "path":  "skills/feedback/scripts/Record-Feedback.test.ps1",
+                      "sha256":  "4b3ca98a12fff204511361921345f82281e8125af6781c32b668c12b026a5cf2"
+                  },
+                  {
+                      "path":  "skills/feedback/SKILL.md",
+                      "sha256":  "7ab67e7373a25164f8c385b37cadebfbfd44d6451ca29be11df6c639c0c250ee"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/components.css",
+                      "sha256":  "eb0cd15a10b58ada4267d56be23927eda38a065eba1b746b876d154cfc7bac86"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/dark-interactive.css",
+                      "sha256":  "5f0a02edb97b79e7b0c850385f5ddfcfaaabf87760620d27a40acf293ccb75a0"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/fonts/Excalifont-Regular.woff2",
+                      "sha256":  "ee41ec4c06bfa0728665499de6f4b4019e7953119ab20b5aeb5917f1609c3b2a"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/fonts/Virgil.woff2",
+                      "sha256":  "9976295bfe709bdea64839a4d4e9a1d436dd6eb67538399a5a0e8b8fadbcf1cf"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/slides-runtime.js",
+                      "sha256":  "9185b363e73b2979017fea00891fc69a7f22ca260f62f3e50b91e0e7235f3afb"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/themes/binary-architect.css",
+                      "sha256":  "22b0af9b5db9273ccb6e2a73d71263bd89beb9044e9042a749f526460ee8ffdc"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/themes/dark-interactive.css",
+                      "sha256":  "8150e3635fc9bf290f97b97f9a26a8f890ff364d703bf7a299ad7326fd76cea8"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/themes/editorial-light.css",
+                      "sha256":  "3ed9da98986031c1e6748f8111688141b43cd1c10be864a89cc418c7b5f52e49"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/themes/excalidraw.css",
+                      "sha256":  "c760fffeba73cd91acfc1038177dbc4926b97c935d5e4d71eaa25291fc987790"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/themes/excalidraw-dark.css",
+                      "sha256":  "69d41abc29608544a788befed4dd1e31ea74bb2905363bed07cb9088062ec98d"
+                  },
+                  {
+                      "path":  "skills/html-slides/assets/viewport-base.css",
+                      "sha256":  "dab42c1a556a0fa51d3c39f7edfb93d8303e5c29625ade479a18ba97f2640734"
+                  },
+                  {
+                      "path":  "skills/html-slides/references/animation-patterns.md",
+                      "sha256":  "1b7b7409893b68c09effb04f20a4603a5168e4956d76c3999c2ba8f86c4bbc8f"
+                  },
+                  {
+                      "path":  "skills/html-slides/references/component-templates.md",
+                      "sha256":  "126c4cd42b60e26b6b216845ff95477d686310c97e8796a81101809dd444f3f1"
+                  },
+                  {
+                      "path":  "skills/html-slides/references/conversion-patterns.md",
+                      "sha256":  "18233bf4a07641638e0c51a370936d36bf7d3d1b655c8e20f2ae7d24353f34a1"
+                  },
+                  {
+                      "path":  "skills/html-slides/references/html-template.md",
+                      "sha256":  "08acb91592fa1cbe3d47a6ac96f6f220acca256b22a8e07bd22b6bf952119287"
+                  },
+                  {
+                      "path":  "skills/html-slides/references/libraries.md",
+                      "sha256":  "46795a834c8e5b8201ca36200b30386c81d9f43dbf68ad527794671f6a2e451a"
+                  },
+                  {
+                      "path":  "skills/html-slides/references/presentation-layer.md",
+                      "sha256":  "4d030310f55329c1f211ec45df28a9f096d16727376a1fadcfb98a0dcc328c27"
+                  },
+                  {
+                      "path":  "skills/html-slides/references/STYLE_PRESETS.md",
+                      "sha256":  "79fe5da839b4b9529739ad13f8792173036f7fed4f9059d0fa1a0ee79a58c715"
+                  },
+                  {
+                      "path":  "skills/html-slides/scripts/deploy.sh",
+                      "sha256":  "6446a0c580e5373602edda047a57d1a9ea394dfcfd6791907813567965ba10df"
+                  },
+                  {
+                      "path":  "skills/html-slides/scripts/export-pdf.sh",
+                      "sha256":  "4df01a0cdc62c3f8970210a3d13bede97c3ae7ffa536302d3bda805fe7bdbe24"
+                  },
+                  {
+                      "path":  "skills/html-slides/scripts/extract-pptx.py",
+                      "sha256":  "4f5e7603c99b8b53e20c5b2a65abdf5edf9422b4c490dca9f2b872a752c17d2a"
+                  },
+                  {
+                      "path":  "skills/html-slides/SKILL.md",
+                      "sha256":  "eb7dfa7c2fe77d6c88fa4769610e1f91bbdb9ced9d8becbc1bb52a16b38fc3a5"
+                  },
+                  {
+                      "path":  "skills/html-slides-pointer/SKILL.md",
+                      "sha256":  "d32a2523081d467ebe2382061af4509ae247e325269bcfbb4067f4bd011a71f5"
+                  },
+                  {
+                      "path":  "skills/impeccable/agents/impeccable_asset_producer.toml",
+                      "sha256":  "4effda08f93ca843d346d78e3fbd68c7ee2d45bcfc44abb7ef891e0f6eadbf31"
+                  },
+                  {
+                      "path":  "skills/impeccable/agents/impeccable_finish_reviewer.toml",
+                      "sha256":  "0d775c2ffa10ff6acb5150e84fd8e9c67b36246be120d7197e600cb74ad6aabd"
+                  },
+                  {
+                      "path":  "skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+                      "sha256":  "b7ca38e2f7822a6a13f32fd735011aefaccc5eeaf4f993850f0076ff30128657"
+                  },
+                  {
+                      "path":  "skills/impeccable/agents/openai.yaml",
+                      "sha256":  "cbd8bd68fa00935dd0f179adb169252629cf7ee443ea9dc7db77e7ef2cf77446"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/adapt.md",
+                      "sha256":  "bead87679caad7c537dd7c04c3bb78be56ac7eec279ad6aad7322f48ff2df2d9"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/adapt.native.md",
+                      "sha256":  "6acc0bf221a4ddc6e5c6438348920b2ca2393b29c4314dbde2cdc23f2b1a9639"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/android.md",
+                      "sha256":  "dacaaf57fe334fb1a02ddb4da5217c78f4e154ac9e6b760d2cc69cceaed0eac4"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/animate.md",
+                      "sha256":  "b6a1ddbe1030d738bb73c0d2e9654f671c8a82871b4d6752ed501e377e7649ac"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/audit.md",
+                      "sha256":  "b6b5731306a59c62856d203fba0e2314462ce3889fc0e8724595173ef54831a4"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/audit.native.md",
+                      "sha256":  "1b10f9ad3d3a1494ee1bbdf35bb6aa453e98defa6e1ae99177b167795054a4f1"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/bolder.md",
+                      "sha256":  "1690702a489e486f796ad2985adf72fea74269407acab2fa8f6876b39fcf4d75"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/clarify.md",
+                      "sha256":  "173dd66abe65633910dcb04a51f40d6ff2a793f87088f022a02fc4cad24dd133"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/colorize.md",
+                      "sha256":  "bc5f71f1129d0f2c310d913d07c8dc609a1d25644121bd78c308f42d52a0b9e9"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/craft.md",
+                      "sha256":  "9205e222bc6565b37fb504ceec93233c2d2a456802b69d16e6b1c44723907c4c"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/craft-floor.md",
+                      "sha256":  "69cefb064f51d391cc05b1a65e3968e7384fbe24c26fd5df9d28a973dcf369fa"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/critique.md",
+                      "sha256":  "845f37336ef401643fb8912f53f3aadf62e25b62f5a927fbdd6f284385ec4e44"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/delight.md",
+                      "sha256":  "098a891028ce59c212b747d3c70468dd750aff7053a703d1336045ed31e0da7c"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/distill.md",
+                      "sha256":  "c549b0a41617772df7c6108e52173684620f88fa4ef2d5f94097f7e39551edf0"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/doctor.md",
+                      "sha256":  "8111dfc587ef59354a354d8ddde9d07ad1caa3ee59ebe5e480154c258198271f"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/document.md",
+                      "sha256":  "2dae70733dc1013dadc5848736cf68b751765081f4d6105cd3da7fab5d657f7f"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/extract.md",
+                      "sha256":  "831cdf9a09f5184dbfa0db43072d8aa47b62d2085391426c3ebe9429fce67bd5"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/harden.md",
+                      "sha256":  "8e2fd8b973ea746a870a6028b703d6781a180639354aa9fcd75473a025d6c94f"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/hooks.md",
+                      "sha256":  "958b7c5e45f12ffeff881b8a5b97a04d7006d69f2389518f9d1af6d0f83ec0df"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/init.md",
+                      "sha256":  "6dbc6263c9f965c64872c228ca0b2cf6a440b45a02fa28fd196f26972fc4e118"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/ios.md",
+                      "sha256":  "07131918b18ce50dbd62fa20bb519d7a0b4a36c798f0e5332522b75cbc7d0574"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/layout.md",
+                      "sha256":  "2d5eba1b9493f85c149a197fe6c4e9d015f5e68c49f24f5210a237cee4e44348"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/live.md",
+                      "sha256":  "92451281b79efa7384e393ca20f24b2606c8f995c32fee74953e9de3f9fee724"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/new-work.md",
+                      "sha256":  "d59ec182c1868b86f382da6a4eddef85ffa25c0cf049866649d374caf978d6d6"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/onboard.md",
+                      "sha256":  "ef2dde00030580ed2765cbf7be9b2ea4a6f64cb915b804fd6f6abcf38051c7b9"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/operate.md",
+                      "sha256":  "a9d2203acd45ca33a13d5c68b02b23ed512425ac15f0e8438318ed124b43729d"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/optimize.md",
+                      "sha256":  "53af9ba7a5059db8384c8d8722f85549427e3a10bfc8adbf8f4eaf20370a2a72"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/overdrive.md",
+                      "sha256":  "5b49e25d46335eb35d7c1b86d8c99d6cef869388f9d17be1277b2f6b45f4b68d"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/polish.md",
+                      "sha256":  "bcd4514f498fb056878c618b17271bcf3f10c1f66cb131f4b4f03145bb763ae1"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/quieter.md",
+                      "sha256":  "8f3fe181091c75098041ddeed502447a725e0127db9a9752c8784d40f3e1355a"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/routing.md",
+                      "sha256":  "b2fda1126e4a05d127f656d878d9baa593860bd8bc7f70186f8e13c5474c14cc"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/shape.md",
+                      "sha256":  "a55f016c046cb6a27c55bd7f346375aeb506a755c4fbca19a5f92dbd42309c23"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/typeset.md",
+                      "sha256":  "6d803447fb419ee718012f6263d2685ad462a14dc08c338392e28b79823a0553"
+                  },
+                  {
+                      "path":  "skills/impeccable/reference/visualize.md",
+                      "sha256":  "4ac59b9a95da9425abc8f0dc0fd73d95eaed3da9fe447f711be98229dda1ed30"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/command-metadata.json",
+                      "sha256":  "6bdbc3f745ceee15e10b050f109ce42bbeb53ab3c3b5239257de1d596654dee7"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/concept-seed.mjs",
+                      "sha256":  "54cee84d286f31ce1bccec809b0da9df9e1c08d25596d115f651747bae62f925"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/context.mjs",
+                      "sha256":  "9624eec1da4235b4f9d45d5cdb29ecb812ae01cb7e8a3953fcbfdc55f011d03e"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/context-signals.mjs",
+                      "sha256":  "e83efa10ce09cf411efce55cdd02e2c55e3a3cbd4d576a4f9ea849688bd628ce"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/critique-storage.mjs",
+                      "sha256":  "ecafe838f5596a8da37d8b995d51d0954e26f98dec3608afd6cc20dcea1603f6"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detect.mjs",
+                      "sha256":  "f5dfd05ca1e314acd8ed79c6301a20a1b844f2eb6691bd63e04116a8e7efb187"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detect-csp.mjs",
+                      "sha256":  "2d80520bef13cb93107699714bc0d2be5a2787a9aa079ecec91b94508a8125a4"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/browser/injected/index.mjs",
+                      "sha256":  "2d00cbdbdcd15abfdbbfc0fe80fdf61292c460424040084c3cd731b1ee9ce7b3"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/cli/main.mjs",
+                      "sha256":  "7d922711abb67ea3c626f1a2fcbe4464e72230bfdd61644217c4ac351065edd5"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/design-system.mjs",
+                      "sha256":  "a3f995a4223e8eb8295bca41ba08ea6d4be3409597fdb163a0775ee61c5ffd35"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/detect-antipatterns.mjs",
+                      "sha256":  "f5240e4162b270efafd099b81d315309a6f25a83a887aedf02bf9bcf3ed5c724"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/detect-antipatterns-browser.js",
+                      "sha256":  "7d99c4506f3265c6a525c8166996171fc7f9a9ffdfd3d26bf5ef63fa6956b6fb"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/engines/browser/detect-url.mjs",
+                      "sha256":  "5a2240c5a56ea6d302bd008a03b1319facc3289056d44beb45d38c3ace8252f6"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/engines/regex/detect-text.mjs",
+                      "sha256":  "813f4662f477fee2cbc9320cb22a8251fc0ab2405ae89b0bbac984d4886dbe4d"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/engines/static-html/css-cascade.mjs",
+                      "sha256":  "2200cd98dd6c5d2123dda81db1f13d0ea20adedfc9f3c116edb08300174805db"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/engines/static-html/detect-html.mjs",
+                      "sha256":  "007d29e69dd90b0dc65597ad43003693d0f9a310d40a74708ff76a8c3fc1d245"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/engines/visual/screenshot-contrast.mjs",
+                      "sha256":  "b4520b3f001079bd175bf20d46c5197b1b8ec5fb98fdf72c50a24c0b6598ee99"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/findings.mjs",
+                      "sha256":  "8b8af7212c8515d6791a8af1375d0619a9f9a707a881e6fbd850e4216b3f8eca"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/node/file-system.mjs",
+                      "sha256":  "4004ac034bd6c09419558608b1185271e4ceb741e8edb3b06082af122ac14697"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/profile/profiler.mjs",
+                      "sha256":  "5e201f3557360bd368a3977fecf925f376fd95f8a4dd6c4cc63fbd62848cda43"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/registry/antipatterns.mjs",
+                      "sha256":  "5f2729e744c893ba06b3475a881a76fc0f295d2d8288d24c2dff78fb52c7022a"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/rules/checks.mjs",
+                      "sha256":  "78a01b8f1e672c5d75f1fedabb22f3803dd87b006081b1ca3e3d66725439f770"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/shared/color.mjs",
+                      "sha256":  "01a68231413473f2c1183e12663ccf8aca26a87d067de75fbf3c21e73b751a83"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/shared/constants.mjs",
+                      "sha256":  "606f50159d56b5e972724c13933e63220696636215292e5316846426f3e12896"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/shared/fonts.mjs",
+                      "sha256":  "869c297295a10082d87988f31c136c5df9ddad84da0c2bbba2e85e1261e320a6"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/shared/inline-ignores.mjs",
+                      "sha256":  "74c80303e25f017b4671ae299b9fca424a5f7714203d19207a8d8896dfd2eecc"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/detector/shared/page.mjs",
+                      "sha256":  "b4cef5548d84fa90d15e6b42b20be9ef74ed05e4e6e46076ec5acc61b343315c"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/doctor.mjs",
+                      "sha256":  "5a3968ce3fc961c158e649cc34cd846d8ebac5895a488b5d412804efe1616ca7"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/generate-image.mjs",
+                      "sha256":  "8fdcd629a4c974d01791e91c7116d78f2e7e4fd884584be7048ec5fc85363dea"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/hook.mjs",
+                      "sha256":  "4e3629e60d2672258ab98ae382325096a237f100cb0f430d9f692b6d5b93cc7e"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/hook-admin.mjs",
+                      "sha256":  "d767c332a64f09cdeecb53bb103725cdcacde4a6b5b4468fedd1cc0ce1e0947d"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/hook-before-edit.mjs",
+                      "sha256":  "4c399b8287a2a5b46b392c98926ea269558daaa16a052fb9a0c645c5e3b9c28b"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/hook-lib.mjs",
+                      "sha256":  "79e42b74d827adcc6d75db607bdc3ca2d08bbfcaf3ffbdf6e38eeeba74939595"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/artifact-schema.mjs",
+                      "sha256":  "ad0a72e96c74be09490b1aea095478e307f45d707b15021c922cbd4466619359"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/composition-catalog.mjs",
+                      "sha256":  "f6af36dd67438793aa098e9afe41c2fad6e183279512c4d073e2053db24481a5"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/concept-catalog.mjs",
+                      "sha256":  "4eac82911c8ad49b7d4ce1565c24213aa8a048528045502972de2428e32dca4b"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/design-parser.mjs",
+                      "sha256":  "096747b1225f0b78f6fe155477324c592f4fc38021b7007177e70b2dc55df588"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/impeccable-config.mjs",
+                      "sha256":  "132d158e5a14c70ca4dd338eff110c671ba55fef8e7f7729677c7afd627cebe3"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/impeccable-paths.mjs",
+                      "sha256":  "276ec7ac47e3c250e76616755d83cca4846f0f951b51c29f985ec84b51282aa2"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/is-generated.mjs",
+                      "sha256":  "ed5b0b00e99ed385db541c7a068cb85f72456a4b6aa7a5460037d24b58bd90cd"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/provider.mjs",
+                      "sha256":  "998c57324fdab98a0bfbd01a6099eadac7276038da961697d6069bbdeb0e5856"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/staleness.mjs",
+                      "sha256":  "f4c95606f5dc69e2d430e41f986468a8f526114d4f27b6a4ba1493ad3408b3ba"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/staleness-deep.mjs",
+                      "sha256":  "52f28d2834b00b82ab58fed7aa9bba19d1a9813fa86c39933a23b2f102c7668c"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/staleness-notice.mjs",
+                      "sha256":  "2770f3360119836822a5823d08248976e327d49adbb06caee1492493e257c8c4"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/surface-briefs.mjs",
+                      "sha256":  "abcc992d8d05475f8761b4d9147ffdf0258e17facb9abedcc0c77c7a56600e0d"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/target-args.mjs",
+                      "sha256":  "8f8b902d9ec7dbad0431226bb8aea935cd67d68878d19d95a605be0585056f31"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/target-slug.mjs",
+                      "sha256":  "dbc2670ad1461658d1b43fe15778ac220bc0db57af1f3fd8ccb6251b5ca5a2a4"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/lib/template-extensions.mjs",
+                      "sha256":  "1a3808237835998f3fea600424c64ab1775beac7e0c344d6b23f472ffc2a3e64"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live.mjs",
+                      "sha256":  "db1ec81e40c288982d6465cf0f6d7f2774b115c31afe399fa7bc268ab5f99427"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/browser-script-parts.mjs",
+                      "sha256":  "6edf11e7fa195d847476fe059a0a24895d62d8f0e6c255955db94f1200028ea2"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/completion.mjs",
+                      "sha256":  "d7821979aec5fbc2028a6d98aa3d0abe34b88b0e2527f6df4e4f71e5782430bd"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/event-validation.mjs",
+                      "sha256":  "d987ec7b071190b39a838f2f7ee58afeb530f19171b14d24ee06e4cea1ff9a94"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/generation-preflight.mjs",
+                      "sha256":  "d98806a798bc0425c204e3dcbbf40071fe9ab46a95bcfb3624f36740b6a0f1da"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/insert-ui.mjs",
+                      "sha256":  "c86839fc9be98eadc0ff6afaa6ab010a7539e9af77e8deeba898cb93f7f311f4"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/manual-apply.mjs",
+                      "sha256":  "c0e7fc5c3d4a7d6e1d6a8e6f85cbe005e5dc01d77b16fd0735605f287c4c8b66"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/manual-edit-routes.mjs",
+                      "sha256":  "5517c40db7c91a5b24b134f79cb0f87c90e307b2f7831b1de670d60e529557c0"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/manual-edits-buffer.mjs",
+                      "sha256":  "bbd1aba1b9bc891cba771ee8b891d344542119967ae4666e7147da59de5485fd"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/poll-lanes.mjs",
+                      "sha256":  "a516bc942c55b66be915619794f4ec79aadf94d6966c6fc7aee24f1fbaa60ab3"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/session-store.mjs",
+                      "sha256":  "1e3095a99016b00adc3d0d00d7afd0d1668270b2caa9c4c81a225991262a9202"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/source-lock.mjs",
+                      "sha256":  "2919dd7641a5ff2320a01a1bf9f9adcff6e7e2f2b3ccb1b48cdf0b5c091b3803"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/source-search.mjs",
+                      "sha256":  "429dcbcf21785df225fa97a24906dec11b5170e76df6ed0a2b098fa2c2057de2"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/svelte-component.mjs",
+                      "sha256":  "f3bbda2a05790c82e511e9c316b758b5449dba1e7d34d6a6b29707c7c9da1de2"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/sveltekit-adapter.mjs",
+                      "sha256":  "8dcf719001da27f11fd5359696dc9f3e69a4731752597eafdda864045dff17ba"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/tanstack-adapter.mjs",
+                      "sha256":  "25b62214e8a8f4a4cecdc7cb8badcca3289b45384052afa49f8274efb24a83de"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/ui-core.mjs",
+                      "sha256":  "e8e56f72c17556ee5e20d89818563a868b54bb933341bb0d4ff56db2aadef28b"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live/vocabulary.mjs",
+                      "sha256":  "0a2c5278382906b3b459f268ed40f7b04bc607f88df9133f6d681e94929d2858"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-accept.mjs",
+                      "sha256":  "bd95e4668f7ce37f550af913f8187eb5d1c005b0246af74db445bd9d6eaef7a3"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-browser.js",
+                      "sha256":  "ce38b372523a5135e7e69a9c6344bedee38f106268e4eef53a534dad82f278f5"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-browser-dom.js",
+                      "sha256":  "bcfa4022e741f8034b841aed76b9ea3f6a64a8e08e4dfa43ba99f8be65a73393"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-browser-session.js",
+                      "sha256":  "dddcb8b941f7460aa6a134f7d456b1820747172c12e01de36dab3265b1065cff"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-commit-manual-edits.mjs",
+                      "sha256":  "f179372ebcd34723cfca72bf718853beb5cfa05ea3a02e9137508d585eb94aa9"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-complete.mjs",
+                      "sha256":  "76e5053c7d912d9368b858a9132e6796546871ec8a25bc3dcce5718018026877"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-copy-edit-agent.mjs",
+                      "sha256":  "d8ec18a339675d252edf878cdfdb96cffb35ece471ec9008a792a302eb529db3"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-discard-manual-edits.mjs",
+                      "sha256":  "fa967fe27e442dd6c9b467713dd4a05c5d2189af03ad76b98bae9f6642cda545"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-inject.mjs",
+                      "sha256":  "a271c566293c63546936d91a129fc9ac712f2e804438a311a1fbcabd702871db"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-insert.mjs",
+                      "sha256":  "79f43958c8107178e0dce51c07c0de51dd23aa530fd3001a785344ffb1915447"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-manual-edit-evidence.mjs",
+                      "sha256":  "c5a36c361c435fc023e17be16a78aaf672adb48a6a74e8177cfa775592502638"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-poll.mjs",
+                      "sha256":  "36d41970e412da21fb8f354d4b43ddcc396a37c049616e02cdaab3a016a8dd18"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-resume.mjs",
+                      "sha256":  "5f7f88fb6cbcdd5dcf210ace22225dbbe43afee4cf9c7c0e1d8b5b3a1f4b79a2"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-server.mjs",
+                      "sha256":  "86f215fdd8b237dc94e8747a2d039cb2168c50d3a7b1a685d864256fa9fd969e"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-status.mjs",
+                      "sha256":  "fa8dd753c51d8659003b8250e62a3832bac86ab4e20f7f21afc3166f4fd6ee1b"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-target.mjs",
+                      "sha256":  "7f18323b89167804c2d9005d4766b159c81268c9f21daab9fdec24f513f25eb0"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/live-wrap.mjs",
+                      "sha256":  "c6cf666fd18e17b92d02aa2fd7e3ff948cfdee0177cccb58631b13329d2c3e6e"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/modern-screenshot.umd.js",
+                      "sha256":  "bb36665889124a0b6e15f16045265737449c3bdcf2712cdb08af3cfa01563e2b"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/palette.mjs",
+                      "sha256":  "6e09e15188033bfb8fe1f8de66f667c2b8b13d48cb55b1f50808330856e5fe16"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/pin.mjs",
+                      "sha256":  "43cf60991a233a84646eb73883461cb4184f680d903d26610f82db6e3e905fa5"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/serve-question.mjs",
+                      "sha256":  "fc97f36bce2dbe7420f5330fee0fe94484e4b35e3337c96389adee074b9ab33e"
+                  },
+                  {
+                      "path":  "skills/impeccable/scripts/surface-brief.mjs",
+                      "sha256":  "acd03bf38f6aef2b5d5287cefccacac018063b5b5356c99d191b3bd012f28ed3"
+                  },
+                  {
+                      "path":  "skills/impeccable/SKILL.md",
+                      "sha256":  "d61672b057c247542e8a4884d68794e5b0cc1198446d23aae0321180c23f1521"
+                  },
+                  {
+                      "path":  "skills/parallelize/SKILL.md",
+                      "sha256":  "26259a42af8090dd4efb2206ecbe8c89d593b168a7aa967dd35b06b679b458d1"
+                  },
+                  {
+                      "path":  "skills/rollover-session/SKILL.md",
+                      "sha256":  "8408c7c493e38aa0d21ef0813b5fe284ad89b4318529c940c74eb412a6df1a41"
+                  },
+                  {
+                      "path":  "skills/skill-audit/agents/openai.yaml",
+                      "sha256":  "7b162232da3e7fe2e02643a89145c5c029432beac92337403e755f97dadf7a02"
+                  },
+                  {
+                      "path":  "skills/skill-audit/references/audit-schema.md",
+                      "sha256":  "9e61fda9185cbb05554d3d06d728795e38d8be1a1ef0c14909de77fa2eec0159"
+                  },
+                  {
+                      "path":  "skills/skill-audit/scripts/audit-skills.cmd",
+                      "sha256":  "fc959ba4025ddc4800c7f8d30adb67e643f5d078817b72a5bd00c9467e782169"
+                  },
+                  {
+                      "path":  "skills/skill-audit/scripts/audit-skills.ps1",
+                      "sha256":  "43334bec85a726e1c2c59656e69f60ed2f978326dbcd2a6556d3cce923a6fdd4"
+                  },
+                  {
+                      "path":  "skills/skill-audit/SKILL.md",
+                      "sha256":  "866cc4c858fa973ac46b6201cc0c32a4ae09ab261ed7cd4b45e9c8d63cbbf4ea"
+                  },
+                  {
+                      "path":  "skills/source-command-brainstorming/SKILL.md",
+                      "sha256":  "697263ebab3c5a9006a684238f9f3a80a1ea5b048427e97931b4c9db40d26a07"
+                  },
+                  {
+                      "path":  "skills/source-command-build-explorable/SKILL.md",
+                      "sha256":  "bfe74be97a331a79c30ee85fea084da271f850bc3e5c1fcca40106980f9eb0ba"
+                  },
+                  {
+                      "path":  "skills/source-command-design/SKILL.md",
+                      "sha256":  "81b2e9e04a0e5320559d73704d56153687b8e2ad40db4853aa0be396fe304dab"
+                  },
+                  {
+                      "path":  "skills/source-command-design-review/SKILL.md",
+                      "sha256":  "fa0d15d1d947a2b5c973d42e700f66da45704c09f52358c6b4c7327c59f8c0bc"
+                  },
+                  {
+                      "path":  "skills/source-command-docket/SKILL.md",
+                      "sha256":  "94902dff177a848ac390a553bffe4394944ae09f71b3419b51a7a210d81cd094"
+                  },
+                  {
+                      "path":  "skills/source-command-hone/SKILL.md",
+                      "sha256":  "a5968f1418db08ad2d40cd50ff94fe0d6a0128d40cddc174c25c609535b97eb4"
+                  },
+                  {
+                      "path":  "skills/source-command-pathway/SKILL.md",
+                      "sha256":  "0f9f544b193971e236dd24814c0fa38552c6f92cd641bedb5a52ee91d1d2f112"
+                  },
+                  {
+                      "path":  "skills/source-command-probe/SKILL.md",
+                      "sha256":  "2754b14bba89e4656545f6115e01d91b63b995a37090f9c078c88c919978e39b"
+                  },
+                  {
+                      "path":  "skills/source-command-recon/SKILL.md",
+                      "sha256":  "f792a72ea671019ccb8bc67fed9cf649517a2169402f546a84b0d65822f1fa08"
+                  },
+                  {
+                      "path":  "skills/source-command-requesting-code-review/SKILL.md",
+                      "sha256":  "f4d73eafb337ef3d2354cb7b6fa895592a132fefa997b92006345d9cf1c805e6"
+                  },
+                  {
+                      "path":  "skills/source-command-rollover/SKILL.md",
+                      "sha256":  "58d4a7cd7cba43a72d5f1dc75a08977936198971774499df6f76229dfc22adab"
+                  },
+                  {
+                      "path":  "skills/source-command-solo-review/SKILL.md",
+                      "sha256":  "76b6ede2d7216de0d7f4bf5de28fc498e4f73fcf12b5740d6ce93f8094828ae8"
+                  },
+                  {
+                      "path":  "skills/source-command-spar/SKILL.md",
+                      "sha256":  "055c64c590ee4df781da67a686a53295ac54ee26fb7a064b41bbff666a16b685"
+                  },
+                  {
+                      "path":  "skills/source-command-spec/SKILL.md",
+                      "sha256":  "c4f4653729d63bc7b4d4ef0ec7708c8dec659eeaea823d7a596056b486e39e3a"
+                  },
+                  {
+                      "path":  "skills/source-command-systematic-debugging/SKILL.md",
+                      "sha256":  "977d9f19fc24331e4f2f2153fb52d42f95bc00f137bcc2871599795eadb6f905"
+                  },
+                  {
+                      "path":  "skills/source-command-task/SKILL.md",
+                      "sha256":  "0e666f3944679edd9a9199e4d574dec25838bdde8a094d8a82ea0eb90bffd841"
+                  },
+                  {
+                      "path":  "skills/source-command-test-driven-development/SKILL.md",
+                      "sha256":  "4eb62b42b6ca2ed55e6c9e7e93e4d5bbc148d41c9bd7a1054cd4d1ac0f44163b"
+                  },
+                  {
+                      "path":  "skills/source-command-ultra-skill/SKILL.md",
+                      "sha256":  "51df0490891bf99e71cd2bb4d5ba3701ed1b3c73b6f594d3eb1d172a0c03b486"
+                  },
+                  {
+                      "path":  "skills/source-command-using-superpowers/SKILL.md",
+                      "sha256":  "17ac80975d3760c3ccac5e122a7c545bbcac8714f41b1193cd8541856c2dcadb"
+                  },
+                  {
+                      "path":  "skills/source-command-verification-before-completion/SKILL.md",
+                      "sha256":  "6239e70f50e52d9b3013f15e6bc6dc5759656e5ffbf52ce293b140a16cbfaee3"
+                  },
+                  {
+                      "path":  "task-hooks/config/claude-hooks.example.json",
+                      "sha256":  "1441f4a201d9a81edb49b2435fc6dd967a314be9cbdbce93918b34561b77dd3e"
+                  },
+                  {
+                      "path":  "task-hooks/config/codex-hooks.example.json",
+                      "sha256":  "a60e44ac62ea73f0e9baf45240d46eb7e843fd6566e7f9e4d3d827c9bb3ed068"
+                  },
+                  {
+                      "path":  "task-hooks/config/cursor-hooks.example.json",
+                      "sha256":  "19bfecd0895abb8b73f5a6debb53ad411dc1bf12b4ce4ab793fe091ce8840195"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/continue-dispatch.js",
+                      "sha256":  "c0cf1c8e2b83688684c175e60422117fa1b2adc75c64f5e76b1eada02a905797"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/allow-tags.js",
+                      "sha256":  "c041634a1b855bc85447b3c76bacef3cec98b61eda28901a1570dac8dc98ec6d"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/audit-bash-log.js",
+                      "sha256":  "7df53549d66de6d2a1fda4f926cb5ff9088fc98446583813d12baa39f45ab2e6"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/auto-schedule-codex-poll.js",
+                      "sha256":  "c98ee156a05c2b57f286f9d5de6a6a18b2d7933970ebfed33bfbd80c30e0243d"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/block-ai-reference.js",
+                      "sha256":  "97455f48837ef90499732818a60e000264d09be886b7341d9e84af7841cf0be9"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/block-dangerous-bash.js",
+                      "sha256":  "56527b3a584bfdd4cbf7fab0ef0646496ce2c31e784d80134e8946f8c09541da"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/block-obsidian-delete.js",
+                      "sha256":  "d3850b3adc88d3a985029c5fefec38b2801b7639ccd87f62607cc6605cfdf994"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/block-secret-dump.js",
+                      "sha256":  "293c0e2b34b6695648da6f4c8edca951b9268fd46c95b5cf8562d91d83966a65"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/block-sensitive-file-read.js",
+                      "sha256":  "638de97827113612d3b2f1820cc396b0b2c3fd2ea596456221b6af958b603191"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/block-visible-powershell.js",
+                      "sha256":  "524d5f65c0a623f809715a50bb3b8678b60b2c5f1ac8b5caaa54e739a64b3075"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/bypass-incident-log.js",
+                      "sha256":  "45562218f07a8fff91f34453368244f1eff8acb730090f1c77e23e8ccda15e21"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/check-secret-exposure.js",
+                      "sha256":  "d2074bd4b7c8240bdadbc1ac79de07372f1e5efbcd48e2e19e87780da57d8881"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/claude/dep-audit-gate.js",
+                      "sha256":  "b8208d8aae126171d33c33fd7d9dabeecc7d61b9079defa944affcb612bcd9b8"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/claude/gates-config.js",
+                      "sha256":  "8d876b7ab56082762970c39dbead99fba5c08aae37b5085b60f8cbcbb23e7a90"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/claude/test-green-gate.js",
+                      "sha256":  "f8b0316a252afd2a1f30e2a1951ec38085253f3d8456e3f07f59bac91237eb2c"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/concurrent-edit-lock.js",
+                      "sha256":  "cac34c0e5a2a793fd6c492835b1998a52270113b05cbba18206eb2606c9ce6ad"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/cursor/auto-schedule-codex-poll.js",
+                      "sha256":  "075f8565b0e75fbfed495b2eaf4cd4f8746f59334730d1951e56f491eaf41e4b"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/cursor/block-dangerous-bash.js",
+                      "sha256":  "404b0bc950941d04385dc6bfae114e4df252389b8de56788eaec74e0d30204fc"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/cursor/block-obsidian-delete.js",
+                      "sha256":  "d3850b3adc88d3a985029c5fefec38b2801b7639ccd87f62607cc6605cfdf994"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/cursor/check-secret-exposure.js",
+                      "sha256":  "b2e45979cdbf5010ccafda79e24fff4e733271e3841ba83991f4219e12655569"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/cursor/check-session-size.js",
+                      "sha256":  "5559f08f7596829487792841e0c8155928cc8c7171da62624314518a594c21d1"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/cursor/format-on-edit.js",
+                      "sha256":  "e5f1548ea9b949b033f26c50ea41d4195080f7d6dc0c7969088bba287b1bdece"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/cursor/protect-firmware.js",
+                      "sha256":  "56d17bb167e362cc407b99a996efa99a36b1b2c0f97ab622185578191ba02c11"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/cursor/scrub-secrets-from-output.js",
+                      "sha256":  "692ce1296da71927c0679c5df2d728dcb9e0693a512164e29fbed5bae6a7d79f"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/format-on-edit.js",
+                      "sha256":  "20f8de06db760884d2eb80a315fb0fa80f1d84e24c3b5e9ef4d280b250bf8977"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/gates-config.js",
+                      "sha256":  "8d876b7ab56082762970c39dbead99fba5c08aae37b5085b60f8cbcbb23e7a90"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/guard-bulk-delete.js",
+                      "sha256":  "d9fcbe6a00a2ec8b8a6635e139ea7741b150cd4c757b2ae524c1faa1c566a490"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/guard-env-mutation.js",
+                      "sha256":  "9809281e06a585cf6df1103a76e836e5d6c3df0ef35226175252fa84c27d024d"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/hook-state.js",
+                      "sha256":  "6411055c8d80a3bf81d295d59b5e59a54b177095b65e722f7e2ba4917fcb1bb5"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/impeccable-run-log.js",
+                      "sha256":  "c517b9df16df1c8f6cef2abca46781d081cdf9cd34818a4536a3746b0c826bce"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/keep-going.js",
+                      "sha256":  "6619ad3e7d6a9acb227138479f5ec563f6428aa59f916727e438caf9a3129307"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/protect-ai-reference.js",
+                      "sha256":  "b1163a5173193bf5c82e35f5edacae74c02289f9d94fbaac19594dc2bfdde68b"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/protect-authored-docs.js",
+                      "sha256":  "b88b1d1972f405e7d3e63ba16cb66ff1430668120735fc117cd1437eab9f838f"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/protect-firmware.js",
+                      "sha256":  "56d17bb167e362cc407b99a996efa99a36b1b2c0f97ab622185578191ba02c11"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/protect-security-config.js",
+                      "sha256":  "68211049a48cff5446d86f78363154d0354e797fe3aafb16309aad161db2a94a"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/scan-output-for-secrets.js",
+                      "sha256":  "4385b07eaf5569b55fd747155fb50d7b614b51296098116c8c96d6e98ee01d37"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/scan-write-for-secrets.js",
+                      "sha256":  "166eb3b2647db629f5ae13c1c3deb6c5a13c1d1475c20232f10efacfa614fd01"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/security-checks-fast.js",
+                      "sha256":  "60b2268ee89ffd6abffcf57c8f2de2e01b612b62eb6fdfa124c98dba95ebcf63"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/SOURCE-MAP.md",
+                      "sha256":  "bea72794fbdd3425fabebfe4ebd0ebe7b0e2f6d4aa421caed63e9ee65baebd2b"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/legacy/warn-large-read.js",
+                      "sha256":  "f39c409235dae102895c5e3db8af8f8c4361e24bc373616027b6bb0244375b8d"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/lib/completion-loop.js",
+                      "sha256":  "7d423c7d6a15e29d8e859f175273d8b0d42bdf319e89d70499faa63261c7e4c6"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/lib/lifecycle-diagnostics.js",
+                      "sha256":  "b1ec86e49933b9a2d81a797faee7e96b038191cf9b6e25e1c50d770b00f29593"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/lib/notifications.js",
+                      "sha256":  "7c01a5ae7e9a5a1f98326cc1f40f5e12b54facb9d5dbf0aaf41e2fe9d07f2a54"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/lib/task-state.js",
+                      "sha256":  "96373aa122be55af07a8dcb8429625154e46bf79821a5b92f1ab01b1016cdee7"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/lib/toast-worker.js",
+                      "sha256":  "7cc223032204dd067d4e25ba47440858934a3180d51c8b1247bfc1b53f06b6f9"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/lib/usage-limit.js",
+                      "sha256":  "520414e671254f3791851d281bccae71601f4f52564cfa7365f2472943997a76"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/security-dispatch.js",
+                      "sha256":  "1680d905107627e9668849e4aa3b9916d427704e03e6c8335fa64a66fd85b78c"
+                  },
+                  {
+                      "path":  "task-hooks/hooks/task-state-dispatch.js",
+                      "sha256":  "7c397bcbac91ea39a09a6662b664a18629f9a51e898deb0e187c04618c3a0737"
+                  },
+                  {
+                      "path":  "task-hooks/README.md",
+                      "sha256":  "953b042b7895ccae0adb7365a86c5dae70ba26ba6bc810114d92285633cdc27d"
+                  },
+                  {
+                      "path":  "task-hooks/templates/TASK.md",
+                      "sha256":  "004392d8383bc74424b84f04cdd406115a72207fd0339c49a325a6389d43ebe7"
+                  },
+                  {
+                      "path":  "task-hooks/tests/config-contract.test.js",
+                      "sha256":  "0ffb2c9cace336ef15f26c0b6e31a9fd54496d0389a52180c06ae62f7cfc7b49"
+                  },
+                  {
+                      "path":  "task-hooks/tests/continue-dispatch.test.js",
+                      "sha256":  "6f308222a1418eb330dd7a5856ac7b835e85003e5dc6fdbd7e00f1faf5eece86"
+                  },
+                  {
+                      "path":  "task-hooks/tests/Migrate-TaskState.Tests.ps1",
+                      "sha256":  "d5f348711173b69568f5a083c65cf7a5006572bc1481060371bb24159984a804"
+                  },
+                  {
+                      "path":  "task-hooks/tests/notifications.test.js",
+                      "sha256":  "9aa57622c26ec89fbd62a2cc23c615f49fe0a013d3c8be01eda7d37abee2727b"
+                  },
+                  {
+                      "path":  "task-hooks/tests/portable-legacy-modules.test.js",
+                      "sha256":  "2c147b91336cb11967f3d63ca4a57fd898db9cd4a31ebd93fcddbd2df854241e"
+                  },
+                  {
+                      "path":  "task-hooks/tests/Run-All.ps1",
+                      "sha256":  "290728786541c912dd2c41e441b1894fc8df1f64494ddba18b1bc76be281b898"
+                  },
+                  {
+                      "path":  "task-hooks/tests/security-dispatch.test.js",
+                      "sha256":  "cf6aa7877c15af66e8dcb05018d409a53d6b8886501e8ebf6ac8afa3c9b865d6"
+                  },
+                  {
+                      "path":  "task-hooks/tests/task-state-dispatch.test.js",
+                      "sha256":  "b7e1f6f499e538363ccb2493c3190ea3f1d44581624e77a839fb8135bcb5dc16"
+                  },
+                  {
+                      "path":  "task-hooks/tools/Migrate-TaskState.ps1",
+                      "sha256":  "153c5a342b8c0f94eaf8ac5145050d899a9c37d587cd29718a59130f5b63aff5"
+                  },
+                  {
+                      "path":  "templates/.env.example",
+                      "sha256":  "14134afc7db61c52b05c18946421dbedd5094bd18dfcb5b3d8cb7a255da25b16"
+                  },
+                  {
+                      "path":  "templates/AGENTS.md",
+                      "sha256":  "5a8ead57e0f726f7a6fda1ef059d404d61d05eca11330fdf019d02697e0d66cd"
+                  },
+                  {
+                      "path":  "templates/BACKBURNER.md",
+                      "sha256":  "40f5acc2eb99d93be0b4e5c4a5b5df6f8aac1e2726f315d3f3573d59180aa8a6"
+                  },
+                  {
+                      "path":  "templates/CLAUDE.md",
+                      "sha256":  "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+                  },
+                  {
+                      "path":  "templates/cursor-project-contract.mdc",
+                      "sha256":  "fb01616330b92f8d7a1ca101aec6ba408413e9efaa34a2426c70b9900b1828b9"
+                  },
+                  {
+                      "path":  "templates/data-manifest.schema.v2.json",
+                      "sha256":  "4cea7eee6616ba128eff7b37fe22fe788c903ceb05a4ff28ea694ff11956364a"
+                  },
+                  {
+                      "path":  "templates/data-manifest.yaml",
+                      "sha256":  "0c0bfc18802f164c00d1bd36d76b26fe50fb0b1fcde9a39073392f5c1c79eef9"
+                  },
+                  {
+                      "path":  "templates/DESIGN.md",
+                      "sha256":  "221d6473f1f26c08b84b2c25649d0baf620127651c74a81103cbf7f4d4fcb1a0"
+                  },
+                  {
+                      "path":  "templates/dvc-data-manifest.asset.yaml",
+                      "sha256":  "a5add1993ad1fc215bcc452b7122fb1a5fdff4fad202ba24ef18c8c2ccbf25c0"
+                  },
+                  {
+                      "path":  "templates/DVC-PROJECT-DATA.md",
+                      "sha256":  "bfb49e31c7c6b8ce21957cdeca9a2af21de750e2160cb66f11452369b97c8751"
+                  },
+                  {
+                      "path":  "templates/gitleaks/.gitleaks.toml",
+                      "sha256":  "345a5d3c38bc709a9f0312245d6241890ea216a5c1c195acecb7700a9b6132ce"
+                  },
+                  {
+                      "path":  "templates/gitleaks/gitleaks.yml",
+                      "sha256":  "119775586cd0d192e66eff7e6e77e603d59b96424459a9a175794c80de335357"
+                  },
+                  {
+                      "path":  "templates/gitleaks/pre-commit",
+                      "sha256":  "9a2433f8a1151e59060a5c82a2b19896b9b6601e7889d5550343a7eb67d37755"
+                  },
+                  {
+                      "path":  "templates/LOG.md",
+                      "sha256":  "a8ba7d6b54020a04597fec528a95752a6bec50856b24c1b5bda4ba6277bb2ab3"
+                  },
+                  {
+                      "path":  "templates/MAP.md",
+                      "sha256":  "625f1185495ca734c5c1df8d4734c9c1ecaf9106cac87cc72138aad3aaca91fd"
+                  },
+                  {
+                      "path":  "templates/MEMORY.md",
+                      "sha256":  "5a615922e2d568ab2f64e6fad7bb879c852c9571e156a980e70865f14dcd1e0b"
+                  },
+                  {
+                      "path":  "templates/PRODUCT.md",
+                      "sha256":  "4bea1d5707ce2a379366478bca77ffd7bdcca84c7ce05936e451c17a8d852ed8"
+                  },
+                  {
+                      "path":  "templates/secret-manifest.json",
+                      "sha256":  "cc23a36494f3aee10144a9246c6635414b13990bc13988538a83d99f85d169d6"
+                  },
+                  {
+                      "path":  "templates/skill-projection-manifest.json",
+                      "sha256":  "b13d6a83a670ba864f1af25857ac10346bd0363779386785d98ee0496c90e898"
+                  },
+                  {
+                      "path":  "templates/skills-manifest.json",
+                      "sha256":  "be85c656e76f124d7a38623945f51e08a1a43ac379c2bc651950f9671c954c45"
+                  },
+                  {
+                      "path":  "templates/STATUS.md",
+                      "sha256":  "a181b5be69412d40354b2ab7246113bf8995fac34b909bce310917c3b7cee1e7"
+                  },
+                  {
+                      "path":  "templates/TASK.md",
+                      "sha256":  "7284271fa0462f73f50709016100269ad532bc531d3084e90cfd6f1c33f3f796"
+                  },
+                  {
+                      "path":  "tools/agent-worktree.cmd",
+                      "sha256":  "18e2b9f7ed52ffbaf08cfa5c8939ebcd7be92d02dafd19aca6ee0c85a95dcfe8"
+                  },
+                  {
+                      "path":  "tools/agent-worktree.ps1",
+                      "sha256":  "b30ab35ea4cfd424ea2014a0c60f2982e63ce2390f424fc2dd0692811b2760ab"
+                  },
+                  {
+                      "path":  "tools/Approve-ClaudeSkillAdapter.ps1",
+                      "sha256":  "e9d394668d8a0c36cfad239dcd86b1e502aced5d4a08abcef9f2218999f30e6f"
+                  },
+                  {
+                      "path":  "tools/Backup-AgentWorkspace.cmd",
+                      "sha256":  "7bb6930ecbb0ebd95dfc86e563ed4f5d7f173556e68bce81969639fddce9029d"
+                  },
+                  {
+                      "path":  "tools/Backup-AgentWorkspace.ps1",
+                      "sha256":  "d18be5e6d0b84546699e342da5d7338ed84abe1ea473fe3f018860b1f5e76aab"
+                  },
+                  {
+                      "path":  "tools/Backup-AgentWorkspace.test.ps1",
+                      "sha256":  "48fb40989573d03070bc92bed61cb7d412c6066c4fe44e9fdd2913c5c397e9fa"
+                  },
+                  {
+                      "path":  "tools/Build-SkillsDocket.cmd",
+                      "sha256":  "9064adf62fea5fa41d4828347d2cd86f3fedb92fef7458b6785f7ae739b00b4f"
+                  },
+                  {
+                      "path":  "tools/Build-SkillsDocket.ps1",
+                      "sha256":  "7fb781b7835ec73d8411721165b538eb80dd3f1f9035abb40bed87b790a16eae"
+                  },
+                  {
+                      "path":  "tools/Build-SkillsDocket.test.ps1",
+                      "sha256":  "6fbbffb3e11d2c715120afe066d6d6f0f9d2adad01df708507669e6ac02f32aa"
+                  },
+                  {
+                      "path":  "tools/bws-command-allowlist.json",
+                      "sha256":  "b35006ab185b83ddd3dd0ce28b46ad6c6ae3bedfbba9a438fe40742d67ee4c8d"
+                  },
+                  {
+                      "path":  "tools/BwsCredentialStore.psm1",
+                      "sha256":  "9c6b5640e4576c63eda71d6fb76abe22d60927f79ce6f0cc17d4e98ba6aaaec6"
+                  },
+                  {
+                      "path":  "tools/BwsCredentialStore.test.ps1",
+                      "sha256":  "55533c41059d04886e3f77f20d4694b21bd601aec73bb41d44cef2d0f6337a51"
+                  },
+                  {
+                      "path":  "tools/Clear-StaleAgentProcesses.ps1",
+                      "sha256":  "c5e70b0c4657d3a72de86e6dc4160d8f0a5eeb8a13f0774b8baaec28497bcad8"
+                  },
+                  {
+                      "path":  "tools/Clear-StaleAgentProcesses.test.ps1",
+                      "sha256":  "a959593f2fe7e8ebe38a2a06fc94a9c42bec7c25cc73eceaccc95b10c86b3809"
+                  },
+                  {
+                      "path":  "tools/Convert-HumanGuide.ps1",
+                      "sha256":  "7538b7656e1f90c06c2699a968b0680c8f0e089661c9281d18aeee82371ba810"
+                  },
+                  {
+                      "path":  "tools/Convert-HumanGuide.test.ps1",
+                      "sha256":  "4ca0471f7332c1bee913b6f89c1a168dfc09752f336e72ada4407322e6cdafe5"
+                  },
+                  {
+                      "path":  "tools/credential-command-allowlist.json",
+                      "sha256":  "4e392e91e7fb4ec3c68be43f6f7de88f17a24e22ba64b4acc396880a075d68cf"
+                  },
+                  {
+                      "path":  "tools/credential-command-policy.json",
+                      "sha256":  "50fb9b7c7b4acfb97997813f457cf8b019d0ac3ed313bf7a7c21e0086b27beea"
+                  },
+                  {
+                      "path":  "tools/Enable-Gitleaks.cmd",
+                      "sha256":  "1b49c953bc6eb7a85e11e84eb6cd7f411423bd776cc0e04aa6a23373da43c02f"
+                  },
+                  {
+                      "path":  "tools/Enable-Gitleaks.ps1",
+                      "sha256":  "ac57888815da32c961e0b7df647b08440b4e6f3c7accca7e3189258804219ea6"
+                  },
+                  {
+                      "path":  "tools/Enable-Gitleaks.test.ps1",
+                      "sha256":  "53ed6583ae85a5ee67ff49c0f2002fe80ecb88049972ff7f11f1e2584816e49d"
+                  },
+                  {
+                      "path":  "tools/Ensure-AgentProject.cmd",
+                      "sha256":  "bc925b4339547659f8c7825a357f9b9597ce3042e075dfe2e5cb77987119ef75"
+                  },
+                  {
+                      "path":  "tools/Ensure-AgentProject.ps1",
+                      "sha256":  "5f1a22718a2bfe229879bc200c0a20991823e2cbba013c2c7e5decf83f3c8c09"
+                  },
+                  {
+                      "path":  "tools/Export-HarnessBackup.ps1",
+                      "sha256":  "11b2630e22783ec4353a751ebf5f02abfff649185ebb2867aae2710f738b8a49"
+                  },
+                  {
+                      "path":  "tools/Get-EnvironmentVariableMetadata.cmd",
+                      "sha256":  "680e25faed143d62e0ca372f573382e7da054b4631ed62b8d83117d8324deeaa"
+                  },
+                  {
+                      "path":  "tools/Get-EnvironmentVariableMetadata.ps1",
+                      "sha256":  "a6d946985f043b1f7d974f3085c44e451de9efcf64149ed77cd361b56af358ea"
+                  },
+                  {
+                      "path":  "tools/Get-EnvironmentVariableMetadata.test.ps1",
+                      "sha256":  "703a91e22682e495eedf2c68682bb588a21b72d0f32cd6fc67ac64e50c7a2220"
+                  },
+                  {
+                      "path":  "tools/Initialize-AgentProject.cmd",
+                      "sha256":  "18523262b2a148d2829666e2af0ca7b1663a42661a9caee83da034d9167778dc"
+                  },
+                  {
+                      "path":  "tools/Initialize-AgentProject.ps1",
+                      "sha256":  "ff06ffea53e6fdb119a1c9e9f2b34f3154b4c7c1771f1a91da1f8b37fcfb5eb4"
+                  },
+                  {
+                      "path":  "tools/Install-AgentBackupTask.ps1",
+                      "sha256":  "829ae2e88245bae6f0860f4d53391c3fd89ca4a7fdbd00fb77703761f2972de5"
+                  },
+                  {
+                      "path":  "tools/Install-AgentBackupTask.Tests.ps1",
+                      "sha256":  "7533570c24c1fa559678667901cf6a726518366c00d91b60267ff04793403261"
+                  },
+                  {
+                      "path":  "tools/Install-StaleAgentCleanupTask.ps1",
+                      "sha256":  "9221317e73432402f7535fbf20a4e80a0f876995ed464ebdebb05060a221fa27"
+                  },
+                  {
+                      "path":  "tools/Invoke-WithBitwardenSecret.Core.psm1",
+                      "sha256":  "97098c27eff80581c77e83d6dc053686041d124dfb8957e373ccd1f4aff99aae"
+                  },
+                  {
+                      "path":  "tools/Invoke-WithBitwardenSecret.ps1",
+                      "sha256":  "7008e518f21f22eddae4a325513af03859c3c1a8bf7ab3800b27d12b68ce5e24"
+                  },
+                  {
+                      "path":  "tools/Invoke-WithBitwardenSecret.test.ps1",
+                      "sha256":  "2dfda53df14516f0d9ceb2d0b4ec3db16bb0a0ca4071462a9aedadd5308cb48c"
+                  },
+                  {
+                      "path":  "tools/Manage-Harness.ps1",
+                      "sha256":  "32bc7c39bef7abe04fc73e6d9b89e54d0bbaacba299b9560cd49222e45f0f8a6"
+                  },
+                  {
+                      "path":  "tools/Manage-Harness.test.ps1",
+                      "sha256":  "f19c2fef1058dbd79f4b2954e577295a296861847bd5879124fa2940fb6f8840"
+                  },
+                  {
+                      "path":  "tools/New-AgentRepository.cmd",
+                      "sha256":  "e8d57f31125c995e2430e8eae44023ce9823762a2fea8d5d95d4bc9906ce236e"
+                  },
+                  {
+                      "path":  "tools/New-AgentRepository.ps1",
+                      "sha256":  "59aec579edadcdb39c0382dc7596ca56d6c340122f61b0ec15a8046f07d47f82"
+                  },
+                  {
+                      "path":  "tools/Project-Bootstrap-Compatibility.test.ps1",
+                      "sha256":  "2972eb16032b1bb67f63161168295fd68ab5c315ec441747fcc683378945cf06"
+                  },
+                  {
+                      "path":  "tools/Repair-QuickAccess.cmd",
+                      "sha256":  "0efe577bd7956256dbcd7646a7f7bc9787155d35c3204c625e69955d914eea4e"
+                  },
+                  {
+                      "path":  "tools/Repair-QuickAccess.ps1",
+                      "sha256":  "b98f6f08bbe1e25d90e1dd9dc48f5914d1d8849688c14228ac89baad121ea5c4"
+                  },
+                  {
+                      "path":  "tools/Restore-AgentWorkspace.cmd",
+                      "sha256":  "63181041f2639fc9c66b98e185e010ee2a47fafcb55c2422d8a2771dbfabcfef"
+                  },
+                  {
+                      "path":  "tools/Restore-AgentWorkspace.ps1",
+                      "sha256":  "a089fe699e15d23dfdd7ba0e2f66dfba1b2ef6e5ae689ec8460442d120d067f5"
+                  },
+                  {
+                      "path":  "tools/Restore-AgentWorkspace.test.ps1",
+                      "sha256":  "bb60608182f8586a44b7abb99e37a97787a9c9a718b16e3b52d160034c4b9d57"
+                  },
+                  {
+                      "path":  "tools/Set-BwsMachineToken.ps1",
+                      "sha256":  "992a8be63e3dbc20d63b063cffcb3c3ad98397a19c5efb31f245851e9a6d831f"
+                  },
+                  {
+                      "path":  "tools/sqlite_project_data.py",
+                      "sha256":  "ce4f53b300a67dd76e5345eae32c20f2d0e2738d56b3581809f3e637dbb7066a"
+                  },
+                  {
+                      "path":  "tools/Sync-AgentRepositories.ps1",
+                      "sha256":  "88dd573e186ea12881004abc8703288e51eb5545d42edebdfe99fe1b3f84568a"
+                  },
+                  {
+                      "path":  "tools/Sync-AgentRepositories.test.ps1",
+                      "sha256":  "762fe03523399df366e0c3801073b3b5ffccf4d165dc0f47b1e650e62928fc8f"
+                  },
+                  {
+                      "path":  "tools/Sync-ClaudeSkills.ps1",
+                      "sha256":  "9adc8a9a73cc0e63f52ed7c4f0fe301e8f0149bc81608677d9eb7c8e2e20aa5d"
+                  },
+                  {
+                      "path":  "tools/Sync-DvcProjectData.ps1",
+                      "sha256":  "37aa3b1c28c81c7660a9c9af235822a1b9464a3758b8f4005c629f9c274c09ff"
+                  },
+                  {
+                      "path":  "tools/Sync-DvcProjectData.test.ps1",
+                      "sha256":  "167c4d4eb78152e8f5a21c1a05ce114d569c0b12b9eb245d9a5d54ce7bf65bb2"
+                  },
+                  {
+                      "path":  "tools/Sync-PortableContract.ps1",
+                      "sha256":  "bc17850d3b440a4f7d206fb2559e9fac526d34dd4927a9dbc2d71d0c9ae7bf67"
+                  },
+                  {
+                      "path":  "tools/Sync-PortableContract.test.ps1",
+                      "sha256":  "30670ce454f0d1158688cd9a591dc2dff7717a68ab536b58f54d2d05a31d1192"
+                  },
+                  {
+                      "path":  "tools/Sync-ProjectSkills.cmd",
+                      "sha256":  "3dccb9bcd08aed155dcdd02d61f5bdd948667533bd2f8c3dac5e9fe7a51be81c"
+                  },
+                  {
+                      "path":  "tools/Sync-ProjectSkills.ps1",
+                      "sha256":  "10b7a47219be666541a3bee1578d94ecbf2835b17f3bb2f118a7f917f474724f"
+                  },
+                  {
+                      "path":  "tools/Sync-SqliteProjectData.ps1",
+                      "sha256":  "8b3f199f30b827b182be6a2f3a90ae31e06bc36bc267ed1cf95111b4fbb835e5"
+                  },
+                  {
+                      "path":  "tools/Sync-SqliteProjectData.test.ps1",
+                      "sha256":  "731ae98a94e8e608bda092452dc646c6ecd94d3b9032563640eaba43b3663981"
+                  },
+                  {
+                      "path":  "tools/Test-AgentProjectState.cmd",
+                      "sha256":  "950e789584a062e4017506e9d4fe33692934ea7aec6126a5f50b7b9e5e14ea57"
+                  },
+                  {
+                      "path":  "tools/Test-AgentProjectState.ps1",
+                      "sha256":  "9fa42e7072033203e90fa9611ef86a686387feb24ab82822c2a305d9fc29f1a4"
+                  },
+                  {
+                      "path":  "tools/Test-AgentProjectState.test.ps1",
+                      "sha256":  "dbc27647609adde044c634274b814448078c9ed1c7a2eed9eae6403449f04f8c"
+                  },
+                  {
+                      "path":  "tools/Test-DataManifest.ps1",
+                      "sha256":  "63b3f500e03f0043762b9e7f9cc2d5aa73c1d9da282b03423344901424667a6b"
+                  },
+                  {
+                      "path":  "tools/Test-DataManifest.test.ps1",
+                      "sha256":  "835479c5de67340cc461b143c806b5efd81250964a70c9536535ee3854670530"
+                  },
+                  {
+                      "path":  "tools/Test-ExecutableDiscovery.ps1",
+                      "sha256":  "352d4eea09a82df54cabaf144d9ebf06b59104300b0a3c2e126246c5d1c4a101"
+                  },
+                  {
+                      "path":  "tools/Test-ExecutableDiscovery.test.ps1",
+                      "sha256":  "a6be511955b780d08dec4507af6e638ad06126fe8ce5403370942e7f4a6a3117"
+                  },
+                  {
+                      "path":  "tools/Test-HarnessSetup.cmd",
+                      "sha256":  "8b4cd01b6f4a7796e1fd25c18f267b46edd31c09b80128cc2a2986a71b1bce51"
+                  },
+                  {
+                      "path":  "tools/Test-HarnessSetup.ps1",
+                      "sha256":  "852ba2bcce2b2d7ddb5b1aebdcc8a95ef21723819f0ba069e947f362db5c357f"
+                  },
+                  {
+                      "path":  "tools/Update-HarnessSetupStamp.cmd",
+                      "sha256":  "f38c8f41700e40fb88beb8511deafa731527b1feb916ebccf8375617704e35fd"
+                  },
+                  {
+                      "path":  "tools/Update-HarnessSetupStamp.ps1",
+                      "sha256":  "aca747f5ca99ed5fc604cf2e74744405276328be7477ae7519b040f8e352f98e"
+                  },
+                  {
+                      "path":  "tools/Update-SecretManifest.cmd",
+                      "sha256":  "78d76f9009aae4cf3209ce2f0fe900a34ab9b2085bdab0debf3dd8c052c71ae4"
+                  },
+                  {
+                      "path":  "tools/Update-SecretManifest.ps1",
+                      "sha256":  "6881c78a89db568cab0b24612f85df6393527e887757263018580eaf918794e3"
+                  },
+                  {
+                      "path":  "tools/Update-SecretManifest.test.ps1",
+                      "sha256":  "513cf4c6266270e28e261e15ad14fdd38343e478775dec23054030ef07d502bd"
+                  },
+                  {
+                      "path":  "WORKTREE-PROTOCOL.md",
+                      "sha256":  "5e63a5758575384cb2af529fbdaec6cfaf26cb7f7a49ae9370a890af9a498595"
+                  }
+              ]
+}

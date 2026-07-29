@@ -1,0 +1,17 @@
+/* theme: dark-interactive (ported from bluedusk) */
+/* GitHub-dark canvas with blue/green/orange accents — the default Pro dark theme. */
+:root{
+  --bg:#0b0e14;--bg-soft:#080a0f;--surface:#131720;--surface-2:#1a1f2e;
+  --border:rgba(255,255,255,.07);--border-strong:rgba(255,255,255,.18);
+  --text-1:#e6edf3;--text-2:#8b949e;--text-3:#6e7681;
+  --accent:#58a6ff;--accent-2:#a371f7;--accent-3:#3fb950;
+  --good:#3fb950;--warn:#d29922;--bad:#f85149;
+  --grad:linear-gradient(135deg,#58a6ff,#a371f7 55%,#3fb950);
+  --grad-soft:linear-gradient(135deg,#131720,#1a1f2e);
+  --radius:12px;--radius-sm:8px;--radius-lg:18px;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+  --shadow-lg:0 24px 60px rgba(0,0,0,.55);
+  --font-sans:'Inter','Noto Sans SC',-apple-system,sans-serif;
+  --font-serif:'Inter',Georgia,serif;
+  --font-mono:'JetBrains Mono',monospace;
+}

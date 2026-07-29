@@ -1,0 +1,18 @@
+/* theme: editorial-light (ported from bluedusk) */
+/* "The Lucid Gallery" — luminous clarity, ghost borders, ambient wide-blur shadows, tech-forward accents. */
+:root{
+  --bg:#f9f9ff;--bg-soft:#ecedf6;--surface:#ffffff;--surface-2:#f2f3fc;
+  --border:rgba(192,199,212,.15);--border-strong:rgba(192,199,212,.35);
+  --text-1:#191c22;--text-2:#414752;--text-3:#747a87;
+  --accent:#0060aa;--accent-2:#733fc4;--accent-3:#006e21;
+  --good:#006e21;--warn:#c48f00;--bad:#ba1a1a;
+  --grad:linear-gradient(135deg,#0060aa,#733fc4 55%,#006e21);
+  --grad-soft:linear-gradient(135deg,#f2f3fc,#ecedf6);
+  --radius:12px;--radius-sm:8px;--radius-lg:18px;
+  --shadow:0 2px 32px rgba(25,28,34,.04);
+  --shadow-lg:0 8px 48px rgba(25,28,34,.08);
+  --font-sans:'Inter','Noto Sans SC',-apple-system,sans-serif;
+  --font-serif:'Space Grotesk',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Space Grotesk','JetBrains Mono',monospace;
+}

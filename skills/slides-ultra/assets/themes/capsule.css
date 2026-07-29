@@ -1,0 +1,17 @@
+/* theme: capsule */
+:root{
+  --bg:#F5F5F0;--bg-soft:#EFEFE9;--surface:#FFFFFF;--surface-2:#EFEFE9;
+  --border:rgba(30,30,30,.85);--border-strong:rgba(30,30,30,1);
+  --text-1:#1A1A1A;--text-2:rgba(26,26,26,.7);--text-3:rgba(26,26,26,.5);
+  --accent:#E85D4E;--accent-2:#A06CE8;--accent-3:#8BB4F7;
+  --good:#A8E6CF;--warn:#F2D160;--bad:#E85D4E;
+  --grad:linear-gradient(135deg,#E85D4E,#A06CE8 55%,#8BB4F7);
+  --grad-soft:linear-gradient(135deg,#F5B895,#F5F5F0 55%,#C5B5E0);
+  --radius:9999px;--radius-sm:9999px;--radius-lg:2rem;
+  --shadow:6px 6px 0 rgba(26,26,26,.08);
+  --shadow-lg:12px 12px 0 rgba(26,26,26,.08);
+  --font-sans:'Space Grotesk','Noto Sans SC',sans-serif;
+  --font-serif:'Bodoni Moda','Noto Serif SC',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Space Grotesk','JetBrains Mono',monospace;
+}

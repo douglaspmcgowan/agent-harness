@@ -1,0 +1,18 @@
+/* theme: binary-architect (ported from bluedusk) */
+/* Organic brutalism / hacker-elite: void-black, neon signals, monospaced precision, sharp 0px corners. */
+:root{
+  --bg:#0e0e0e;--bg-soft:#000000;--surface:#131313;--surface-2:#201f1f;
+  --border:rgba(72,72,71,.2);--border-strong:rgba(72,72,71,.4);
+  --text-1:#e8e8e8;--text-2:#adaaaa;--text-3:#706e6e;
+  --accent:#9cff93;--accent-2:#00eefc;--accent-3:#c4a5ff;
+  --good:#9cff93;--warn:#ffda6e;--bad:#ff7351;
+  --grad:linear-gradient(135deg,#9cff93,#00eefc 55%,#c4a5ff);
+  --grad-soft:linear-gradient(135deg,#131313,#201f1f);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:0 0 20px rgba(156,255,147,.06);
+  --shadow-lg:0 0 32px rgba(0,238,252,.1);
+  --font-sans:'Space Grotesk','Noto Sans SC',sans-serif;
+  --font-serif:'Space Grotesk',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono','Fira Code',monospace;
+}

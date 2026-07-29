@@ -1,0 +1,17 @@
+/* theme: stencil-tablet */
+:root{
+  --bg:#E2DCC9;--bg-soft:#F4EFE0;--surface:#F4EFE0;--surface-2:#E2DCC9;
+  --border:rgba(10,10,10,.35);--border-strong:rgba(10,10,10,.6);
+  --text-1:#0A0A0A;--text-2:#3a3a36;--text-3:#6b6b62;
+  --accent:#EE7A2E;--accent-2:#C73B7A;--accent-3:#2D7E73;
+  --good:#2D7E73;--warn:#D8A93B;--bad:#C73B7A;
+  --grad:linear-gradient(135deg,#EE7A2E,#C73B7A 55%,#2D7E73);
+  --grad-soft:linear-gradient(135deg,#F4EFE0,#E2DCC9);
+  --radius:22px;--radius-sm:14px;--radius-lg:26px;
+  --shadow:none;
+  --shadow-lg:none;
+  --font-sans:'Inter','Noto Serif SC',sans-serif;
+  --font-serif:'Stardos Stencil','Noto Serif SC',serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Barlow Condensed','Noto Sans SC',sans-serif;
+}

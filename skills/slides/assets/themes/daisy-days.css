@@ -1,0 +1,17 @@
+/* theme: daisy-days */
+:root{
+  --bg:#F5F0E6;--bg-soft:#FDE68A;--surface:#FFFFFF;--surface-2:#A8E6CF;
+  --border:rgba(45,45,45,.9);--border-strong:#2D2D2D;
+  --text-1:#2D2D2D;--text-2:#6B6B6B;--text-3:#9A9A9A;
+  --accent:#F8635F;--accent-2:#7ECDC0;--accent-3:#D4A5E8;
+  --good:#7ECDC0;--warn:#FDE68A;--bad:#F8635F;
+  --grad:linear-gradient(135deg,#7ECDC0,#F7C8D4 55%,#FDE68A);
+  --grad-soft:linear-gradient(135deg,#F5F0E6,#A8D8F0);
+  --radius:20px;--radius-sm:14px;--radius-lg:28px;
+  --shadow:4px 4px 0 #2D2D2D;
+  --shadow-lg:6px 6px 0 #2D2D2D;
+  --font-sans:'Quicksand','Noto Sans SC',sans-serif;
+  --font-serif:'Fredoka One','ZCOOL XiaoWei',cursive;
+  --font-display:var(--font-serif);
+  --font-mono:'Quicksand','Noto Sans SC',sans-serif;
+}

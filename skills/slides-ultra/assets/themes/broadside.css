@@ -1,0 +1,21 @@
+/* theme: broadside */
+:root{
+  --bg:#111111;--bg-soft:#1A1A18;--surface:#1A1A18;--surface-2:#222220;
+  --border:rgba(40,40,38,1);--border-strong:rgba(240,236,229,.28);
+  --text-1:#F0ECE5;--text-2:#888880;--text-3:#505048;
+  --accent:#E85D26;--accent-2:#F0814F;--accent-3:#C44A1C;
+  --good:#7da35a;--warn:#E89A26;--bad:#E85D26;
+  --grad:linear-gradient(135deg,#E85D26,#F0814F 60%,#C44A1C);
+  --grad-soft:linear-gradient(135deg,#1A1A18,#222220);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:none;
+  --shadow-lg:none;
+  --font-sans:'Barlow','Noto Sans SC',sans-serif;
+  --font-serif:'Barlow','Noto Sans SC',sans-serif;
+  --font-mono:'IBM Plex Mono','JetBrains Mono',monospace;
+}
+/* broadside ships two registers: the default dark stage (above) and a fire-orange
+   poster register. Single-mode tokens capture the dark one; opt a slide into the
+   orange register with class="bg-accent". */
+.slide.bg-accent{background:var(--accent);--text-1:#111111;--text-2:#3A1A0E;--text-3:#6B3A22;--accent:#111111;--border:rgba(17,17,17,.25);--border-strong:rgba(17,17,17,.5)}
+.slide.bg-accent .kicker,.slide.bg-accent .gradient-text{color:#111111;-webkit-text-fill-color:#111111}

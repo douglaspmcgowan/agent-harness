@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "commands": [
+    {
+      "commandId": "docket-sync",
+      "purpose": "Publish the explicitly public subset of the local Docket store and pull decisions.",
+      "executable": "%ProgramFiles%\\nodejs\\node.exe",
+      "argumentList": [
+        "%USERPROFILE%\\projects\\docket\\sync-cloud.js"
+      ],
+      "workingDirectory": "%USERPROFILE%\\projects\\docket",
+      "inheritedEnvironment": [],
+      "projectId": "",
+      "secretBindings": [
+        {
+          "secretId": "",
+          "environmentVariable": "REVIEW_SECRET"
+        }
+      ]
+    }
+  ]
+}

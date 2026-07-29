@@ -1,0 +1,3 @@
+.agents/human-readable/README.md text eol=lf
+.agents/human-readable/README.html text eol=lf
+.agents/capsule/approved-obsidian-config/** -text -whitespace

@@ -1,0 +1,2 @@
+- [Onboarding — tour + tutorial + help modal](feedback_guided_tour_default.md) — every new app ships with all three; "?" opens the help modal, not the tour
+- [Edge-case test pass by default](feedback_edge_case_tests_default.md) — every new app's Playwright suite walks the 10-item edge case checklist (bounds, long text, persistence, empty state, mobile…) — not just the happy path

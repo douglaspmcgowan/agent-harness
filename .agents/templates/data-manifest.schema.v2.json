@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/douglaspmcgowan/agent-harness/schemas/data-manifest.v2.json",
+  "title": "Agent harness external project-data manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "project",
+    "data_root_env",
+    "assets"
+  ],
+  "properties": {
+    "version": {
+      "const": 2
+    },
+    "project": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+    },
+    "data_root_env": {
+      "type": "string",
+      "pattern": "^[A-Z_][A-Z0-9_]*$"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "project",
+          "class",
+          "authority",
+          "local_destination",
+          "adapter",
+          "version_rule",
+          "integrity_rule",
+          "restore_verifier"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]*$"
+          },
+          "project": {
+            "type": "string"
+          },
+          "class": {
+            "enum": [
+              "immutable-file",
+              "versioned-large-artifact",
+              "live-document-object-state",
+              "live-relational-state",
+              "local-transactional-state",
+              "portable-export",
+              "regenerable-output"
+            ]
+          },
+          "authority": {
+            "type": "string",
+            "minLength": 1
+          },
+          "local_destination": {
+            "type": "string",
+            "pattern": "^(inputs|runtime|outputs|private)[/\\\\]"
+          },
+          "adapter": {
+            "type": "string",
+            "pattern": "^(?:[A-Za-z0-9][A-Za-z0-9._-]*\\.ps1|\\.agents[\\\\/]data[\\\\/](?:[A-Za-z0-9._-]+[\\\\/])*[A-Za-z0-9._-]+\\.ps1)$"
+          },
+          "version_rule": {
+            "type": "string",
+            "minLength": 1
+          },
+          "integrity_rule": {
+            "type": "string",
+            "minLength": 1
+          },
+          "restore_verifier": {
+            "type": "string",
+            "minLength": 1
+          },
+          "regeneration_rule": {
+            "type": "string",
+            "minLength": 1
+          },
+          "recovery_rule": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retention_daily": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "retention_weekly": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "retention_monthly": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "stale_write_rule": {
+            "enum": [
+              "compare-and-swap",
+              "immutable-generations",
+              "single-writer-lease"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "class": {
+                  "const": "regenerable-output"
+                }
+              },
+              "required": [
+                "class"
+              ]
+            },
+            "then": {
+              "required": [
+                "regeneration_rule"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "class": {
+                  "enum": [
+                    "live-document-object-state",
+                    "live-relational-state",
+                    "local-transactional-state"
+                  ]
+                }
+              },
+              "required": [
+                "class"
+              ]
+            },
+            "then": {
+              "required": [
+                "recovery_rule",
+                "stale_write_rule"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "x-recovery-classes": [
+    "live-document-object-state",
+    "live-relational-state",
+    "local-transactional-state"
+  ],
+  "x-stale-write-classes": [
+    "live-document-object-state",
+    "live-relational-state",
+    "local-transactional-state"
+  ],
+  "x-regeneration-classes": [
+    "regenerable-output"
+  ],
+  "x-default-retention": {
+    "daily": 3,
+    "weekly": 4,
+    "monthly": 3
+  },
+  "x-adapter-path-policy": "reject-reparse-points"
+}

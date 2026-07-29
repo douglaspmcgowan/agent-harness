@@ -1,0 +1,20 @@
+/* theme: excalidraw-dark (ported from bluedusk) */
+/* Hand-drawn aesthetic on dark: rough sketch feel, offset shadows, rounded sketchy corners. */
+/* Font note: --font-sans uses 'Excalifont' — the woff2 lives at html-slides/assets/fonts/Excalifont-Regular.woff2 */
+/* and must be @font-face-loaded by the deck. 'Caveat' (Google Fonts) is the hand-drawn web fallback. */
+:root{
+  --bg:#121212;--bg-soft:#0a0a0a;--surface:#232329;--surface-2:#2e2d39;
+  --border:rgba(227,227,232,.5);--border-strong:rgba(227,227,232,.85);
+  --text-1:#e3e3e8;--text-2:#a0a0a8;--text-3:#6e6e78;
+  --accent:#4dabf7;--accent-2:#cc5de8;--accent-3:#51cf66;
+  --good:#51cf66;--warn:#fcc419;--bad:#ff6b6b;
+  --grad:linear-gradient(135deg,#4dabf7,#cc5de8 55%,#51cf66);
+  --grad-soft:linear-gradient(135deg,#232329,#2e2d39);
+  --radius:14px;--radius-sm:10px;--radius-lg:18px;
+  --shadow:3px 3px 0 rgba(255,255,255,.06);
+  --shadow-lg:5px 5px 0 rgba(255,255,255,.12);
+  --font-sans:'Excalifont','Caveat','Segoe Print',cursive;
+  --font-serif:'Excalifont','Caveat',cursive;
+  --font-display:var(--font-serif);
+  --font-mono:'Cascadia Code',monospace;
+}

@@ -1,0 +1,17 @@
+/* theme: grove */
+:root{
+  --bg:#192b1b;--bg-soft:#1e3221;--surface:#1e3221;--surface-2:#214025;
+  --border:rgba(212,207,191,.12);--border-strong:rgba(212,207,191,.28);
+  --text-1:#d4cfbf;--text-2:rgba(212,207,191,.6);--text-3:rgba(212,207,191,.32);
+  --accent:#c8524a;--accent-2:#d4cfbf;--accent-3:#3a5a36;
+  --good:#7ea06a;--warn:#c8a24a;--bad:#c8524a;
+  --grad:linear-gradient(135deg,#c8524a,#a8413a);
+  --grad-soft:linear-gradient(135deg,#192b1b,#1e3221);
+  --radius:2px;--radius-sm:1px;--radius-lg:4px;
+  --shadow:0 8px 28px rgba(0,0,0,.32);
+  --shadow-lg:0 20px 56px rgba(0,0,0,.5);
+  --font-sans:'Jost','Noto Sans SC',system-ui,sans-serif;
+  --font-serif:'Playfair Display','Noto Serif SC',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono',monospace;
+}

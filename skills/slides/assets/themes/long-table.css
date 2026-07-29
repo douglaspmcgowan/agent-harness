@@ -1,0 +1,17 @@
+/* theme: long-table */
+:root{
+  --bg:#FAF1E2;--bg-soft:#F2E5CF;--surface:#F2E5CF;--surface-2:#E8D7B6;
+  --border:rgba(181,61,42,.32);--border-strong:rgba(181,61,42,.78);
+  --text-1:#B53D2A;--text-2:rgba(181,61,42,.78);--text-3:rgba(181,61,42,.5);
+  --accent:#B53D2A;--accent-2:#8E2D1F;--accent-3:#B53D2A;
+  --good:#7A8C3A;--warn:#C98A2A;--bad:#8E2D1F;
+  --grad:linear-gradient(135deg,#B53D2A,#8E2D1F);
+  --grad-soft:linear-gradient(135deg,#FAF1E2,#F2E5CF);
+  --radius:4px;--radius-sm:2px;--radius-lg:999px;
+  --shadow:0 4px 16px rgba(181,61,42,.10);
+  --shadow-lg:0 12px 36px rgba(181,61,42,.16);
+  --font-sans:'Fraunces',Georgia,serif;
+  --font-serif:'Fraunces',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Bricolage Grotesque',sans-serif;
+}

@@ -1,0 +1,5 @@
+- [Visually inspect output](feedback_inspect_output.md) — always verify generated docs visually before declaring done
+- [Sketch extraction process](project_sketch_extraction.md) — how to crop sketches from concept PDFs/PPTX into a consolidated doc
+- [DOCX Google Docs compatibility](feedback_docx_google_docs.md) — use columnWidths (tblGrid) not cell widths for tables
+- [Errors & troubleshooting](feedback_errors_troubleshooting.md) — Python/Node/Plotly/LibreOffice fixes for this project
+- [No drizzle-kit push on prod](feedback_no_drizzle_push.md) — use manual ALTER TABLE, never drizzle-kit push with real data

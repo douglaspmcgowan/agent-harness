@@ -1,0 +1,17 @@
+/* theme: bold-poster */
+:root{
+  --bg:#FFFFFF;--bg-soft:#F5F2EF;--surface:#F5F2EF;--surface-2:#ECE7E2;
+  --border:rgba(28,20,16,.85);--border-strong:rgba(28,20,16,1);
+  --text-1:#1C1410;--text-2:rgba(28,20,16,.78);--text-3:rgba(28,20,16,.55);
+  --accent:#D8000F;--accent-2:#B0000C;--accent-3:#1C1410;
+  --good:#3f7d4a;--warn:#D88A00;--bad:#D8000F;
+  --grad:linear-gradient(135deg,#D8000F,#B0000C 60%,#1C1410);
+  --grad-soft:linear-gradient(135deg,#F5F2EF,#FFFFFF 60%,#ECE7E2);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:2px 2px 0 rgba(28,20,16,.25), 4px 4px 0 rgba(28,20,16,.2);
+  --shadow-lg:2px 2px 0 rgba(28,20,16,.25), 4px 4px 0 rgba(28,20,16,.2), 6px 6px 0 rgba(28,20,16,.15);
+  --font-sans:'Libre Baskerville','Noto Serif SC',Georgia,serif;
+  --font-serif:'Shrikhand','Libre Baskerville',cursive,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'Space Grotesk','JetBrains Mono',monospace;
+}

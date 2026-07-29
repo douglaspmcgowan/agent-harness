@@ -1,0 +1,17 @@
+/* theme: cobalt-grid */
+:root{
+  --bg:#F0EBDE;--bg-soft:#E6E0CE;--surface:#F0EBDE;--surface-2:#E6E0CE;
+  --border:rgba(31,43,224,.18);--border-strong:rgba(31,43,224,.45);
+  --text-1:#1F2BE0;--text-2:#5560E5;--text-3:rgba(31,43,224,.55);
+  --accent:#1F2BE0;--accent-2:#5560E5;--accent-3:#8b93f0;
+  --good:#2f9e6a;--warn:#c08a1a;--bad:#d8443a;
+  --grad:linear-gradient(135deg,#1F2BE0,#5560E5 60%,#8b93f0);
+  --grad-soft:linear-gradient(135deg,#F0EBDE,#E6E0CE);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:none;
+  --shadow-lg:0 0 0 1.5px #F0EBDE;
+  --font-sans:'Hanken Grotesk','Noto Sans SC',sans-serif;
+  --font-serif:'Newsreader','Noto Serif SC',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'DM Mono','JetBrains Mono',ui-monospace,monospace;
+}

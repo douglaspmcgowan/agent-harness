@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "accounts": [
+    {
+      "service": "Google",
+      "accountIdentifier": null,
+      "identifierLabel": "Google email used by Google Drive",
+      "exampleFormat": "name@gmail.com or name@organization.org",
+      "whereToFind": "Google Drive for desktop > gear icon > Preferences > account",
+      "purpose": "Google Drive desktop sync and optional federated application sign-in",
+      "requiredOnNewComputer": true
+    },
+    {
+      "service": "Bitwarden",
+      "accountIdentifier": null,
+      "identifierLabel": "Bitwarden login email",
+      "exampleFormat": "name@example.com",
+      "whereToFind": "Bitwarden desktop or web vault > account menu",
+      "purpose": "Human vault sign-in and Secrets Manager organization access",
+      "requiredOnNewComputer": true
+    },
+    {
+      "service": "GitHub",
+      "accountIdentifier": null,
+      "identifierLabel": "GitHub username",
+      "exampleFormat": "octocat",
+      "whereToFind": "GitHub profile URL: github.com/<username>",
+      "purpose": "Repository remotes and GitHub CLI",
+      "requiredOnNewComputer": true
+    },
+    {
+      "service": "OpenAI",
+      "accountIdentifier": null,
+      "identifierLabel": "OpenAI or SSO sign-in email used by Codex",
+      "exampleFormat": "name@example.com",
+      "whereToFind": "Codex account/profile settings",
+      "purpose": "Codex application",
+      "requiredOnNewComputer": true
+    },
+    {
+      "service": "Anthropic",
+      "accountIdentifier": null,
+      "identifierLabel": "Anthropic or SSO sign-in email used by Claude",
+      "exampleFormat": "name@example.com",
+      "whereToFind": "Claude account/profile settings",
+      "purpose": "Claude application",
+      "requiredOnNewComputer": true
+    },
+    {
+      "service": "Cursor",
+      "accountIdentifier": null,
+      "identifierLabel": "Cursor or SSO sign-in email",
+      "exampleFormat": "name@example.com",
+      "whereToFind": "Cursor > account settings",
+      "purpose": "Cursor application",
+      "requiredOnNewComputer": true
+    }
+  ],
+  "forbiddenContent": [
+    "passwords",
+    "API keys",
+    "access tokens",
+    "session cookies",
+    "recovery keys"
+  ]
+}

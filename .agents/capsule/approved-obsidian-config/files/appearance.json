@@ -1,0 +1,10 @@
+{
+  "accentColor": "",
+  "cssTheme": "Minimal",
+  "baseFontSize": 17,
+  "enabledCssSnippets": [
+    "canvas-clean",
+    "wide-editor",
+    "home-dashboard"
+  ]
+}

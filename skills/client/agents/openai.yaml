@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client"
+  short_description: "Initialize and govern client project repositories"
+  default_prompt: "Use $client to turn this business context into a sourced client profile, deliverables ledger, and ready project repository."

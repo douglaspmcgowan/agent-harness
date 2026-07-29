@@ -1,0 +1,61 @@
+# Secrets / credentials — never commit
+.credentials.json
+.last-cleanup
+mcp-needs-auth-cache.json
+
+# Machine-specific config (kept per-machine, NOT shared across machines)
+mcp.json
+plugins/installed_plugins.json
+launch.json
+ide/
+settings.json
+
+# Ephemeral / runtime state
+history.jsonl
+stats-cache.json
+sessions-map.md
+
+# Large binary / runtime cache dirs
+cache/
+paste-cache/
+shell-snapshots/
+file-history/
+telemetry/
+debug/
+backups/
+sessions/
+session-env/
+tasks/
+todos/
+plans/
+
+# Plugin runtime state (installable via marketplace)
+plugins/cache/
+plugins/data/
+plugins/marketplaces/
+plugins/install-counts-cache.json
+plugins/known_marketplaces.json
+
+# Per-session transcripts + working dirs under projects/
+# NOTE: projects/**/memory/ files ARE committed — that's the portable memory layer.
+projects/**/*.jsonl
+projects/*/[0-9a-f][0-9a-f][0-9a-f][0-9a-f]*[0-9a-f]/
+
+*.bak-*
+hooks.bak-*/
+
+# longrun-dashboard runtime side-files (generated next to the live copy; roots.txt IS tracked config)
+tools/longrun-dashboard.skills-cache.json
+tools/longrun-dashboard.archived.json
+tools/longrun-dashboard.session-actions.jsonl
+
+# Machine-specific egress guards — hardcode the internal proxy hostname; keep per-machine, never track
+hooks/block-egress-exfil.js
+hooks/block-nasa-web-egress.js
+
+# Python build cache
+__pycache__/
+*.pyc
+
+# Machine-local scrub gate (holds real NASA tokens) - never push
+claude-sync-scrub.ps1

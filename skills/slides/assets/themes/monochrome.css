@@ -1,0 +1,17 @@
+/* theme: monochrome */
+:root{
+  --bg:#FAFADF;--bg-soft:#F5F0E4;--surface:#F5F0E4;--surface-2:#F2F2D2;
+  --border:rgba(26,26,22,.22);--border-strong:rgba(26,26,22,.55);
+  --text-1:#1A1A16;--text-2:#5E5E54;--text-3:#8A8A80;
+  --accent:#1A1A16;--accent-2:#5E5E54;--accent-3:#8A8A80;
+  --good:#5E6E54;--warn:#8A7A54;--bad:#7A4A40;
+  --grad:linear-gradient(135deg,#1A1A16,#5E5E54);
+  --grad-soft:linear-gradient(135deg,#FAFADF,#F5F0E4);
+  --radius:16px;--radius-sm:0px;--radius-lg:16px;
+  --shadow:none;
+  --shadow-lg:none;
+  --font-sans:'Jost','Noto Sans SC',system-ui,sans-serif;
+  --font-serif:'Lora','Noto Serif SC',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+}

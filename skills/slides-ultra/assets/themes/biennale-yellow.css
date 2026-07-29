@@ -1,0 +1,17 @@
+/* theme: biennale-yellow */
+:root{
+  --bg:#E9E5DB;--bg-soft:#DCD6C4;--surface:#E9E5DB;--surface-2:#DCD6C4;
+  --border:rgba(27,37,102,.2);--border-strong:rgba(27,37,102,.4);
+  --text-1:#1B2566;--text-2:rgba(27,37,102,.75);--text-3:rgba(27,37,102,.5);
+  --accent:#F1EE2E;--accent-2:#F0DA7C;--accent-3:#E26B4A;
+  --good:#5a8a4a;--warn:#E2A04A;--bad:#E26B4A;
+  --grad:linear-gradient(135deg,#F1EE2E,#F8F39B 55%,#F0DA7C);
+  --grad-soft:linear-gradient(135deg,#F8F39B,#E9E5DB 60%,#F0DA7C);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:none;
+  --shadow-lg:none;
+  --font-sans:'Archivo','Noto Sans SC',sans-serif;
+  --font-serif:'Instrument Serif','Noto Serif SC',Georgia,serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono','IBM Plex Mono',ui-monospace,monospace;
+}

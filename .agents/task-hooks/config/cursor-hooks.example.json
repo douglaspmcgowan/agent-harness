@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "command": "node {{HOME_WINDOWS_JSON}}\\.agents\\hooks\\security-dispatch.js PreToolUse --product=cursor"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "node {{HOME_WINDOWS_JSON}}\\.agents\\hooks\\security-dispatch.js PostToolUse --product=cursor"
+      },
+      {
+        "command": "node {{HOME_WINDOWS_JSON}}\\.agents\\hooks\\task-state-dispatch.js PostToolUse --product=cursor",
+        "matcher": "Task"
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "node {{HOME_WINDOWS_JSON}}\\.agents\\hooks\\task-state-dispatch.js UserPromptSubmit --product=cursor"
+      }
+    ],
+    "sessionStart": [
+      {
+        "command": "node {{HOME_WINDOWS_JSON}}\\.agents\\hooks\\task-state-dispatch.js SessionStart --product=cursor"
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "node {{HOME_WINDOWS_JSON}}\\.agents\\hooks\\task-state-dispatch.js BeforeShellExecution --product=cursor"
+      }
+    ],
+    "beforeMCPExecution": [
+      {
+        "command": "node {{HOME_WINDOWS_JSON}}\\.agents\\hooks\\task-state-dispatch.js BeforeMCPExecution --product=cursor"
+      }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": "node {{HOME_WINDOWS_JSON}}\\.agents\\hooks\\task-state-dispatch.js AfterAgentResponse --product=cursor"
+      }
+    ],
+    "stop": [
+      {
+        "command": "node {{HOME_WINDOWS_JSON}}\\.agents\\hooks\\continue-dispatch.js Stop --product=cursor --legacy=check-session-size.js"
+      }
+    ]
+  }
+}

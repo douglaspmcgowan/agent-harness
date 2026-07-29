@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "packages": [
+    {
+      "name": "Git",
+      "wingetId": "Git.Git",
+      "required": true
+    },
+    {
+      "name": "GitHub CLI",
+      "wingetId": "GitHub.cli",
+      "required": true
+    },
+    {
+      "name": "PowerShell",
+      "wingetId": "Microsoft.PowerShell",
+      "required": true
+    },
+    {
+      "name": "Node.js LTS",
+      "wingetId": "OpenJS.NodeJS.LTS",
+      "required": true
+    },
+    {
+      "name": "Bitwarden",
+      "wingetId": "Bitwarden.Bitwarden",
+      "required": true
+    },
+    {
+      "name": "Google Drive",
+      "wingetId": "Google.GoogleDrive",
+      "required": true
+    },
+    {
+      "name": "Obsidian",
+      "wingetId": "Obsidian.Obsidian",
+      "required": true
+    },
+    {
+      "name": "Cursor",
+      "wingetId": "Anysphere.Cursor",
+      "required": true
+    },
+    {
+      "name": "Claude",
+      "wingetId": null,
+      "required": true,
+      "manualUrl": "https://claude.ai/download"
+    },
+    {
+      "name": "Codex",
+      "wingetId": null,
+      "required": true,
+      "manualUrl": "https://openai.com/codex/"
+    }
+  ]
+}

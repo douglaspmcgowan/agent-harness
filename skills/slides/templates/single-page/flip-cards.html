@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>Flip Cards</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/base.css">
+<link rel="stylesheet" id="theme-link" href="../../assets/themes/minimal-white.css">
+<link rel="stylesheet" href="../../assets/animations/animations.css">
+<style>
+/* Flip cards — click a card to flip it and reveal the back. Tokens only. */
+.flip-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px;max-width:980px}
+.flip-cell{perspective:1200px}
+.flip-card{position:relative;height:200px;cursor:pointer;transform-style:preserve-3d;
+  transition:transform .6s var(--ease)}
+.flip-card.flipped{transform:rotateY(180deg)}
+.flip-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--radius);
+  padding:26px 28px;display:flex;flex-direction:column;justify-content:center;
+  background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow)}
+.flip-front{border-top:3px solid var(--accent)}
+.flip-cell:nth-child(2) .flip-front{border-top-color:var(--accent-2)}
+.flip-cell:nth-child(3) .flip-front{border-top-color:var(--good)}
+.flip-cell:nth-child(4) .flip-front{border-top-color:var(--accent-3)}
+.flip-back{transform:rotateY(180deg);background:var(--surface-2);
+  align-items:center;text-align:center}
+.flip-icon{font-size:30px;margin-bottom:10px}
+.flip-title{font-size:21px;font-weight:700;margin-bottom:4px;color:var(--text-1)}
+.flip-sub{font-size:15px;font-weight:600;color:var(--accent)}
+.flip-cell:nth-child(2) .flip-sub{color:var(--accent-2)}
+.flip-cell:nth-child(3) .flip-sub{color:var(--good)}
+.flip-cell:nth-child(4) .flip-sub{color:var(--accent-3)}
+.flip-hint{position:absolute;bottom:12px;right:16px;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--text-3)}
+.flip-detail{font-size:15px;line-height:1.6;color:var(--text-2)}
+.flip-detail strong{color:var(--text-1)}
+.flip-card:hover .flip-front{box-shadow:var(--shadow-lg)}
+</style>
+</head><body class="single">
+<div class="deck"><section class="slide is-active" data-title="Flip cards">
+  <p class="kicker">Interactive · Click to flip</p>
+  <h2 class="h2">Four capabilities—click for details</h2>
+  <p class="dim mt-s">Click any card to flip—the back has the details</p>
+  <div class="flip-grid anim-stagger-list" data-anim-target>
+    <div class="flip-cell"><div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-face flip-front">
+        <div class="flip-icon">🎨</div><div class="flip-title">Token themes</div>
+        <div class="flip-sub">Change once, updates everywhere</div><div class="flip-hint">click</div>
+      </div>
+      <div class="flip-face flip-back">
+        <p class="flip-detail">24 themes share one set of <strong>CSS variables</strong>; reskin by editing only <strong>:root</strong>.</p>
+      </div>
+    </div></div>
+    <div class="flip-cell"><div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-face flip-front">
+        <div class="flip-icon">⌨️</div><div class="flip-title">Keyboard nav</div>
+        <div class="flip-sub">Mouse-free demos</div><div class="flip-hint">click</div>
+      </div>
+      <div class="flip-face flip-back">
+        <p class="flip-detail">Arrow keys to navigate,<strong>O</strong> overview,<strong>S</strong> presenter view—all keyboard-accessible.</p>
+      </div>
+    </div></div>
+    <div class="flip-cell"><div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-face flip-front">
+        <div class="flip-icon">⚡</div><div class="flip-title">Zero build</div>
+        <div class="flip-sub">Open and go</div><div class="flip-hint">click</div>
+      </div>
+      <div class="flip-face flip-back">
+        <p class="flip-detail">No build step—<strong>double-click HTML</strong> runs directly in Chrome .</p>
+      </div>
+    </div></div>
+    <div class="flip-cell"><div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-face flip-front">
+        <div class="flip-icon">📐</div><div class="flip-title">25 animations</div>
+        <div class="flip-sub">Name it, use it</div><div class="flip-hint">click</div>
+      </div>
+      <div class="flip-face flip-back">
+        <p class="flip-detail">From <strong>fade</strong> to <strong>3D flip</strong>, press <strong>A</strong> cycle live.</p>
+      </div>
+    </div></div>
+  </div>
+  <div class="notes">Click to demo the flip interaction——Front shows the title, back gives a one-line takeaway. In keyboard mode you can present without flipping.</div>
+</section></div>
+<script src="../../assets/runtime.js"></script>
+</body></html>

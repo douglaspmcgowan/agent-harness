@@ -1,0 +1,27 @@
+/* home-dashboard.css
+   Visual styling for the _Home dashboard note.
+   Activated by cssclasses: [home] in frontmatter. */
+
+/* ── Gradient banner on the H1 title ── */
+.markdown-preview-view.home h1:first-of-type {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 72%, #533483 100%);
+  color: white !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+  padding: 32px 36px 22px;
+  margin: -24px -24px 28px -24px;
+  border-radius: 4px;
+  font-size: 2.1em;
+  letter-spacing: 0.03em;
+}
+
+/* ── Slightly rounded cards for callout blocks ── */
+.markdown-preview-view.home .callout {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ── Compact dataview task list inside callouts ── */
+.markdown-preview-view.home .callout .dataview.task-list-ul {
+  margin: 4px 0 0 0;
+  padding-left: 16px;
+}

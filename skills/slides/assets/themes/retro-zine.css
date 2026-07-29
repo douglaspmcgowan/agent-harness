@@ -1,0 +1,17 @@
+/* theme: retro-zine */
+:root{
+  --bg:#C8B99A;--bg-soft:#B8A98A;--surface:#F4EFE6;--surface-2:#B8A98A;
+  --border:rgba(26,26,26,.55);--border-strong:rgba(26,26,26,.9);
+  --text-1:#1A1A1A;--text-2:#3a3a30;--text-3:#6b6555;
+  --accent:#008F4D;--accent-2:#00A85D;--accent-3:#1A1A1A;
+  --good:#008F4D;--warn:#D8A93B;--bad:#E5392A;
+  --grad:linear-gradient(135deg,#008F4D,#00A85D 55%,#1A1A1A);
+  --grad-soft:linear-gradient(135deg,#C8B99A,#B8A98A);
+  --radius:0px;--radius-sm:0px;--radius-lg:0px;
+  --shadow:12px 12px 0 #008F4D;
+  --shadow-lg:14px 14px 0 #1A1A1A;
+  --font-sans:'Space Grotesk','Noto Serif SC',sans-serif;
+  --font-serif:'Bebas Neue','Noto Serif SC',sans-serif;
+  --font-display:var(--font-serif);
+  --font-mono:'JetBrains Mono','IBM Plex Mono',ui-monospace,monospace;
+}
