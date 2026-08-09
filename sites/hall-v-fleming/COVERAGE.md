@@ -132,6 +132,28 @@ Nothing from Becket, First Liberty, National Review, The Federalist, Washington 
 The Daily Signal, Baptist Press, Christianity Today, Deseret News, or Liberty University's own
 newsroom on *Hall* either.
 
+## Non-text media
+
+Searched for podcast, video, broadcast and radio coverage. **Found none.** Given how widely the
+concurrence was quoted in text, the absence is worth noting.
+
+The one piece of non-text media that exists is primary source, not press:
+
+- **Oral argument recording, 10 December 2025** —
+  https://www.ca4.uscourts.gov/OAarchive/mp3/25-1574-20251210.mp3
+  Verified live: HTTP 200, `audio/mpeg`, 38,577,376 bytes. Before Agee, Richardson and Benjamin;
+  Fitschen for Hall, Bernhardt for the Commonwealth.
+
+It is more candid than the coverage. Per Courthouse News' report of the argument, Judge Agee told
+Hall's counsel from the bench: "You may well have a winner at the Supreme Court… We may agree the
+tea leaves show you might have a shot at this, but I don't know if we have the ability to give you
+that shot." Judge Richardson asked whether "you might think of the music ministry as a little
+different" — i.e. whether Hall could be distinguished from *Locke* on the facts. Neither line
+appears in most write-ups.
+
+I did not transcribe the recording; the quotes above are Courthouse News' reporting of the
+argument, not my own listening.
+
 ## Supreme Court status — stated intent, not a filed fact
 
 Steven Fitschen told Courthouse News on 13 May 2026: "The historical analysis in *Locke* was
