@@ -166,9 +166,63 @@ Both are accurate readings of the same 18 pages. A headline can therefore be "co
 on taxpayer money for pastoral degrees" or "judge says binding precedent is a stain that should
 be overruled," and neither is fabricated. That divergence is the subject of the site.
 
-## Open items to verify via coverage / docket research
+## Docket status, verified 9 August 2026
 
-- Exact complaint filing date in E.D. Va. (opinion gives only the case number and the May 9,
-  2025 dismissal).
-- Whether rehearing en banc was sought or denied.
-- Whether a cert petition has been filed as of August 2026.
+- **Complaint filed 7 March 2025** in E.D. Va.; docket terminated 9 May 2025
+  (CourtListener docket 71012956). Fitschen appeared for Hall 10 March 2025.
+- **Fourth Circuit docket** (CourtListener 70340487): filed 22 May 2025, terminated 13 May 2026.
+  Entry #31 oral argument 10 Dec 2025; #32 published authored opinion; #33 judgment order,
+  affirmed. **No post-judgment entries** — no rehearing or en banc petition appears.
+- **Supreme Court: no cert petition docketed.** A contiguous scan of the Court's docket JSON API
+  across OT2025 paid/IFP 25-1150 → 25-1500, OT2026 26-1 → 26-320, and applications 26A1 → 26A200
+  returned no case naming Hall or Fleming.
+- **The 90-day clock under Sup. Ct. R. 13.1 runs to approximately 11 August 2026.** A petition
+  could still be filed timely.
+
+Caveats to preserve when repeating these: RECAP mirrors PACER and is not guaranteed complete, and
+the Supreme Court's JSON endpoints are keyed by docket number rather than party name. The honest
+claim is "nothing appears on the public dockets," not "nothing was filed."
+
+## Statutory correction to the opinion's own citation
+
+The opinion attributes the "primary purpose … and not provide religious training or theological
+education" language to **Va. Code § 23.1-628** and frames it as the *program* limit. Checked
+against the Virginia LIS official code:
+
+- **§ 23.1-628(A)** defines "eligible institution" — and reads "and not **to** provide religious
+  training or theological education." The opinion's quotation drops the "to."
+- **§ 23.1-631(C)** is the actual *program-level* exclusion: grants "shall be used only for …
+  educational programs other than those providing religious training or theological education."
+
+Quote the statute from the statute, not from the opinion's rendering of it.
+
+## Other verified detail
+
+- **Grant amount has moved.** $5,000/year in Hall's years; SCHEV lists **$5,250** for undergraduates
+  in 2025–26.
+- **Supreme Court vote lines** (from the slip opinions / LII syllabi): *Locke* 7–2 (Rehnquist;
+  Scalia and Thomas dissenting) · *Trinity Lutheran* 7–2 on the judgment (Roberts; footnote 3 drew
+  only a four-Justice plurality) · *Espinoza* 5–4 (Roberts) · *Carson* 6–3 (Roberts). Every
+  narrowing decision was authored by the same Chief Justice.
+- **No circuit split found.** *Hall* appears to be the first published federal appellate decision
+  squarely deciding whether the *Trinity Lutheran*/*Espinoza*/*Carson* line abrogated *Locke* for
+  devotional-theology majors. Recorded as "none found," not as a proven negative.
+
+## The parallel case is the live vehicle
+
+*Johnson v. Fleming*, No. 3:25-cv-00407 (E.D. Va.), on appeal as **No. 26-1437 (4th Cir.)**,
+docketed 14 April 2026:
+
+- District court (31 March 2026) **dismissed the VTAG claims under *Locke*** but **declined to
+  dismiss** the claims against the **Virginia National Guard State Tuition Assistance Program**,
+  saying it remained open to the possibility that some fact might distinguish it from *Locke*.
+- Plaintiff Trace Stevens is a Virginia Army National Guard member pursuing an M.Div. to become a
+  **military chaplain** — which puts *Locke*'s "taxpayer funds to support church leaders"
+  rationale under real strain, since the government itself employs chaplains.
+- Opening brief 26 May 2026 and reply 24 July 2026 both flag *Hall* as related. Amici include
+  retired U.S. Army Chiefs of Chaplains (via Becket) and a nineteen-state attorneys-general group.
+  Counsel of record spans ADF, ACLJ, Becket, and the Founding Freedoms Law Center.
+
+Unverified: the judge's full name in *Johnson* ("Young") comes from a Virginia Lawyers Weekly
+digest rather than a docket read, and no F. Supp. citation or opinion PDF for the 31 March 2026
+ruling was located. Whether argument has been scheduled is unknown.

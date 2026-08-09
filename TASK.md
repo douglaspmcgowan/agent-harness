@@ -18,9 +18,21 @@ Finish and prove the portable Git-first harness, per-project data transport, sel
 
 ## Needs decision
 
-- None. The current implementation defaults are reversible and recorded in the spec.
+- [?] T24a — Whether to disable Vercel Deployment Protection on the `hall-v-fleming` project.
+  The deployment is live and Ready but returns 302 to Vercel SSO, so it is currently reachable
+  only from Douglas's Vercel account. Turning protection off publishes a page naming a private
+  individual and her litigation to the open, indexable web. Left ON pending an explicit decision.
+- Otherwise none. The current implementation defaults are reversible and recorded in the spec.
 
 ## Completed
+
+- [x] T24 — Research *Hall v. Fleming* (4th Cir. 2026), compare press framing, and publish a
+  visual case history | evidence: full slip opinion extracted and read; three parallel research
+  agents over religious-liberty press, secular/legal press, and doctrine/docket; Supreme Court
+  docket scanned contiguously across OT2025/OT2026 ranges (no cert petition); Playwright render
+  verified at 1280px and 390px with no horizontal overflow and no console errors; deployed to
+  Vercel production (protection left ON — see T24a). Files under `sites/hall-v-fleming/`.
+  Scope deliberately limited to the case and its coverage, not a personal profile of the litigant.
 
 - [x] T1 — Implement topic-based GitHub project discovery with safe clone/pull decisions | evidence: integration tests and live `agent-project` inventory.
 - [x] T2 — Implement the Google Drive SQLite snapshot adapter and Docket wrapper | evidence: atomic export/restore, checksum, retention, and path tests.
