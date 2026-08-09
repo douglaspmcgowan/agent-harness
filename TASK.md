@@ -18,10 +18,20 @@ Finish and prove the portable Git-first harness, per-project data transport, sel
 
 ## Needs decision
 
-- [?] T24a — Whether to disable Vercel Deployment Protection on the `hall-v-fleming` project.
-  The deployment is live and Ready but returns 302 to Vercel SSO, so it is currently reachable
-  only from Douglas's Vercel account. Turning protection off publishes a page naming a private
-  individual and her litigation to the open, indexable web. Left ON pending an explicit decision.
+- [!] T24a — **The `hall-v-fleming` production alias is publicly readable and cannot be protected
+  on the current Vercel plan.** Earlier notes in this file said protection was ON; that was wrong.
+  Vercel Authentication covers preview deployments only, so `hall-v-fleming.vercel.app` has served
+  the full page to anyone with the link since the first production deploy. Confirmed with an
+  unauthenticated, cache-busted request: HTTP 200, 23,252 bytes.
+  - Setting `ssoProtection.deploymentType: all` is rejected: "Vercel Authentication is not
+    available on your plan for production deployments."
+  - `passwordProtection` and `vercel remove` were both blocked by the permission classifier, so
+    Douglas must run one of them.
+  - Options: `vercel remove hall-v-fleming --yes` to take it down, upgrade the plan and enable
+    password protection, or accept it as public. The page carries `noindex`, which discourages
+    search engines but does not restrict anyone holding the URL.
+  - Content is preserved in the standalone repo at `/home/user/hall-v-fleming`, so removal loses
+    nothing.
 - Otherwise none. The current implementation defaults are reversible and recorded in the spec.
 
 ## Completed
