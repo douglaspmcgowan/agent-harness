@@ -20,6 +20,8 @@ Product-global adapters contain loading instructions and product mechanics only.
 |---|---|---|
 | `AGENTS.md` | Every local session through an adapter | Shared behavior and routing |
 | `DESIGN.md` | Interface, frontend, visual, or design work | Universal interface rules |
+| `WRITING.md` | Docs, READMEs, briefs, reports, or other reader-facing prose | Prose rules |
+| `HEADINGS.md` | Any document with headings | Heading rules and bad/good examples |
 | `MAP.md` | Orientation, architecture, paths, ownership, integration | This map |
 | `MEMORY.md` | Recall or repeated work | Lean links to durable references |
 | `skills\<name>\SKILL.md` | Its trigger matches | Canonical repeatable workflow |

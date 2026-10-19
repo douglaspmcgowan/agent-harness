@@ -568,7 +568,7 @@ function Test-ProjectProvenance(
 
 function Install-CanonicalPackage([string]$TargetAgents) {
     $relativeFiles = [System.Collections.Generic.List[string]]::new()
-    foreach ($name in @('AGENTS.md', 'DESIGN.md', 'MAP.md', 'MEMORY.md')) { $relativeFiles.Add($name) }
+    foreach ($name in @('AGENTS.md', 'DESIGN.md', 'MAP.md', 'MEMORY.md', 'WRITING.md', 'HEADINGS.md')) { $relativeFiles.Add($name) }
     $relativeFiles.Add('skill-pathways.json')
     foreach ($name in @(
         'CLAUDE-SKILL-ADAPTERS.json',
@@ -1007,7 +1007,7 @@ function Assert-TextContains(
 function Verify-Global {
     $failures = [System.Collections.Generic.List[string]]::new()
     foreach ($relative in @(
-        'AGENTS.md', 'DESIGN.md', 'MAP.md', 'MEMORY.md', 'skill-pathways.json',
+        'AGENTS.md', 'DESIGN.md', 'MAP.md', 'MEMORY.md', 'WRITING.md', 'HEADINGS.md', 'skill-pathways.json',
         'adapters\claude\CLAUDE.md',
         'adapters\codex\AGENTS.proposed.md',
         'adapters\cursor\user-rules.txt',
