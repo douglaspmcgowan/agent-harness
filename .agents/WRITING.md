@@ -58,6 +58,25 @@ Detectors now separate AI from human writing by structure as well as wording. St
 - Don't frame the subject against "the old way" or as "next-generation." Use specific dates and history instead.
 - Prefer the concrete, topic-specific argument over the safe general one. In public-debate essays, 65% of human main arguments were unique within a debate, against 3% of LLM arguments (Argument Collapse, 2026).
 - Let the shape follow the material. A tidy single-track arc that over-explains its theme is the default AI story and essay shape.
+### Default paths to avoid
+
+Current models take these paths by default and people usually don't. When a draft follows one, pick a different route on purpose.
+
+| Default path | Example from current models | A route people take more often |
+|---|---|---|
+| Thesis, then support, then a policy proposal | Essays that close on "employers should pair each new hire with a mentor". In public-debate essays, 29% of LLM support passages led straight into a proposal, against 12% of human ones. | Stay with the evidence; close on a consequence, a case or an open question |
+| Concede, then pivot to a middle position | "Basic hygiene matters, but Americans should abandon the neurotic pursuit of total sterility" (all five models in one debate) | Commit to one side, or argue a position nobody in the room is taking |
+| Close on "it depends" | "Remote work is not good or bad for junior employees in the abstract. It is good when…" (Haiku 5.5) | Say which way it usually goes and why |
+| Generic authority instead of a case | "Research indicates…", "experts note…" | Name the study, the case, the date: "the Hurricane Sandy flood studies" |
+| Abstract concept as the argument | "Security failures create significant externalities…" | Show one concrete instance and let the concept follow |
+| Everyone reaches for the same supporting example | All three 5.5 models argued that remote juniors miss overhearing a senior colleague on a call | Use the example only you would think of: your own experience, a specific number, an odd case |
+| The same opening frame | "The first [thing/week/month] I…" (all three 5.5 personal essays); "The storm had…" (two of three stories) | Open mid-scene, on a detail, or on the claim itself |
+| Announce the structure, then restate it at the end | "In this post, we'll cover three fixes…", then a summary conclusion | Start with the first point; stop when the last one is made |
+| Old way against new way | "Unlike legacy approaches, next-generation…" | Give the actual history with dates |
+| Tidy single-track story with flat escalation | One plot line, the theme explained outright, tension that never rises (Claude's StoryScope fingerprint) | Subplots, unexplained motives, rising stakes, moral ambiguity, time jumps |
+
+Sources: Argument Collapse (2026), SlopShape (2026), StoryScope (2026), and the 2026-10-19 Claude 5.5 sample check.
+
 - When revising someone's draft, keep their pronouns, contractions, examples and stance. LLM revision strips first-person pronouns and contractions, adds longer words, and nudges claims toward neutral even under "grammar only" prompts (van Nuenen, 2026; "How LLMs distort our written language", 2026).
 
 ## Research papers and technical writing
