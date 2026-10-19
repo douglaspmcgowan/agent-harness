@@ -1,6 +1,6 @@
 ---
 name: tune
-description: "Ingest new writing samples Douglas supplies and recalibrate his two persistent voice-guide files — ~/.claude/voice.md (compact core rules) and ~/.claude/voice-detail.md (sentence-level calibration) — which his global CLAUDE.md already loads before any publishable prose. Runs a mandatory classification GATE first (incremental update with new samples / audit-only with none / samples too thin for real statistics), maintains a running register-diverse sample corpus, computes real stylometric features (sentence-length distribution, TTR/MTLD, function-word frequency, punctuation ratios, paragraph shape) with a stdlib-only Python script and diffs them against the ranges the voice files already claim, proposes specific edits as a reviewable diff, audits the kill list for overcorrection/flatness (scoring a recent piece against the corpus with Cosine Delta stylometric distance), and backs up each file to a timestamped copy before any write (never a git worktree — ~/.claude is not a repo). Use when Douglas says 'attune', 'attune my voice', 'update my voice files', 'tune my voice', 'recalibrate my writing voice', 'tune', or '/tune'."
+description: "Ingest new writing samples Douglas supplies and recalibrate his two persistent voice-guide files — ~/.claude/voice.md (compact core rules) and ~/.claude/voice-detail.md (sentence-level calibration) — which his global CLAUDE.md already loads before any publishable prose. Runs a mandatory classification GATE first (incremental update with new samples / audit-only with none / samples too thin for real statistics), maintains a running register-diverse sample corpus, computes real stylometric features (sentence-length distribution, TTR/MTLD, function-word frequency, punctuation ratios, paragraph shape, noun density, and an approximation of Biber's six register dimensions) with a stdlib-only Python script and diffs them against the ranges the voice files already claim, proposes specific edits as a reviewable diff, audits the kill list for overcorrection/flatness (scoring a recent piece against the corpus with Cosine Delta stylometric distance), and backs up each file to a timestamped copy before any write (never a git worktree — ~/.claude is not a repo). Use when Douglas says 'attune', 'attune my voice', 'update my voice files', 'tune my voice', 'recalibrate my writing voice', 'tune', or '/tune'."
 ---
 
 # /tune [samples] [--mode incremental|audit|auto] [--propose-only] [--recent-piece <path>]
@@ -126,6 +126,14 @@ external package) once per register over that register's corpus, computing:
   directly onto `voice-detail.md` §1's punctuation claims (semicolons in both modes; em-dashes casual-only;
   parentheses as the casual aside vehicle).
 - **Paragraph shape** — mean sentences per paragraph and the share of single-sentence paragraphs.
+- **Noun density** — nominalizations per 1000 words and comma-led participle clauses per 100 sentences, the two
+  features Reinhart et al. (PNAS 2025) found instruction-tuned models overuse at roughly 1.5–2× and 2–5×.
+- **Biber dimensions** — word-list approximations of Biber's six register dimensions (involved vs. informational,
+  narrative, explicit vs. situation-dependent reference, overt persuasion, abstract style, online elaboration),
+  with the per-feature rates behind each. The scores are not on Biber's published scale, so record them per register
+  as the baseline and compare drafts against that baseline (`compare.biber_delta`). Milička et al. (2025) found most
+  models drift the same way on these dimensions (more informational, more explicit, less narrative), which makes a
+  per-register baseline the most direct check that a draft sounds like Douglas instead of like a model.
 
 **Then compute the delta against the ranges the files already claim.** `voice-detail.md` currently asserts
 casual/persuasive sentences run **12–25 words** (with punchy drops of **3–8**) and academic/technical **18–35
@@ -267,6 +275,7 @@ exist, then runs it once per register with the claimed range for that register. 
 # --compare: also report cosine similarity (function words + char 3-grams) between
 #            the measured text and REF_FILE (e.g. a register corpus) -- the light
 #            in-session stand-in for Cosine Delta authorship distance.
+# --compare also reports biber_delta: the piece's Biber dimension scores minus the reference's.
 # --impostor FILE (repeatable): with --compare, runs the impostor-method verification:
 #            the measured text's similarity to the Douglas corpus is ranked against its
 #            similarity to each impostor text. Rank 1 of N on both feature sets =
@@ -453,6 +462,80 @@ def noun_density(toks, text, sents):
         'note': 'suffix/regex estimates; compare against the corpus baseline, not as absolute counts',
     }
 
+# Biber's six register dimensions (Biber 1988), approximated with word lists and
+# regexes instead of a part-of-speech tagger. Each dimension score is the sum of its
+# positive features minus its negative features, in occurrences per 1,000 words.
+# Raw scores are NOT on Biber's published scale; read them against --compare or
+# against other drafts, never as absolutes.
+def _ws(s):
+    return set(s.split())
+BIBER = {
+    'private_verbs': _ws("think thinks thought feel feels felt believe believes believed know knows knew "
+                         "guess suppose supposed mean meant want wanted hope hoped wonder wondered realize "
+                         "realized remember remembered understand understood assume assumed suspect figure figured"),
+    'first_person': _ws("i me my mine myself we us our ours ourselves"),
+    'second_person': _ws("you your yours yourself yourselves"),
+    'hedges_amplifiers': _ws("maybe probably perhaps really very totally so pretty quite basically actually"),
+    'be_do_present': _ws("is are am isn't aren't do does don't doesn't"),
+    'prepositions': _ws("of in on at by for with from into about over under through between across"),
+    'third_person': _ws("he she him her his hers himself herself they them their theirs themselves"),
+    'past_irregular': _ws("was were had did said went came took made got saw knew thought told found gave "
+                          "felt left kept began ran stood sat heard brought held"),
+    'time_adverbs': _ws("now then today tomorrow yesterday soon later already afterwards eventually immediately"),
+    'place_adverbs': _ws("here there above below nearby outside inside away behind ahead around abroad"),
+    'prediction_modals': _ws("will would shall won't wouldn't"),
+    'necessity_modals': _ws("must should ought need needs shouldn't"),
+    'possibility_modals': _ws("can could may might can't couldn't"),
+    'conditional': _ws("if unless"),
+    'suasive_verbs': _ws("suggest suggests recommend recommends propose proposes insist insists urge urges "
+                         "demand demands ensure ensures require requires request requests"),
+    'conjuncts': _ws("however therefore thus moreover furthermore consequently hence nevertheless "
+                     "nonetheless accordingly instead otherwise"),
+    'demonstratives': _ws("this these those"),
+}
+CONTRACTION_RE = re.compile(r"\b\w+'(?:t|re|ve|ll|m|d)\b|\b(?:it|that|there|what|he|she)'s\b", re.IGNORECASE)
+WH_RELATIVE_RE = re.compile(r"\w[,]?\s+(?:which|who|whom|whose)\b", re.IGNORECASE)
+THAT_CLAUSE_RE = re.compile(r"\b(?:say|says|said|think|thinks|thought|know|knows|knew|believe|believes|"
+                            r"believed|show|shows|showed|suggest|suggests|suggested|argue|argues|argued|"
+                            r"mean|means|meant|find|finds|found|claim|claims|claimed|note|notes|noted)\s+that\b",
+                            re.IGNORECASE)
+ATTRIB_ADJ_RE = re.compile(r"^[a-z]{4,}(?:al|ive|ous|ic|able|ible|ary|ful|less)$")
+
+def biber_dimensions(text, toks, sents):
+    total = len(toks) or 1
+    per = lambda n: n / total * 1000
+    count = lambda key: sum(1 for t in toks if t in BIBER[key])
+    f = {k: per(count(k)) for k in BIBER}
+    f['contractions'] = per(len(CONTRACTION_RE.findall(text)))
+    f['past_tense'] = per(sum(1 for t in toks if t.endswith('ed') and len(t) > 4)) + f['past_irregular']
+    f['nominalizations'] = per(sum(1 for t in toks if NOMINAL_RE.match(t) and t not in NOMINAL_EXEMPT))
+    f['wh_relatives'] = per(len(WH_RELATIVE_RE.findall(text)))
+    f['that_clauses'] = per(len(THAT_CLAUSE_RE.findall(text)))
+    f['attributive_adjectives'] = per(sum(1 for t in toks if ATTRIB_ADJ_RE.match(t)))
+    f['mean_word_length'] = sum(len(t) for t in toks) / total
+    pas = passive_rate(sents)
+    f['passive_sentences_pct'] = pas['pct_sentences_passive'] if pas else 0.0
+    d = {
+        '1_involved_vs_informational': (f['private_verbs'] + f['first_person'] + f['second_person']
+                                        + f['contractions'] + f['hedges_amplifiers'] + f['be_do_present'])
+                                       - (f['nominalizations'] + f['prepositions'] + f['attributive_adjectives']
+                                          + 10 * f['mean_word_length']),
+        '2_narrative': f['past_tense'] + f['third_person'] - f['be_do_present'],
+        '3_explicit_vs_situation_dependent': f['wh_relatives'] + f['nominalizations']
+                                             - (f['time_adverbs'] + f['place_adverbs']),
+        '4_overt_persuasion': f['prediction_modals'] + f['necessity_modals'] + f['possibility_modals']
+                              + f['conditional'] + f['suasive_verbs'],
+        '5_abstract': f['conjuncts'] + f['passive_sentences_pct'],
+        '6_online_elaboration': f['that_clauses'] + f['demonstratives'],
+    }
+    return {
+        'dimensions': {k: round(v, 1) for k, v in d.items()},
+        'features_per_1000': {k: round(v, 2) for k, v in sorted(f.items())},
+        'note': 'word-list/regex approximation of Biber (1988); raw scores are not on Biber\'s scale -- '
+                'compare against the corpus (see compare.biber_delta) or other drafts, never as absolutes. '
+                'Dimension 1 subtracts 10x mean word length as a stand-in for noun density.',
+    }
+
 def char3_counts(text):
     t = re.sub(r'\s+', ' ', text.lower())
     t = re.sub(r"[^a-z0-9 .,;:()\-']", '', t)
@@ -546,6 +629,7 @@ def main():
         'diction': diction(toks),
         'passive_voice': passive_rate(sents),
         'noun_density': noun_density(toks, text, sents),
+        'biber': biber_dimensions(text, toks, sents),
         'markers': marker_rates(text, toks),
         'paragraph': {
             'count': len(paras),
@@ -565,10 +649,13 @@ def main():
     if compare_file:
         ref_text = open(compare_file, encoding='utf-8', errors='replace').read()
         ref_toks = [w.lower() for w in words(ref_text)]
+        ref_dims = biber_dimensions(ref_text, ref_toks, sentences(ref_text))['dimensions']
         result['compare'] = {
             'reference': compare_file,
             'cosine_similarity_function_words': cosine(fw_vector(toks), fw_vector(ref_toks)),
             'cosine_similarity_char3': cosine(char3_counts(text), char3_counts(ref_text)),
+            'biber_delta': {k: round(v - ref_dims[k], 1) for k, v in result['biber']['dimensions'].items()},
+            'biber_delta_note': 'piece minus reference, per dimension; positive = more of that dimension than the corpus',
             'note': 'Cosine similarity over relative-frequency vectors (1.0 = identical profile). '
                     'A lightweight stand-in for Cosine Delta: true Delta z-scores need a multi-document '
                     'reference set, which a single corpus file cannot provide.',

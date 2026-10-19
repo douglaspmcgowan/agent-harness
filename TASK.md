@@ -22,6 +22,9 @@ Finish and prove the portable Git-first harness, per-project data transport, sel
 
 ## Completed
 
+- [x] T16 — Text-level Antislop script and Biber dimensions in `/tune` (Douglas, 2026-10-19: "you can't do this with a script? and yeah let's make tune better then") | evidence: `commands/antislop-generate.py` NEW (streams, cuts at banned regex, continues via user-turn draft since prefill 400s on current Claude models), logic tested with a fake streamer (two backtracks, clean output, give-up path terminates); live API run not done, no credentials in the cloud container; `commands/attune-stylometry.py` adds `biber` dimensions and `compare.biber_delta`, run on 12k words of human and 12k of model text; `commands/tune.md` Step 3 and embedded copy synced; `commands/voice.md` verify step uses `biber_delta`.
+  - [ ] Run `commands/antislop-generate.py` live against Opus 5.5 on Windows with credentials and compare banned-pattern counts with and without it. <!-- agent: claude/cloud session -->
+
 - [x] T15 — Ban `here's` and `quietly`, encourage semicolons and parentheses, add research-paper guidance (Douglas, 2026-10-19: "let's outlaw here's. and quietly. and encourage semicolons and paranethesis"; "how does this change for technical writing like research papers?") | evidence: `.agents/WRITING.md` banned-words line, semicolon rule, "Research papers and technical writing" section; `commands/voice.md` rewrite steps; `git diff --check` clean.
   - [x] Answer: rarity percentile, frontier-model Antislop, Biber dimensions vs `/tune` stylometry, instruction tuning, slop-forensics currency (last commit 2025-11-01), AGENTS.md lines, unread papers | evidence: answered in chat 2026-10-19.
 
