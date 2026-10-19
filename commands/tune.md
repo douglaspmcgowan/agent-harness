@@ -135,6 +135,13 @@ external package) once per register over that register's corpus, computing:
   models drift the same way on these dimensions (more informational, more explicit, less narrative), which makes a
   per-register baseline the most direct check that a draft sounds like Douglas instead of like a model.
 
+- **Repeated sentence frames** (optional, needs spaCy and `en_core_web_sm`) — the share of sentences containing a
+  part-of-speech 6-gram that recurs in 3+ sentences, templates per 1000 tokens, and the gzip compression ratio of
+  the tag sequence, after Shaib et al. (EMNLP 2024). Without spaCy the script reports `available: false` and the rest
+  still runs. Rates grow with length, so compare samples of similar size. On the 2026-10-19 check, Opus and Sonnet 5.5
+  used fewer frames than an equal-size human sample and Haiku 5.5 about the same, so treat a high rate as a drift
+  from Douglas's own baseline rather than as an AI tell.
+
 **Then compute the delta against the ranges the files already claim.** `voice-detail.md` currently asserts
 casual/persuasive sentences run **12–25 words** (with punchy drops of **3–8**) and academic/technical **18–35
 words**. Pass those as the claimed range to the script (`--claim-min` / `--claim-max`) so it reports the share of
@@ -536,6 +543,55 @@ def biber_dimensions(text, toks, sents):
                 'Dimension 1 subtracts 10x mean word length as a stand-in for noun density.',
     }
 
+# Syntactic templates (Shaib et al., EMNLP 2024, arXiv 2407.00211): part-of-speech
+# sequences that recur across a text, such as DT JJ NN IN DT JJ NN ("a romantic comedy
+# about a corporate executive"). Models reuse them far more than people: ~95% of model
+# outputs vs ~38% of human references contained one in their study. Optional: needs spaCy
+# and en_core_web_sm; without them this returns available=False and the rest still runs.
+def syntactic_templates(text, n=6, min_count=3):
+    try:
+        import spacy, gzip
+        nlp = spacy.load('en_core_web_sm', disable=['ner', 'lemmatizer'])
+    except Exception as exc:                      # missing package or model
+        return {'available': False,
+                'note': f'needs spaCy + en_core_web_sm ({type(exc).__name__}); skipped'}
+    doc = nlp(text)
+    sents = [[t for t in s if not t.is_space] for s in doc.sents]
+    sents = [s for s in sents if len(s) >= n]
+    grams = Counter()
+    per_sent = []
+    for s in sents:
+        tags = [t.tag_ for t in s]
+        g = [tuple(tags[i:i + n]) for i in range(len(tags) - n + 1)]
+        per_sent.append((s, g))
+        grams.update(set(g))                       # count sentences containing each n-gram
+    templates = {g for g, c in grams.items() if c >= min_count}
+    hit = sum(1 for _, g in per_sent if any(x in templates for x in g))
+    examples = []
+    for g, c in grams.most_common():
+        if g not in templates or len(examples) >= 5:
+            continue
+        for s, gs in per_sent:
+            if g in gs:
+                i = gs.index(g)
+                examples.append({'tags': ' '.join(g), 'sentences': c,
+                                 'example': ' '.join(t.text for t in s[i:i + n])})
+                break
+    pos_string = ' '.join(t.tag_ for t in doc if not t.is_space).encode()
+    ntok = sum(len(s) for s in sents) or 1
+    return {
+        'available': True,
+        'ngram_length': n,
+        'min_sentences': min_count,
+        'template_count': len(templates),
+        'pct_sentences_with_template': round(100 * hit / (len(sents) or 1), 1),
+        'templates_per_1000_tokens': round(sum(1 for _, g in per_sent for x in g if x in templates) / ntok * 1000, 1),
+        'pos_compression_ratio': round(len(pos_string) / len(gzip.compress(pos_string)), 3) if pos_string else None,
+        'top_templates': examples,
+        'note': 'a template is a POS 6-gram found in 3+ sentences; rates and compression ratio grow with text length, '
+                'so compare samples of similar size',
+    }
+
 def char3_counts(text):
     t = re.sub(r'\s+', ' ', text.lower())
     t = re.sub(r"[^a-z0-9 .,;:()\-']", '', t)
@@ -630,6 +686,7 @@ def main():
         'passive_voice': passive_rate(sents),
         'noun_density': noun_density(toks, text, sents),
         'biber': biber_dimensions(text, toks, sents),
+        'syntactic_templates': syntactic_templates(text),
         'markers': marker_rates(text, toks),
         'paragraph': {
             'count': len(paras),

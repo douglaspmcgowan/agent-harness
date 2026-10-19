@@ -4,6 +4,11 @@ This guide covers prose an agent writes for a human reader: docs, READMEs, brief
 
 Most rules below exist because current models drift toward them by default. Sources are listed at the end. Where a rule is a house judgment and no study backs it, the rule says so.
 
+**Evidence status (checked 2026-10-19).** Each rule was checked against 12 pieces each from Claude Opus, Sonnet and Haiku 5.5 and an equal-size human sample (Brown corpus). The human sample is 1960s news and essays and the model prompts were casual, so genre explains part of every gap.
+- **Confirmed on 5.5:** very few semicolons and parentheses (0.2–0.8 per 1,000 words against 3.3 for humans); more colons (1.8–5.5 against 1.7); shorter, more uniform sentences (spread 9.2–9.6 words against 12.4); `quiet` and `here's`; the same openings across models; pieces clustered tightly (rarity percentile 0.35–0.47 against 0.82 for human pieces).
+- **Not reproduced on 5.5:** noun-heavy prose (models used about half the human nominalization rate), low vocabulary variety (MTLD was higher than human), "and" chaining, and repeated sentence frames for Opus and Sonnet (12–15% of sentences against 31% human; Haiku 33%). Those rules came from 2023–2025 models. Keep them as readability preferences, not as AI tells.
+- **Obsolete as a tell:** em dashes. None of the three 5.5 models used one in 12,000 words. Douglas's own em-dash ban still applies in `/voice`.
+
 ## Directness and jargon
 
 - Say the thing. Lead with the answer, the finding or the instruction, then give the reason.
@@ -18,10 +23,10 @@ Follow `HEADINGS.md`. In short, a heading is a topic label (`Hardware`, `Workben
 
 ## Sentences
 
-- Avoid noun-heavy prose. Prefer verbs to nominalizations. "We migrated the database and logins failed less often" beats "The implementation of the database migration resulted in a reduction in authentication failures." Instruction-tuned models use nominalizations at 1.5–2× the human rate (Reinhart et al.).
-- Cut trailing participle clauses that add commentary: "…, highlighting the need for…", "…, underscoring its importance." Models use present-participle clauses at 2–5× the human rate.
+- Prefer verbs to nominalizations (a readability rule; the AI-tell evidence is from 2024 models). "We migrated the database and logins failed less often" beats "The implementation of the database migration resulted in a reduction in authentication failures." Reinhart et al. measured 1.5–2× the human rate in GPT-4o and Llama 3; the 5.5 samples did not show it.
+- Cut trailing participle clauses that add commentary: "…, highlighting the need for…", "…, underscoring its importance." Reinhart et al. measured 2–5× the human rate; the 5.5 samples ran 1.3–2× (2.3–3.8 per 100 sentences against 1.8).
 - Vary sentence length on purpose. A run of sentences of the same length is a tell. So is a run of short declarative fragments.
-- Use semicolons and parentheses. Join two closely linked clauses with a semicolon instead of "and" or a full stop; put a real aside (a unit, an exception, a source) in parentheses. Current models almost never use either, and they chain clauses with "and" instead (Economist, 2026; Gude et al., 2026; a harness profile of Opus, Sonnet and Haiku 5.5 found 0.2–0.8 semicolons per 1,000 words against 3.1 in the Brown corpus of human writing).
+- Use semicolons and parentheses. Join two closely linked clauses with a semicolon instead of "and" or a full stop; put a real aside (a unit, an exception, a source) in parentheses. Current models almost never use either (Economist, 2026; Gude et al., 2026; the 5.5 check above).
 - Don't write "it is not X, it is Y", "not just X but Y", or the reversed "Y rather than X" as rhetoric. State Y.
 - Replace a bare "this" or "it" at the start of a sentence with its noun.
 
@@ -33,7 +38,7 @@ Vocabulary tells rotate with each model generation. Removing one tell tends to b
 
 - Announcers and value tags: `this matters`, `here's the thing`, `here's where it gets interesting`, `the key insight`, `the honest answer`, `it's worth noting`, `let's break it down`.
 - Current tic words: `load-bearing`, `genuinely`, `quiet` used as mood ("the gulls had gone quiet"), `crucially`, `fundamentally`, `seamless`, `robust`, `leverage`, `multifaceted`.
-- Older tic words: `delve`, `tapestry`, `testament`, `showcasing`, `fostering`, `underscore`, `pivotal`, `realm`, `meticulous`, `commendable`, `intricate`.
+- Older tic words (2023–2025 models; mostly gone from current output): `delve`, `tapestry`, `testament`, `showcasing`, `fostering`, `underscore`, `pivotal`, `realm`, `meticulous`, `commendable`, `intricate`.
 - Staccato rhythm like `No X. No Y. Just Z.`
 - Summary closers that repeat the paragraph: `In short, …`, `Ultimately, …`, `By doing X, we achieve Y.`
 
@@ -63,7 +68,7 @@ Academic prose has different human norms, so some rules above relax and others t
 - **Hedge to the evidence.** Calibrated hedging ("suggests", "in our sample") is correct in a paper. The tell is uniform hedging on every claim, or no hedging on a weak one.
 - **Watch the documented paper vocabulary.** Abstract and review studies found these words rose sharply after 2023: `delve`, `intricate`, `meticulous`, `commendable`, `notably`, `comprehensive`, `pivotal`, `underscore`, `showcase`, `landscape`, `shed light on`, `pave the way` (Kobak et al.; Liang et al.).
 - **Cut value framing and contribution signalling.** Phrases like "a novel and comprehensive framework" and "significantly advances the field" grew fastest in PubMed abstracts from 2018 to 2025. State what the method does and the measured result.
-- **Keep vocabulary varied and words short where possible.** LLM-edited papers use longer words and fewer distinct words than the originals (Miletić and Falk, LREC 2026).
+- **Keep vocabulary varied and words short where possible.** LLM-edited papers from 2020–2024 use longer words and fewer distinct words than the originals (Miletić and Falk, LREC 2026); unverified on current models.
 - **Don't over-signpost.** Skip "In this section, we…" openers and end-of-section recaps; the heading already says where the reader is.
 - **Every citation must exist.** Check each reference against its DOI or arXiv ID. Fabricated or mangled citations are the most damaging tell in a paper.
 
