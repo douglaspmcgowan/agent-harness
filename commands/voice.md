@@ -65,6 +65,8 @@ Rewrite the piece against the spec. The rules that matter most:
 - **Remove every tell.** Delete kill-list terms and constructions, filler preambles ("it is worth noting"), impersonal hedges ("it could be argued"), and the "X, not Y" antithesis in all its forms (this is the single most important cut). State the positive claim and stop.
 - **Em-dashes: zero.** Convert every em-dash to a colon, a period, or a real clause. Applies uniformly across casual, academic, and refined registers — this is a hard gate, checked mechanically in Step 5, not a dial to trend toward.
 - **De-nominalize.** Turn noun-heavy phrasing back into verbs ("the implementation of the migration resulted in a reduction" becomes "we migrated and it dropped"). Cut trailing commentary clauses like ", highlighting the need for...". Instruction-tuned models overuse both at roughly 1.5-2x and 2-5x the human rate (Reinhart et al., PNAS 2025).
+- **Banned words.** Remove every `here's` and `quietly` (Douglas, 2026-10-19).
+- **Use semicolons and parentheses.** Where two clauses are tightly linked, join them with a semicolon; put real asides in parentheses. Models underuse both.
 - **Fix headings.** If the piece has headings, rewrite them per `HEADINGS.md`: topic labels, no "What this is" or "How this works" meta-labels, no coined phrases, no claims in headings.
 - **Fix flat rhythm.** If sentences run uniform, add short punches after longer setups. Do not overcorrect into a different flatness.
 

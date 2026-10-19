@@ -22,6 +22,9 @@ Finish and prove the portable Git-first harness, per-project data transport, sel
 
 ## Completed
 
+- [x] T15 — Ban `here's` and `quietly`, encourage semicolons and parentheses, add research-paper guidance (Douglas, 2026-10-19: "let's outlaw here's. and quietly. and encourage semicolons and paranethesis"; "how does this change for technical writing like research papers?") | evidence: `.agents/WRITING.md` banned-words line, semicolon rule, "Research papers and technical writing" section; `commands/voice.md` rewrite steps; `git diff --check` clean.
+  - [x] Answer: rarity percentile, frontier-model Antislop, Biber dimensions vs `/tune` stylometry, instruction tuning, slop-forensics currency (last commit 2025-11-01), AGENTS.md lines, unread papers | evidence: answered in chat 2026-10-19.
+
 - [x] T14 — Heading guide, noun-heavy rule in `/voice`, and per-model prose profile (Douglas, 2026-10-19: "make a heading guide and then ... give me a list of bad and good examples"; "make sure voice has this human-based stuff embedded") | evidence: `.agents/HEADINGS.md` NEW with rules and bad/good table; `.agents/WRITING.md` links it; `commands/voice.md` reads both guides and gates on new `noun_density` metric; `commands/attune-stylometry.py` adds nominalization and participle-clause rates (smoke-tested), with the embedded copy in `commands/tune.md` synced; per-model profile of Opus, Sonnet and Haiku (12 prompts each) against a Brown-corpus baseline and wordfreq reported in chat.
   - [x] Answer: explain Antislop, Milička benchmark, slop-forensics; identify the violin-plot paper (StoryScope, arXiv 2604.03136); explain how the guide was installed | evidence: answered in chat 2026-10-19.
 

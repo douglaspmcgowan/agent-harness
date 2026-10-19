@@ -21,16 +21,18 @@ Follow `HEADINGS.md`. In short, a heading is a topic label (`Hardware`, `Workben
 - Avoid noun-heavy prose. Prefer verbs to nominalizations. "We migrated the database and logins failed less often" beats "The implementation of the database migration resulted in a reduction in authentication failures." Instruction-tuned models use nominalizations at 1.5–2× the human rate (Reinhart et al.).
 - Cut trailing participle clauses that add commentary: "…, highlighting the need for…", "…, underscoring its importance." Models use present-participle clauses at 2–5× the human rate.
 - Vary sentence length on purpose. A run of sentences of the same length is a tell. So is a run of short declarative fragments.
-- Punctuate like a person. Commas, semicolons and parentheses are fine; models now underuse them and chain clauses with "and" instead (Economist, 2026).
+- Use semicolons and parentheses. Join two closely linked clauses with a semicolon instead of "and" or a full stop; put a real aside (a unit, an exception, a source) in parentheses. Current models almost never use either, and they chain clauses with "and" instead (Economist, 2026; Gude et al., 2026; a harness profile of Opus, Sonnet and Haiku 5.5 found 0.2–0.8 semicolons per 1,000 words against 3.1 in the Brown corpus of human writing).
 - Don't write "it is not X, it is Y", "not just X but Y", or the reversed "Y rather than X" as rhetoric. State Y.
 - Replace a bare "this" or "it" at the start of a sentence with its noun.
 
 ## Words and phrases
 
+**Banned outright (Douglas, 2026-10-19):** `here's` in any use ("here's the thing", "here's how", "here's what I found") and `quietly`. Rewrite the sentence so neither is needed.
+
 Vocabulary tells rotate with each model generation. Removing one tell tends to bring in the next, so treat this list as an example set. A banlist is no substitute for specific content.
 
 - Announcers and value tags: `this matters`, `here's the thing`, `here's where it gets interesting`, `the key insight`, `the honest answer`, `it's worth noting`, `let's break it down`.
-- Current tic words: `load-bearing`, `genuinely`, `quietly`, `crucially`, `fundamentally`, `seamless`, `robust`, `leverage`, `multifaceted`.
+- Current tic words: `load-bearing`, `genuinely`, `quiet` used as mood ("the gulls had gone quiet"), `crucially`, `fundamentally`, `seamless`, `robust`, `leverage`, `multifaceted`.
 - Older tic words: `delve`, `tapestry`, `testament`, `showcasing`, `fostering`, `underscore`, `pivotal`, `realm`, `meticulous`, `commendable`, `intricate`.
 - Staccato rhythm like `No X. No Y. Just Z.`
 - Summary closers that repeat the paragraph: `In short, …`, `Ultimately, …`, `By doing X, we achieve Y.`
@@ -43,10 +45,22 @@ Vocabulary tells rotate with each model generation. Removing one tell tends to b
 - Give space in proportion to difficulty. Uniform coverage of easy and hard parts reads as generated.
 - End a section when the content ends. Don't add a recap.
 
+## Research papers and technical writing
+
+Academic prose has different human norms, so some rules above relax and others tighten.
+
+- **Nouns and passives are normal here.** Human academic writing is itself noun-heavy and uses the passive. Keep the technical nouns; cut only stacked nominalizations where a verb reads cleaner ("we measured X" over "the measurement of X was performed"). Judge against a corpus of papers in the same field, not against casual prose.
+- **Hedge to the evidence.** Calibrated hedging ("suggests", "in our sample") is correct in a paper. The tell is uniform hedging on every claim, or no hedging on a weak one.
+- **Watch the documented paper vocabulary.** Abstract and review studies found these words rose sharply after 2023: `delve`, `intricate`, `meticulous`, `commendable`, `notably`, `comprehensive`, `pivotal`, `underscore`, `showcase`, `landscape`, `shed light on`, `pave the way` (Kobak et al.; Liang et al.).
+- **Cut value framing and contribution signalling.** Phrases like "a novel and comprehensive framework" and "significantly advances the field" grew fastest in PubMed abstracts from 2018 to 2025. State what the method does and the measured result.
+- **Keep vocabulary varied and words short where possible.** LLM-edited papers use longer words and fewer distinct words than the originals (Miletić and Falk, LREC 2026).
+- **Don't over-signpost.** Skip "In this section, we…" openers and end-of-section recaps; the heading already says where the reader is.
+- **Every citation must exist.** Check each reference against its DOI or arXiv ID. Fabricated or mangled citations are the most damaging tell in a paper.
+
 ## Checks before handing prose over
 
 1. Run the check in `HEADINGS.md`.
-2. Search the draft for the phrases above, and for `this` at the start of a sentence or heading.
+2. Search the draft for `here's`, `quietly` and the other phrases above, and for `this` at the start of a sentence or heading.
 3. Read a paragraph aloud. Fix it if the rhythm is even or it says little.
 4. Check that every claim carries a name, a number or a source.
 5. For a measured comparison against Douglas's own writing, run `/voice`; the script behind it is `commands/attune-stylometry.py`.
@@ -64,3 +78,5 @@ Vocabulary tells rotate with each model generation. Removing one tell tends to b
 - Graphite study, reported by Gizmodo (2026-10-02): https://gizmodo.com/this-matters-researchers-identify-thousands-of-new-tells-in-ai-writing-2000820447
 - Economist study, reported by Daring Fireball (2026-08-11): https://daringfireball.net/linked/2026/08/11/economist-ai-writing
 - Claudisms banlist: https://claudisms.ai/
+- Gude et al., *More aligned, less diverse? Analyzing the grammar and lexicon of two generations of LLMs*, 2026: https://arxiv.org/abs/2605.06030
+- Miletić and Falk, *What are LLMs doing to scientific communication?*, LREC 2026: https://arxiv.org/abs/2605.19936
