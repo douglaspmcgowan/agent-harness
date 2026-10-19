@@ -45,6 +45,16 @@ Vocabulary tells rotate with each model generation. Removing one tell tends to b
 - Give space in proportion to difficulty. Uniform coverage of easy and hard parts reads as generated.
 - End a section when the content ends. Don't add a recap.
 
+## Structure and argument
+
+Detectors now separate AI from human writing by structure as well as wording. Structural features alone flag AI-written business posts at 97% accuracy, even after rewording (SlopShape, 2026). Plot features flag AI stories at 93% (StoryScope, 2026).
+
+- Don't announce the structure ("In this post, we'll cover three fixes…") and don't close by restating the thesis. Both are the strongest AI-leaning features in SlopShape.
+- Don't frame the subject against "the old way" or as "next-generation." Use specific dates and history instead.
+- Prefer the concrete, topic-specific argument over the safe general one. In public-debate essays, 65% of human main arguments were unique within a debate, against 3% of LLM arguments (Argument Collapse, 2026).
+- Let the shape follow the material. A tidy single-track arc that over-explains its theme is the default AI story and essay shape.
+- When revising someone's draft, keep their pronouns, contractions, examples and stance. LLM revision strips first-person pronouns and contractions, adds longer words, and nudges claims toward neutral even under "grammar only" prompts (van Nuenen, 2026; "How LLMs distort our written language", 2026).
+
 ## Research papers and technical writing
 
 Academic prose has different human norms, so some rules above relax and others tighten.
@@ -79,4 +89,10 @@ Academic prose has different human norms, so some rules above relax and others t
 - Economist study, reported by Daring Fireball (2026-08-11): https://daringfireball.net/linked/2026/08/11/economist-ai-writing
 - Claudisms banlist: https://claudisms.ai/
 - Gude et al., *More aligned, less diverse? Analyzing the grammar and lexicon of two generations of LLMs*, 2026: https://arxiv.org/abs/2605.06030
+- Madler, *SlopShape: identifying AI-generated commercial web content*, 2026: https://arxiv.org/abs/2609.15369
+- Russell et al., *StoryScope: investigating idiosyncrasies in AI fiction*, COLM 2026: https://arxiv.org/abs/2604.03136
+- *Argument collapse: LLMs flatten long-form public debate*, 2026: https://arxiv.org/abs/2606.01736
+- van Nuenen, *Voice under revision*, 2026: https://arxiv.org/abs/2604.22142
+- *How LLMs distort our written language*, 2026: https://arxiv.org/abs/2603.18161
+- Shaib et al., *Detection and measurement of syntactic templates in generated text*, EMNLP 2024: https://arxiv.org/abs/2407.00211
 - Miletić and Falk, *What are LLMs doing to scientific communication?*, LREC 2026: https://arxiv.org/abs/2605.19936
