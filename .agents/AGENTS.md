@@ -70,6 +70,8 @@ Use `TASK.md` as the active goal, queue, blockers, completed evidence, and exact
 ## Design and writing
 
 - Follow `~/.agents/DESIGN.md` for universal interface rules and the repository `DESIGN.md` for project-specific additions.
+- Before writing docs, READMEs, briefs, reports or other prose for a reader, read `~/.agents/WRITING.md`. Be direct: give the answer first, use the precise term, and explain jargon where it first appears instead of avoiding it.
+- Write headings as topic labels (`Hardware`, `Workbench and camera views`). Don't use meta-labels such as "What this is" or "How this works", coined phrases, or headings that carry a claim.
 - Before drafting prose Douglas will publish or send, resolve the active Obsidian vault and read its `Codex\voice.md`.
 
 ## Corrections, memory, and completion

@@ -22,6 +22,11 @@ Finish and prove the portable Git-first harness, per-project data transport, sel
 
 ## Completed
 
+- [x] T13 — Write the prose writing guide and wire it into the shared contract (Douglas, 2026-10-19: "write a prose writing guide ... add it to agents md"; replace plain-words avoidance with "be direct and explain jargon the first place it's mentioned") | evidence: `.agents/WRITING.md` NEW; `.agents/AGENTS.md` Design and writing, portable block in `AGENTS.md`, `.agents/PORTABLE-PRINCIPLES.md`, `.agents/templates/AGENTS.md` updated and byte-equal; installer and Verify-Global list `WRITING.md`; `git diff --check` clean. Windows-only Pester-style suites not runnable in the Linux cloud container (baseline fails identically).
+  - [x] Answer: noun-heavy prose example, model-characterization tools, heading research, word-distribution papers | evidence: answered in chat 2026-10-19 with cited sources.
+  - [ ] Port the same rule and `WRITING.md` to the installed global harness (`doug-harness-mirror`), which is outside this session's GitHub scope. <!-- agent: claude/cloud session -->
+  - [ ] Regenerate `.agents/harness-provenance.json` on Windows; hashes were already stale at HEAD before this change. <!-- agent: claude/cloud session -->
+
 - [x] T1 — Implement topic-based GitHub project discovery with safe clone/pull decisions | evidence: integration tests and live `agent-project` inventory.
 - [x] T2 — Implement the Google Drive SQLite snapshot adapter and Docket wrapper | evidence: atomic export/restore, checksum, retention, and path tests.
 - [x] T3 — Normalize user-PATH executable discovery for agent processes | evidence: fresh-process resolver passes for every required installed executable.

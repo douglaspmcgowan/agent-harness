@@ -10,6 +10,7 @@ This repository contract travels with the project for Claude, Codex, Cursor, and
 - Verify inherited claims against repository, Git, runtime, or current primary evidence.
 - Match commands and paths to the user's actual shell and device.
 - Avoid the rhetorical "it is X, not Y" construction.
+- Write directly: answer first, use the precise term, and explain jargon where it first appears. Write headings as topic labels, never meta-labels like "How this works". When present, follow `~/.agents/WRITING.md`.
 - Preserve unrelated changes. Inspect exact targets before destructive or broad operations and prefer recoverable changes.
 - Before creating, replacing, renaming, or removing an artifact, search the repository and available shared harness for its existing owner, equivalents, consumers, wiring, tests, and documentation. Extend or consolidate the closest adequate owner. Record search evidence and the reason for a truly new owner in `TASK.md`.
 - Extract every discrete obligation from a multi-step prompt into `TASK.md`. Add required agent-discovered work as nested checkboxes with provenance. Use parallel execution when eligible work is independent and file-disjoint.
