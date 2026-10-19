@@ -14,32 +14,11 @@ Most rules below exist because current models drift toward them by default. Sour
 
 ## Headings
 
-Nobody has published a controlled study of AI-written versus human-written headings. The rules here combine professional style guides, the Wikipedia AI Cleanup project's observations, and patterns seen in this harness's own output.
-
-**Write labels.** A heading names the topic so a scanning reader can find it. Put the key noun first. Good: `Hardware`, `Workbench and camera views`, `Install the driver`, `Known issues`.
-
-- Concept sections get noun phrases: `Camera coverage`, `Data retention`.
-- Task sections get a bare imperative verb: `Calibrate the camera`. Avoid a leading `-ing` form ("Calibrating the camera").
-- Follow the document's existing case convention. Sentence case is the default (Google, Python docs); a document already in Title Case stays in Title Case.
-- One H1 per page. Don't repeat the page title as the first heading. Don't skip heading levels. Don't add a heading that holds only subheadings.
-
-**Avoid these patterns, which read as generated:**
-
-| Pattern | Example | Use instead |
-|---|---|---|
-| Meta-label describing the section's job | `What this is`, `How this works`, `What this looks like`, `Why it matters`, `The short version` | Name the topic: `Overview` only if nothing better exists, otherwise `Lab hardware`, `Capture pipeline` |
-| Deictic `this`/`it` in a heading | `How this works` | The noun `this` stands for |
-| Wh-clause headings in a row | `What X is`, `How Y works`, `Why Z matters` | Mix in noun labels; most sections need none of these |
-| Coined, cute or metaphorical phrase | `The bench and what can see what`, `The load-bearing part` | `Workbench and camera views` |
-| Claim or punchline stuffed into a heading | `Hardware: one bench, two cameras`, `The left bench is a blind spot` | Put the claim in the first sentence under a plain label |
-| Formulaic pairs and closers | `Awards and recognition`, `Challenges and future directions`, `Key takeaways`, `Conclusion` | Only when the content is really that |
-| Every heading built on one template | four `What/How` headings in one doc | Vary by content; a short doc may need no headings |
-
-Test: read only the headings. They should work as a table of contents a stranger could navigate. They should not read as a sequence of teasers.
+Follow `HEADINGS.md`. In short, a heading is a topic label (`Hardware`, `Workbench and camera views`, `Install the driver`). It is not a meta-label like "How this works", a coined phrase, or a claim.
 
 ## Sentences
 
-- Prefer verbs to nominalizations. "We migrated the database and logins failed less often" beats "The implementation of the database migration resulted in a reduction in authentication failures." Instruction-tuned models use nominalizations at 1.5–2× the human rate (Reinhart et al.).
+- Avoid noun-heavy prose. Prefer verbs to nominalizations. "We migrated the database and logins failed less often" beats "The implementation of the database migration resulted in a reduction in authentication failures." Instruction-tuned models use nominalizations at 1.5–2× the human rate (Reinhart et al.).
 - Cut trailing participle clauses that add commentary: "…, highlighting the need for…", "…, underscoring its importance." Models use present-participle clauses at 2–5× the human rate.
 - Vary sentence length on purpose. A run of sentences of the same length is a tell. So is a run of short declarative fragments.
 - Punctuate like a person. Commas, semicolons and parentheses are fine; models now underuse them and chain clauses with "and" instead (Economist, 2026).
@@ -66,7 +45,7 @@ Vocabulary tells rotate with each model generation. Removing one tell tends to b
 
 ## Checks before handing prose over
 
-1. Read the headings alone. Each one should name a topic. If one describes what the section does, rewrite it.
+1. Run the check in `HEADINGS.md`.
 2. Search the draft for the phrases above, and for `this` at the start of a sentence or heading.
 3. Read a paragraph aloud. Fix it if the rhythm is even or it says little.
 4. Check that every claim carries a name, a number or a source.

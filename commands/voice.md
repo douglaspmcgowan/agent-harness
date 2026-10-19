@@ -38,6 +38,8 @@ Read both voice files in full as the rewrite spec:
 - `C:\Users\dmcgowa2\.claude\voice.md` — core rules, hard nos (the antithesis ban at the top), the two-mode split, the few-shot exemplars.
 - `C:\Users\dmcgowa2\.claude\voice-detail.md` — sentence architecture, diction, hedging, transitions, the full kill list, the RED FLAGS list, §12 measured baselines (the target numbers per register), and the reference paragraph for the target register.
 
+Also read `~/.agents/WRITING.md` and `~/.agents/HEADINGS.md`. They hold the research-backed, human-baseline rules (noun-heavy prose, participle-clause commentary, rotating model tics, heading shapes) that apply under every register. Where they disagree with the voice files, the voice files win.
+
 For `refined`, also read §11 (Refined Conversational Register). There is no dedicated corpus for refined; use the §11 rules plus the casual dials as a loose reference.
 
 ## Step 3 — Measure the input (before-numbers)
@@ -51,7 +53,7 @@ Register mapping:
 - `academic` → claim 18 / 35 → corpus `C:\Users\dmcgowa2\Documents\Claude NASA Folder\voice\corpus\academic.md`
 - `refined` → claim 12 / 25 → casual corpus (loose reference)
 
-If the piece is pasted text rather than a file, write it to a temp file first, or pipe it on stdin (the script reads stdin when no file is passed). Record the before-values: cosine similarity to the corpus (function words and char 3-grams), latinate-suffix rate, passive rate, punchy share, sentence-length stdev, hype rate, and every kill-list and antithesis hit found by hand.
+If the piece is pasted text rather than a file, write it to a temp file first, or pipe it on stdin (the script reads stdin when no file is passed). Record the before-values: cosine similarity to the corpus (function words and char 3-grams), latinate-suffix rate, passive rate, punchy share, sentence-length stdev, hype rate, `noun_density` (nominalizations per 1,000 words and participle clauses per 100 sentences), and every kill-list and antithesis hit found by hand.
 
 ## Step 4 — Rewrite to his voice
 
@@ -62,11 +64,13 @@ Rewrite the piece against the spec. The rules that matter most:
 - **Fix the diction.** Casual leans Anglo-Saxon and concrete ("make" over "create", "use" over "utilize"). Academic uses precise Latinate terms only where they are the right technical word.
 - **Remove every tell.** Delete kill-list terms and constructions, filler preambles ("it is worth noting"), impersonal hedges ("it could be argued"), and the "X, not Y" antithesis in all its forms (this is the single most important cut). State the positive claim and stop.
 - **Em-dashes: zero.** Convert every em-dash to a colon, a period, or a real clause. Applies uniformly across casual, academic, and refined registers — this is a hard gate, checked mechanically in Step 5, not a dial to trend toward.
+- **De-nominalize.** Turn noun-heavy phrasing back into verbs ("the implementation of the migration resulted in a reduction" becomes "we migrated and it dropped"). Cut trailing commentary clauses like ", highlighting the need for...". Instruction-tuned models overuse both at roughly 1.5-2x and 2-5x the human rate (Reinhart et al., PNAS 2025).
+- **Fix headings.** If the piece has headings, rewrite them per `HEADINGS.md`: topic labels, no "What this is" or "How this works" meta-labels, no coined phrases, no claims in headings.
 - **Fix flat rhythm.** If sentences run uniform, add short punches after longer setups. Do not overcorrect into a different flatness.
 
 ## Step 5 — Verify the rewrite (before claiming done)
 
-Re-run the stylometry script on the rewritten text, same register and same `--compare` corpus. Report before → after for: cosine similarity to the corpus (should rise or hold high), latinate rate and passive rate and punchy share moving toward the §12 register baseline, hype rate at or near zero, kill-list hits at zero, antithesis at zero, em-dash count at zero (check the script's `em_dash_check.pass` field directly). Self-audit the rewrite against voice.md's RED FLAGS list.
+Re-run the stylometry script on the rewritten text, same register and same `--compare` corpus. Report before → after for: cosine similarity to the corpus (should rise or hold high), latinate rate and passive rate and punchy share moving toward the §12 register baseline, hype rate at or near zero, `noun_density` at or below the corpus baseline, kill-list hits at zero, antithesis at zero, em-dash count at zero (check the script's `em_dash_check.pass` field directly). Self-audit the rewrite against voice.md's RED FLAGS list.
 
 If a dial moved the wrong way, or a kill-list or antithesis hit survived, iterate once and re-measure. The em-dash count is a hard gate: any nonzero count after the rewrite is a fail, iterate until `em_dash_check.pass` reads true. Watch the sentence-length standard deviation: if it collapsed well below the register baseline (~8+ for both modes), the rewrite flattened the rhythm and needs variation put back. Do not claim the piece matches his voice if the after-numbers do not support it — report what improved and what still reads off.
 

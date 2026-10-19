@@ -429,6 +429,30 @@ def passive_rate(sents):
                 'never an absolute grammar count',
     }
 
+NOMINAL_RE = re.compile(r"^[a-z]{3,}(tion|sion|ment|ness|ity|ance|ence|ancy|ency|ism)s?$")
+NOMINAL_EXEMPT = set("""
+nation station mention question business city community moment government
+experience evidence audience sentence science office difference century
+""".split())
+PARTICIPLE_CLAUSE_RE = re.compile(r",\s+(?:thereby\s+|thus\s+)?([a-z]{3,}ing)\b")
+PARTICIPLE_EXEMPT = set("including according during regarding following nothing something "
+                        "anything everything thing things being".split())
+
+def noun_density(toks, text, sents):
+    # Reinhart et al. (PNAS 2025): instruction-tuned models use nominalizations at
+    # ~1.5-2x and comma-led present-participle clauses (", highlighting the need")
+    # at ~2-5x the human rate. Suffix and regex estimates -- a comparator across
+    # drafts and registers, never an absolute grammar count.
+    total = len(toks) or 1
+    nominal = sum(1 for t in toks if NOMINAL_RE.match(t) and t not in NOMINAL_EXEMPT)
+    clauses = sum(1 for m in PARTICIPLE_CLAUSE_RE.finditer(text.lower())
+                  if m.group(1) not in PARTICIPLE_EXEMPT)
+    return {
+        'nominalizations_per_1000': round(nominal / total * 1000, 2),
+        'participle_clauses_per_100_sentences': round(clauses / (len(sents) or 1) * 100, 1),
+        'note': 'suffix/regex estimates; compare against the corpus baseline, not as absolute counts',
+    }
+
 def char3_counts(text):
     t = re.sub(r'\s+', ' ', text.lower())
     t = re.sub(r"[^a-z0-9 .,;:()\-']", '', t)
@@ -521,6 +545,7 @@ def main():
         },
         'diction': diction(toks),
         'passive_voice': passive_rate(sents),
+        'noun_density': noun_density(toks, text, sents),
         'markers': marker_rates(text, toks),
         'paragraph': {
             'count': len(paras),
